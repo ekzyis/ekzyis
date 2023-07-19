@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 
-rsync -v public/*.{html,css,ico,png,webmanifest} vps:/var/www/ekzyis
+set -e
+
+rsync -avh public/ vps:/var/www/ekzyis --delete --dry-run
+
+echo
+read -p "Continue deploy? [yn] " yn
+echo
+[ "$yn" == "y" ] && rsync -avh public/ vps:/var/www/ekzyis --delete
