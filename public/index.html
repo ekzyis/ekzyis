@@ -12,7 +12,12 @@
     <meta name="theme-color" content="#091833" />
   </head>
   <body>
-    <div class="container flex flex-column text-center justify-center h-100vh">
+    <header class="flex flex-row text-center justify-center pt-1">
+      <nav>
+        <a href="/">home</a>
+      </nav>
+    </header>
+    <div class="container flex flex-column text-center">
       <code>
         <strong>
           <pre>
@@ -21,27 +26,46 @@
  / _ \ |/ /|_  / | | | / __|    
 |  __/   <  / /| |_| | \__ \    
  \___|_|\_\/___|\__, |_|___/.com
-                |___/           </pre
-          >
+                |___/           </pre>
         </strong>
       </code>
       <div class="font-mono mb-1">Welcome!</div>
       <div>
         <p>
-          I am just a pleb who likes programming, cybersecurity and bitcoin
+          I am just a pleb who likes programming, cybersecurity and bitcoin<br/>
           (chronological order).
         </p>
-        <p>This is my personal website. I intend to add more stuff soon.</p>
-        <p>So come back later!</p>
-        <code>
-          <pre>
-Access: 2023-05-04 19:58:41.576550631 +0000
-Modify: 2023-05-05 11:42:20.056491837 +0000
-Change: 2023-05-05 11:42:20.056491837 +0000
- Birth: 2023-05-04 19:58:41.576550631 +0000</pre
-          >
-        </code>
+        <p>
+          I see this website as my personal playground where I can experiment with setups using minimal HTML and CSS (no javascript required here!),
+          host a onion site, integrate protocols like <a href="https://docs.lightning.engineering/the-lightning-network/l402">L402</a> or <a href="https://nostr.com/">nostr</a> and whatever else I might come up with.
+        </p>
+        <p>
+          While doing this, I want to share my experiences with others in blog posts for the following reasons:
+          <ul>
+            <li>They might be useful as guides if others want to do similar things</li>
+            <li>Knowing that I can share whatever I learned with others later helps me stay motivated to keep learning more</li>
+            <li>I would love to talk more about topics that I am interested in with people (<a href="https://stacker.news/">stacker.news</a> made me realize this!)</li>
+            <li>I want to keep track of all the things I've learned over time</li>
+          </ul>
+        </p>
       </div>
     </div>
+    <footer class="flex justify-center">
+      <div>
+        <hr />
+        <nav class="flex flex-row justify-center">
+          <a href="/rss">rss</a>
+          <a href="https://snort.social/p/npub16x07c4qz05yhqe2gy2q2u9ax359d2lc0tsh6wn3y70dmk8nv2j2s96s89d">nostr</a>
+          <a href="/simplex.jpeg">simplex</a>
+          <a href="https://github.com/ekzyis">github</a>
+          <a href="https://stacker.news/ekzyis">sn</a>
+        </nav>
+        <code>
+          <pre>
+Change: 2023-07-19 05:46:09.018958096 +0200
+ Birth: 2023-05-04 19:58:41.576550631 +0000</pre>
+        </code>
+      </div>
+    </footer>
   </body>
 </html>

@@ -4,6 +4,31 @@ body {
   caret-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  color: #8787a4;
+  text-decoration: underline;
+}
+a:hover {
+  background: #8787A4;
+  color: #ffffff;
+}
+nav > a {
+  margin: 0 3px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: repeating-linear-gradient(90deg,#fff,#fff 6px,transparent 1px,transparent 8px);
+}
+
+ul {
+  text-align: left;
 }
 
 .container {
@@ -12,7 +37,9 @@ body {
   -ms-box-sizing:     border-box;
   -o-box-sizing:      border-box;
   box-sizing:         border-box;
-  padding: 1rem;
+  margin: 1em auto;
+  padding: 0 1em;
+  max-width: 60rem;
 }
 
 .flex {
@@ -50,4 +77,7 @@ body {
 }
 .mb-1 {
   margin-bottom: 1em;
+}
+.pt-1 {
+  padding-top: 1em;
 }
