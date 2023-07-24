@@ -1,1 +1,1 @@
-# ekzyis.com
+Personal website at https://ekzyis.com
