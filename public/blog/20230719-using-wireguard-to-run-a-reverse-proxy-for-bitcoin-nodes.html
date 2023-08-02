@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>blog | ekzyis</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="/index.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#091833" />
-  </head>
-  <body>
-    <header class="flex flex-row text-center justify-center pt-1">
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog">blog</a>
-      </nav>
-    </header>
-    <div class="container flex flex-column text-center">
-      <code>
+
+<head>
+  <title>blog | ekzyis</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="/index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#091833" />
+</head>
+
+<body>
+  <header class="flex flex-row text-center justify-center pt-1">
+    <nav>
+      <a href="/">home</a>
+      <a href="/blog">blog</a>
+    </nav>
+  </header>
+  <div class="container flex flex-column text-center">
+    <code>
         <strong>
           <pre>
  _     _             
@@ -30,53 +32,60 @@
                 |___/</pre>
         </strong>
       </code>
-      <div>
-        <div class="font-mono mb-1">2023-07-19<br/>Using Wireguard to run a reverse proxy for bitcoin nodes</div>
-        <!-- vvv blog article vvv -->
-        <div class="text-left">
-          <p>
-            If you a run a bitcoin node at home, you may have noticed that inbound connections drop after a while <a href="https://bitcointalk.org/index.php?topic=5428788">like I did</a>.<br/>
-            One likely reason could be that you were not assigned a static public IPv4 address from your ISP.
-            This means that everytime your public IP address changes, your peers can not reach you anymore under your previous IP address.
-            For them, it looks like you suddenly went offline. And for some reason, you don't get new inbound connections after that.
-          </p>
-          <p>
-            You can confirm this by keeping track of your public IP (using <a href="https://ip.me/">ip.me</a> for example)
-            and check if all your inbound connections drop at the same time your public IP changes.
-            If that is the case, you can be pretty sure that your ISP changing your public IP is causing this.
-          </p>
-          <p>
-            So let's assume you have confirmed this and still want to run a bitcoin node at home with inbound connections.<br/>
-            How do we fix this? As far as I know, you only have three options:
-            <ul>
-              <li>Ask your ISP to assign you a static public IPv4 address (may require a business contract which costs more)</li>
-              <li>Restart your node everytime you notice that your public IP changed</li>
-              <li>Use a server with a static public IPv4 address as a reverse proxy</li>
-            </ul>
-            As you might have guessed, I am going to show you how to use WireGuard to make a reverse proxy out of a server of yours so you don't need to pay more
-            for your internet connection while learning more about networking at the same time.
-          </p>
-        </div>
-        <div class="font-mono mt-1">WIP</div>
-        <!-- ^^^ blog article ^^^ -->
+    <div>
+      <div class="font-mono mb-1">2023-07-19<br />Using Wireguard to run a reverse proxy for bitcoin nodes</div>
+      <!-- vvv blog article vvv -->
+      <div class="text-left">
+        <p>
+          If you a run a bitcoin node at home, you may have noticed that inbound connections drop after a while <a
+            href="https://bitcointalk.org/index.php?topic=5428788">like I did</a>.<br />
+          One likely reason could be that you were not assigned a static public IPv4 address from your ISP.
+          This means that everytime your public IP address changes, your peers can not reach you anymore under your
+          previous IP address.
+          For them, it looks like you suddenly went offline. And for some reason, you don't get new inbound connections
+          after that.
+        </p>
+        <p>
+          You can confirm this by keeping track of your public IP (using <a href="https://ip.me/">ip.me</a> for example)
+          and check if all your inbound connections drop at the same time your public IP changes.
+          If that is the case, you can be pretty sure that your ISP changing your public IP is causing this.
+        </p>
+        <p>
+          So let's assume you have confirmed this and still want to run a bitcoin node at home with inbound
+          connections.<br />
+          How do we fix this? As far as I know, you only have three options:
+        <ul>
+          <li>Ask your ISP to assign you a static public IPv4 address (may require a business contract which costs more)
+          </li>
+          <li>Restart your node everytime you notice that your public IP changed</li>
+          <li>Use a server with a static public IPv4 address as a reverse proxy</li>
+        </ul>
+        As you might have guessed, I am going to show you how to use WireGuard to make a reverse proxy out of a server
+        of yours so you don't need to pay more
+        for your internet connection while learning more about networking at the same time.
+        </p>
       </div>
+      <div class="font-mono mt-1">WIP</div>
+      <!-- ^^^ blog article ^^^ -->
     </div>
-    <footer class="flex justify-center">
-      <div>
-        <hr />
-        <nav class="flex flex-row justify-center">
-          <a href="/rss">rss</a>
-          <a href="https://snort.social/p/npub16x07c4qz05yhqe2gy2q2u9ax359d2lc0tsh6wn3y70dmk8nv2j2s96s89d">nostr</a>
-          <a href="/simplex.jpeg">simplex</a>
-          <a href="https://github.com/ekzyis">github</a>
-          <a href="https://stacker.news/ekzyis">sn</a>
-        </nav>
-        <code>
+  </div>
+  <footer class="flex justify-center">
+    <div>
+      <hr />
+      <nav class="flex flex-row justify-center">
+        <a href="/rss">rss</a>
+        <a href="https://snort.social/p/npub16x07c4qz05yhqe2gy2q2u9ax359d2lc0tsh6wn3y70dmk8nv2j2s96s89d">nostr</a>
+        <a href="/simplex.jpeg">simplex</a>
+        <a href="https://github.com/ekzyis">github</a>
+        <a href="https://stacker.news/ekzyis">sn</a>
+      </nav>
+      <code>
           <pre>
 Modify: 2023-07-19 04:21:43.482250187 +0000
  Birth: 2023-07-19 04:01:23.862273784 +0000</pre>
         </code>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
