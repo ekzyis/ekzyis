@@ -2,9 +2,9 @@
 
 set -e
 
-rsync -avh public/ vps:/var/www/ekzyis --delete --dry-run
+rsync -avh public/ ekzyis.com:/var/www/ekzyis --delete --dry-run
 
 echo
 read -p "Continue deploy? [yn] " yn
 echo
-[ "$yn" == "y" ] && rsync -avh public/ vps:/var/www/ekzyis --delete
+[ "$yn" == "y" ] && rsync -avh public/ ekzyis.com:/var/www/ekzyis --delete
