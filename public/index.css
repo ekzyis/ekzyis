@@ -75,6 +75,9 @@ ul {
   height: 100vh;
 }
 
+.mx-1 {
+  margin: auto 1em;
+}
 .m-auto {
   margin: auto;
 }
@@ -83,4 +86,7 @@ ul {
 }
 .pt-1 {
   padding-top: 1em;
+}
+.pb-1 {
+  padding-bottom: 1em;
 }
