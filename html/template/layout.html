@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+{{ template "head.html" . }}
+
+<body>
+  <header class="flex flex-row text-center justify-center pt-1">
+    {{ template "nav.html" }}
+  </header>
+  <div class="container flex flex-column text-center">
+    {{ .Body }}
+  </div>
+  {{ template "footer.html" . }}
+</body>
+
+</html>
