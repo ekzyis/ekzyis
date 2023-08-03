@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"os"
 	"strings"
@@ -18,7 +19,13 @@ var (
 		"blog/index.html",
 		"blog/20230719-using-wireguard-to-run-a-reverse-proxy-for-bitcoin-nodes.html",
 	}
+	dev bool
 )
+
+func init() {
+	flag.BoolVar(&dev, "dev", false, "Specify if files should be built for development mode")
+	flag.Parse()
+}
 
 func buildFiles() {
 	m := minify.New()
@@ -28,6 +35,10 @@ func buildFiles() {
 		title := "ekzyis"
 		if strings.Contains(path, "/") {
 			title = strings.Split(path, "/")[0] + " | ekzyis"
+		}
+		env := "production"
+		if dev {
+			env = "development"
 		}
 
 		content, err := os.ReadFile(fmt.Sprintf("html/pages/%s", path))
@@ -44,6 +55,7 @@ func buildFiles() {
 			"Title":     title,
 			"Body":      string(content),
 			"BuildDate": buildDate,
+			"Env":       env,
 		}
 		mw := m.Writer("text/html", file)
 		defer mw.Close()

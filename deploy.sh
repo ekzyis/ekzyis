@@ -2,6 +2,7 @@
 
 set -e
 
+go run .
 rsync -avh public/ ekzyis.com:/var/www/ekzyis --delete --dry-run
 
 echo

@@ -9,4 +9,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#091833" />
   <link rel="alternate" type="application/rss+xml" title="Name of RSS feeda" href="/blog/rss.xml" />
+  {{ if eq .Env "development" }}
+  <script>
+    async function hotReload() {
+      console.log("running in development mode")
+      const r = await fetch("/hot-reload")
+      let x = await r.text()
+      setInterval(async () => {
+        const r = await fetch("/hot-reload", {
+          cache: "no-cache"
+        })
+        if (x !== await r.text()) {
+          x = r.body
+          window.location.reload()
+        }
+      }, 1000)
+    }
+    hotReload()
+  </script>
+  {{ end }}
 </head>
