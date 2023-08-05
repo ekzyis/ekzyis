@@ -17,8 +17,23 @@ a:hover {
   background: #8787A4;
   color: #ffffff;
 }
+a > code:hover {
+  background-color: #8787A4;
+}
+
 nav > a {
   margin: 0 3px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3 {
+  font-size: 1.1em;
+  font-style: italic;
 }
 
 hr {
@@ -31,6 +46,27 @@ ul {
   text-align: left;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.code {
+  background-color: #2b3148;
+}
+
+.diff-remove {
+  color: #ed88a5;
+}
+.diff-add {
+  color: #a2de88;
+}
+
 .container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing:    border-box;
@@ -39,9 +75,12 @@ ul {
   box-sizing:         border-box;
   margin: 1em auto;
   padding: 0 1em;
-  max-width: 60rem;
+  max-width: min(60rem, 100vw);
 }
 
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }

@@ -1,0 +1,26 @@
++-----------------------+                                                           +---------------------+
+|    ping process       |                                                           |                     |
+|         v             | <-- local machine boundary    remote machine boundary --> |                     |
+| +----------------+    |                                                           | +----------------+  |
+| | interface: wg0 |    |                                                           | | interface: wg0 |  |
+| +----------------+    |                                                           | +----------------+  |
+|         |             |                                                           |         ^           |
+|         v             |                                                           |         |           |
+|    +----------+       |                                                           |    +----------+     |
+|    | x ICMP x | <-------------- encrypted ICMP packet leaving/entering wg0 ----------> | x ICMP x |     |
+|    +----------+       |                (virtual network interface)                |    +----------+     |
+|         |             |                                                           |         ^           |
+|         |             |                    UDP packet leaving enp3s0              |         |           |
+|         |             |           +------- (physical network interface)           |         |           |
+|         v             |           |        which wraps ICMP packet                |         |           |
+| +-------------------+ |           v                                               | +-----------------+ |
+| | interface: enp3s0 | |    +------------+                        +------------+   | | interface: eth0 | |
+| +-------------------+ |    |     UDP    |                        |     UDP    |   | +-----------------+ |
++---------|-------------+    |+----------+|                        |+----------+|   +----------^----------+
+          |                  || x ICMP x ||      +~~~~~~~~~~+      || x ICMP x ||              |
+          +----------------->|+----------+|----->| INTERNET |----->|+----------+|--------------+
+                             +------------+      +~~~~~~~~~~+      +------------+
+                                                                         ^
+                                     UDP packet entering eth0            |
+                                 (physical network interface) -----------+
+                                      which wraps ICMP packet

@@ -17,7 +17,7 @@ var (
 	paths = []string{
 		"index.html", "404.html",
 		"blog/index.html",
-		"blog/20230719-using-wireguard-to-run-a-reverse-proxy-for-bitcoin-nodes.html",
+		"blog/20230808-demystifying-wireguard-and-iptables.html",
 	}
 	dev bool
 )
