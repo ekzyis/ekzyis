@@ -17,7 +17,7 @@ var (
 	paths = []string{
 		"index.html", "404.html",
 		"blog/index.html",
-		"blog/20230808-demystifying-wireguard-and-iptables.html",
+		"blog/20230808-Demystifying-WireGuard-and-iptables.html",
 	}
 	dev bool
 )
@@ -27,15 +27,28 @@ func init() {
 	flag.Parse()
 }
 
+func parseTitle(path string) string {
+	title := "ekzyis"
+	var subPath string
+	subPath, found := strings.CutPrefix(path, "blog/")
+	if found {
+		if subPath == "index.html" {
+			title = "blog | ekzyis"
+		} else {
+			title = strings.ReplaceAll(subPath, "-", " ")
+			title, _ = strings.CutSuffix(title, ".html")
+			title = title[8:]
+		}
+	}
+	return title
+}
+
 func buildFiles() {
 	m := minify.New()
 	m.AddFunc("text/html", html.Minify)
 	buildDate := time.Now().In(time.UTC).Format("2006-01-02 15:04:05.000000000 -0700")
 	for _, path := range paths {
-		title := "ekzyis"
-		if strings.Contains(path, "/") {
-			title = strings.Split(path, "/")[0] + " | ekzyis"
-		}
+		title := parseTitle(path)
 		env := "production"
 		if dev {
 			env = "development"
@@ -45,6 +58,8 @@ func buildFiles() {
 		if err != nil {
 			panic(err)
 		}
+
+		path = strings.ToLower(path)
 		file, err := os.Create(fmt.Sprintf("public/%s", path))
 		if err != nil {
 			panic(err)
