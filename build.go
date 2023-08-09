@@ -17,7 +17,7 @@ var (
 	paths = []string{
 		"index.html", "404.html",
 		"blog/index.html",
-		"blog/20230808-Demystifying-WireGuard-and-iptables.html",
+		"blog/20230809-Demystifying-WireGuard-and-iptables.html",
 	}
 	dev bool
 )
