@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bytes"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"strings"
 	"text/template"
@@ -65,6 +67,17 @@ func (source *HtmlSource) LoadContent() {
 	source.Content = content
 }
 
+func GetVersion() string {
+	cmd := exec.Command("git", "rev-parse", "--short", "HEAD")
+	var out bytes.Buffer
+	cmd.Stdout = &out
+	err := cmd.Run()
+	if err != nil {
+		panic(err)
+	}
+	return out.String()
+}
+
 func (source *HtmlSource) Render(destDir string) {
 	destPath := destDir + filepath.Base(source.FsPath)
 	args := map[string]any{
@@ -73,6 +86,7 @@ func (source *HtmlSource) Render(destDir string) {
 		"Title":     source.Title,
 		"Href":      source.Href,
 		"Content":   string(source.Content),
+		"Version":   GetVersion(),
 	}
 	ExecuteTemplate(destPath, args)
 }
