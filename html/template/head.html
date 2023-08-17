@@ -12,6 +12,7 @@
   <script defer data-api="/api/event" data-domain="ekzyis.com" src="/js/script.js"></script>
   {{ if eq .Env "development" }}
   <script>
+    const scroll = (y) => window.scrollTo(0, 925*y)
     async function hotReload() {
       console.log("running in development mode")
       const r = await fetch("/hot-reload")

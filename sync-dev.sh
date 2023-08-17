@@ -12,6 +12,6 @@ function cleanup() {
 trap cleanup EXIT
 
 sync
-while inotifywait -r -e modify html/; do
+while inotifywait -r -e modify html/ blog/ *.go; do
   sync
 done
