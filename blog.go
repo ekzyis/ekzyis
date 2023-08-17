@@ -93,7 +93,7 @@ func (post *MarkdownPost) InsertHeader(htmlContent *[]byte) {
 		"| '_ \\| |/ _ \\ / _` |\n" +
 		"| |_) | | (_) | (_| |\n" +
 		"|_.__/|_|\\___/ \\__, |\n" +
-		"               |___/ </pre></strong></code>\n" +
+		"                |___/ </pre></strong></code>\n" +
 		"<div><div class=\"font-mono mb-1 text-center\">\n" +
 		"<strong>{{- .Title }}</strong><br />\n" +
 		"<small>{{- .Date }} | {{ .ReadingTime }} | {{ .Sats }} sats</small>\n" +
