@@ -2,6 +2,7 @@ Title:        Demystifying WireGuard and iptables
 Date:         2023-08-09
 ReadingTime:  15 minutes
 Sats:         11623
+Comments:     https://stacker.news/items/221471
 
 ---
 
@@ -158,7 +159,7 @@ $ iptables -S --line-numbers
 These were all commands we will use in this blog post.
 
 If anything is still unclear, don't hesitate to refer to the [manual](https://man.archlinux.org/man/iptables.8.en)
-or ask a question in the [comments](https://stacker.news/items/221471).
+or ask a question in the [comments]({{- .Comments -}}).
 
 ---
 
@@ -870,7 +871,7 @@ Thanks for reading my first blog post!
 If you want to read more content like this, please consider subscribing via [RSS](/blog/rss.xml).
 
 
-Also, I would highly appreciate any feedback in the [comments](https://stacker.news/items/221471).
+Also, I would highly appreciate any feedback in the [comments]({{- .Comments -}}).
 You can tell me if it was too long, too boring, too complicated or anything else, that's no problem!
 I am very new to this whole blogging thing and thus could really _really_ need **any** kind of feedback.
 I'll even pay you 100 sats!

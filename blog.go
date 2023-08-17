@@ -28,6 +28,7 @@ type MarkdownPost struct {
 	Date        string
 	ReadingTime string
 	Sats        int
+	Comments    string
 }
 
 func NewMarkdownPost(path string) *MarkdownPost {
@@ -77,6 +78,8 @@ func (post *MarkdownPost) ParseArgs(sc *bufio.Scanner) {
 				panic(err)
 			}
 			post.Sats = int(sats)
+		case "Comments":
+			post.Comments = parts[1] + ":" + parts[2]
 		}
 	}
 	err := sc.Err()
@@ -96,7 +99,7 @@ func (post *MarkdownPost) InsertHeader(htmlContent *[]byte) {
 		"                |___/ </pre></strong></code>\n" +
 		"<div><div class=\"font-mono mb-1 text-center\">\n" +
 		"<strong>{{- .Title }}</strong><br />\n" +
-		"<small>{{- .Date }} | {{ .ReadingTime }} | {{ .Sats }} sats</small>\n" +
+		"<small>{{- .Date }} | {{ .ReadingTime }} | <a target=\"_blank\" href=\"{{ .Comments }}\">Comments</a> | {{ .Sats }} sats</small>\n" +
 		"</div>\n")
 	*htmlContent = append(header, *htmlContent...)
 }
