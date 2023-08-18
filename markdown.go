@@ -138,13 +138,7 @@ func GetPosts(srcDir string) *[]MarkdownPost {
 	return &posts
 }
 
-func (post *MarkdownPost) Render(destDir string) {
-	destPath := strings.ReplaceAll(destDir+filepath.Base(post.FsPath), ".md", ".html")
-	f, err := os.Create(destPath)
-	if err != nil {
-		panic(err)
-	}
-	defer f.Close()
+func (post *MarkdownPost) Render() {
 	opts := html.RendererOptions{Flags: MarkdownToHtmlFlags}
 	renderer := html.NewRenderer(opts)
 	html := markdown.ToHTML(post.Content, nil, renderer)
@@ -154,28 +148,23 @@ func (post *MarkdownPost) Render(destDir string) {
 	if err != nil {
 		panic(err)
 	}
-	t.Execute(f, *post)
+	t.Execute(os.Stdout, *post)
 }
 
-func RenderBlogIndex(srcDir string, destDir string, posts *[]MarkdownPost) {
+func RenderBlogIndex(srcDir string) {
+	posts := GetPosts(srcDir)
 	srcPath := srcDir + "index.html"
-	destPath := destDir + "index.html"
-	f, err := os.Create(destPath)
-	if err != nil {
-		panic(err)
-	}
-	defer f.Close()
 	t := template.New(filepath.Base(srcPath))
 	t = t.Funcs(template.FuncMap{
 		"ToHref": func(fsPath string) string {
 			return "/" + strings.ReplaceAll(fsPath, ".md", ".html")
 		},
 	})
-	t, err = t.ParseFiles(srcPath)
+	t, err := t.ParseFiles(srcPath)
 	if err != nil {
 		panic(err)
 	}
-	err = t.Execute(f, map[string][]MarkdownPost{"Posts": *posts})
+	err = t.Execute(os.Stdout, map[string][]MarkdownPost{"Posts": *posts})
 	if err != nil {
 		panic(err)
 	}

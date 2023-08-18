@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function sync() {
-  go run . --dev
+  ENV=development make run $@
   date +%s.%N > public/hot-reload
   rsync -avh public/ dev.ekzyis.com:/var/www/dev.ekzyis --delete
 }
@@ -11,7 +11,7 @@ function cleanup() {
 }
 trap cleanup EXIT
 
-sync
+sync -B
 while inotifywait -r -e modify html/ blog/ *.go; do
   sync
 done

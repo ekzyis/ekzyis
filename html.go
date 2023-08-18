@@ -16,7 +16,6 @@ import (
 var (
 	m         *minify.M
 	BuildDate string
-	Env       string
 	t         = template.Must(template.ParseGlob("html/template/*.html"))
 )
 
@@ -24,10 +23,6 @@ func init() {
 	m = minify.New()
 	m.AddFunc("text/html", html.Minify)
 	BuildDate = time.Now().In(time.UTC).Format("2006-01-02 15:04:05.000000000 -0700")
-	Env = "production"
-	if dev {
-		Env = "development"
-	}
 }
 
 type HtmlSource struct {
@@ -78,8 +73,7 @@ func GetVersion() string {
 	return out.String()
 }
 
-func (source *HtmlSource) Render(destDir string) {
-	destPath := destDir + filepath.Base(source.FsPath)
+func (source *HtmlSource) Render() {
 	args := map[string]any{
 		"BuildDate": BuildDate,
 		"Env":       Env,
@@ -88,18 +82,13 @@ func (source *HtmlSource) Render(destDir string) {
 		"Content":   string(source.Content),
 		"Version":   GetVersion(),
 	}
-	ExecuteTemplate(destPath, args)
+	ExecuteTemplate(args)
 }
 
-func ExecuteTemplate(destPath string, args map[string]any) {
-	file, err := os.Create(destPath)
-	if err != nil {
-		panic(err)
-	}
-	defer file.Close()
-	mw := m.Writer("text/html", file)
+func ExecuteTemplate(args map[string]any) {
+	mw := m.Writer("text/html", os.Stdout)
 	defer mw.Close()
-	err = t.ExecuteTemplate(mw, "layout.html", args)
+	err := t.ExecuteTemplate(mw, "layout.html", args)
 	if err != nil {
 		panic(err)
 	}

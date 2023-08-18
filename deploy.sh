@@ -2,7 +2,7 @@
 
 set -e
 
-go run .
+ENV=production make -B
 rsync -avh public/ ekzyis.com:/var/www/ekzyis --delete --dry-run
 
 echo
