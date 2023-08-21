@@ -41,9 +41,18 @@ func NewHtmlSource(path string) *HtmlSource {
 }
 
 func (source *HtmlSource) ComputeTitle() {
-	source.Title = "ekzyis"
-	if source.FsPath == "blog/index.html" {
+	// FIXME
+	//   this is just a temporary workaround.
+	//   actual solution would be to use title from blog post markdown metadata
+	switch source.FsPath {
+	case "html/pages/blog/index.html":
 		source.Title = "blog | ekzyis"
+	case "html/pages/blog/20230809-demystifying-wireguard-and-iptables.html":
+		source.Title = "Demystifying WireGuard and iptables | blog | ekzyis"
+	case "html/pages/blog/20230821-wireguard-packet-forwarding.html":
+		source.Title = "WireGuard Packet Forwarding | blog | ekzyis"
+	default:
+		source.Title = "ekzyis"
 	}
 }
 
