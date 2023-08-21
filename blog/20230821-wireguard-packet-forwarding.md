@@ -1,7 +1,7 @@
 Title:        WireGuard Packet Forwarding
 Date:         2023-08-21
 ReadingTime:  10 minutes
-Sats:         0
+Sats:         2593
 Comments:     https://stacker.news/items/230179
 
 ---
