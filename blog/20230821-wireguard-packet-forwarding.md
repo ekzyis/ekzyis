@@ -352,4 +352,5 @@ This will make it possible to expose an internal service (like an HTTP server fo
   while outgoing packets will be captured _after_ firewall processing. This means `tcpdump` will capture incoming packets that will be dropped by the firewall
   whereas outgoing packets that were dropped will not show up.
   See [here](https://wiki.archlinux.org/title/Network_Debugging#Tcpdump) and [here](https://superuser.com/a/925332) for more information.
+  </span>
 </small>
