@@ -157,7 +157,7 @@ func RenderBlogIndex(srcDir string) {
 	t := template.New(filepath.Base(srcPath))
 	t = t.Funcs(template.FuncMap{
 		"ToHref": func(fsPath string) string {
-			return "/" + strings.ReplaceAll(fsPath, ".md", ".html")
+			return "/" + strings.ReplaceAll(fsPath, ".md", "")
 		},
 	})
 	t, err := t.ParseFiles(srcPath)
