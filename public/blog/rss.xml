@@ -11,5 +11,11 @@
       <link>https://ekzyis.com/blog/20230809-demystifying-wireguard-and-iptables</link>
       <comments>https://stacker.news/items/221471</comments>
     </item>
+    <item>
+      <guid>https://ekzyis.com/blog/20230821-wireguard-packet-forwarding</guid>
+      <title>WireGuard Packet Forwarding</title>
+      <link>https://ekzyis.com/blog/20230821-wireguard-packet-forwarding</link>
+      <comments>https://stacker.news/items/230179</comments>
+    </item>
   </channel>
 </rss>
