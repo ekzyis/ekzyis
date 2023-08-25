@@ -11,23 +11,6 @@
   <link rel="alternate" type="application/rss+xml" title="blog | ekzyis" href="/blog/rss.xml" />
   <script defer data-api="/api/event" data-domain="ekzyis.com" src="/js/script.js"></script>
   {{ if eq .Env "development" }}
-  <script>
-    const scroll = (y) => window.scrollTo(0, 925*y)
-    async function hotReload() {
-      console.log("running in development mode")
-      const r = await fetch("/hot-reload")
-      let x = await r.text()
-      setInterval(async () => {
-        const r = await fetch("/hot-reload", {
-          cache: "no-cache"
-        })
-        if (x !== await r.text()) {
-          x = r.body
-          window.location.reload()
-        }
-      }, 1000)
-    }
-    hotReload()
-  </script>
+  <script defer src="/hotreload.js"></script>
   {{ end }}
 </head>
