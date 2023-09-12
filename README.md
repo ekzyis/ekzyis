@@ -17,3 +17,22 @@ Run `make render` to render all files in public/.
 Deployment is done by rendering all files in production mode and then copying them where a webserver like `nginx` can serve them.
 
 I use [`deploy.sh`](./deploy.sh) for this.
+
+## How to create new blog post
+
+1. Create new Markdown file in blog/
+2. It needs to have this header:
+
+```
+Title:        title
+Date:         date
+ReadingTime:  time
+Sats:         0
+Comments:     comments
+
+---
+```
+
+3. Run `make render`.
+
+Done!
