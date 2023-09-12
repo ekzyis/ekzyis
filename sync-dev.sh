@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function sync() {
-  ENV=development make run $@
+  ENV=development make render $@
   date +%s.%N > public/hot-reload
   rsync -avh public/ dev.ekzyis.com:/var/www/dev.ekzyis --delete
 }
