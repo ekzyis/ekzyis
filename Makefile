@@ -1,4 +1,4 @@
-.PHONY: build run all
+.PHONY: build render all
 
 MARKDOWN=$(wildcard blog/*.md)
 TARGETS= \
@@ -6,11 +6,11 @@ TARGETS= \
 	$(patsubst blog/%,public/blog/%,$(MARKDOWN:.md=.html)) \
 	$(patsubst html/pages/%,public/%,$(wildcard html/pages/*.html))
 
-all: build run
+all: build render
 
 build: renderer
 
-run: $(TARGETS)
+render: $(TARGETS)
 
 renderer: *.go
 	go build -o renderer .
