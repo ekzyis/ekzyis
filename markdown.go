@@ -79,7 +79,7 @@ func (post *MarkdownPost) ParseArgs(sc *bufio.Scanner) {
 			}
 			post.Sats = int(sats)
 		case "Comments":
-			post.Comments = parts[1] + ":" + parts[2]
+			post.Comments = strings.Join(parts[1:], ":")
 		}
 	}
 	err := sc.Err()
