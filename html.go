@@ -51,6 +51,8 @@ func (source *HtmlSource) ComputeTitle() {
 		source.Title = "Demystifying WireGuard and iptables | blog | ekzyis"
 	case "html/pages/blog/20230821-wireguard-packet-forwarding.html":
 		source.Title = "WireGuard Packet Forwarding | blog | ekzyis"
+	case "html/pages/blog/20230925-wireguard-port-forwarding.html":
+		source.Title = "WireGuard Port Forwarding | blog | ekzyis"
 	default:
 		source.Title = "ekzyis"
 	}

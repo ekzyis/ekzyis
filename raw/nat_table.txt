@@ -1,0 +1,3 @@
+| Source IP address | Source Port | NAT IP address | NAT port | Destination IP address | Destination Port |
+| ----------------- | ----------- | -------------- | -------- | ---------------------- | ---------------- |
+|      192.168.0.14 |       56781 |  93.184.216.34 |    41501 |          54.147.66.132 |              443 |

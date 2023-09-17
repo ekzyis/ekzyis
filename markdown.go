@@ -15,7 +15,7 @@ import (
 )
 
 var (
-	MarkdownToHtmlFlags = html.CommonFlags | html.HrefTargetBlank
+	MarkdownToHtmlFlags = (html.CommonFlags ^ html.SmartypantsFractions) | html.HrefTargetBlank
 )
 
 type MarkdownPost struct {
