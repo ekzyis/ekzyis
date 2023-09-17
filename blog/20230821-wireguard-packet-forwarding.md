@@ -167,7 +167,7 @@ $ cat /proc/sys/net/ipv4/ip_forward
 To change the setting, we can use `sysctl -w`:
 
 ```
-$ sysctl -w net.ipv4.ip_forward=0
+$ sysctl -w net.ipv4.ip_forward=1
 ```
 
 However, this change is not persistent. To make sure the new setting is kept after reboot, we need to modify _/etc/sysctl.conf_.
