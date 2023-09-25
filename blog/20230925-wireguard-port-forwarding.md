@@ -2,7 +2,7 @@ Title:        WireGuard Port Forwarding
 Date:         2023-09-25
 ReadingTime:  10 minutes
 Sats:         0
-Comments:     -
+Comments:     https://stacker.news/items/265524
 
 ---
 
