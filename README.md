@@ -33,6 +33,7 @@ Comments:     comments
 ---
 ```
 
-3. Run `make render`.
+3. Update `ComputeTitle` in `html.go` (TODO: make this no longer required)
+4. Run `make render`.
 
 Done!
