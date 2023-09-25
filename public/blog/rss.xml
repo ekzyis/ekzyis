@@ -17,5 +17,11 @@
       <link>https://ekzyis.com/blog/20230821-wireguard-packet-forwarding</link>
       <comments>https://stacker.news/items/230179</comments>
     </item>
+    <item>
+      <guid>https://ekzyis.com/blog/20230925-wireguard-port-forwarding</guid>
+      <title>WireGuard Port Forwarding</title>
+      <link>https://ekzyis.com/blog/20230925-wireguard-port-forwarding</link>
+      <comments>https://stacker.news/items/265524</comments>
+    </item>
   </channel>
 </rss>
