@@ -3,7 +3,7 @@
 function sync() {
   ENV=development make render $@
   date +%s.%N > public/hot-reload
-  rsync -avh public/ dev.ekzyis.com:/var/www/dev.ekzyis --delete
+  rsync -avhP public/ dev.ekzyis.com:/var/www/dev.ekzyis --delete
 }
 
 function cleanup() {
