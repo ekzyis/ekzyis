@@ -67,7 +67,7 @@ func (post *MarkdownPost) ParseArgs(sc *bufio.Scanner) {
 		parts[1] = strings.Trim(parts[1], " \n")
 		switch parts[0] {
 		case "Title":
-			post.Title = parts[1]
+			post.Title = strings.Join(parts[1:], ":")
 		case "Date":
 			post.Date = parts[1]
 		case "ReadingTime":
