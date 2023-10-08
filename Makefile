@@ -16,12 +16,15 @@ renderer: *.go
 	go build -o renderer .
 
 public/blog/index.html: blog/index.html renderer
+	mkdir -p public/blog html/pages/blog
 	./renderer -src $< > html/pages/$<
 	./renderer -src html/pages/$< > $@
 
 public/blog/%.html: blog/%.md renderer
+	mkdir -p public/blog html/pages
 	./renderer -src $< > html/pages/$(<:.md=.html)
 	./renderer -src html/pages/$(<:.md=.html) > $@
 
 public/%.html: html/pages/%.html renderer
+	mkdir -p public
 	./renderer -src $< > $@
