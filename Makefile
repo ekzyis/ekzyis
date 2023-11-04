@@ -15,7 +15,7 @@ render: $(TARGETS)
 renderer: *.go
 	go build -o renderer .
 
-public/blog/index.html: blog/index.html renderer
+public/blog/index.html: blog/index.html $(MARKDOWN) renderer
 	mkdir -p public/blog html/pages/blog
 	./renderer -src $< > html/pages/$<
 	./renderer -src html/pages/$< > $@
