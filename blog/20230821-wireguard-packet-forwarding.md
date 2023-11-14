@@ -205,7 +205,7 @@ We will inspect this traffic on 10.172.16.1 (the router) and 10.172.16.6 (the pi
 
 On the pinging machine, we will get the following output for the virtual network interface <span id="ft-2b">[[2]](#ft-2)</span>:
 
-```tcpdump
+```
 $ tcpdump -tni wg0
 tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
 listening on wg0, link-type RAW (Raw IP), snapshot length 262144 bytes
@@ -223,7 +223,7 @@ IP 10.172.16.25 > 10.172.16.6: ICMP echo reply, id 19, seq 5, length 64
 
 and this for the physical network interface (filtered by UDP packets from/to port 51913):
 
-```tcpdump
+```
 $ tcpdump -tni enp3s0 'udp and port 51913'
 tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
 listening on enp3s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
@@ -241,7 +241,7 @@ IP 139.144.78.247.51913 > 192.168.178.146.51941: UDP, length 128
 
 On the router, we get this output for the virtual network interface:
 
-```tcpdump
+```
 $ tcpdump -tni wg0
 tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
 listening on wg0, link-type RAW (Raw IP), snapshot length 262144 bytes
@@ -269,7 +269,7 @@ IP 10.172.16.25 > 10.172.16.6: ICMP echo reply, id 21, seq 5, length 64
 
 and this for the physical network interface _(public IP addresses of end devices redacted)_:
 
-```tcpdump
+```
 $ tcpdump -tni eth0 'udp and port 51913'
 tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
 listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
