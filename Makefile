@@ -1,4 +1,4 @@
-.PHONY: build render all
+.PHONY: build render all dev
 
 MARKDOWN=$(wildcard blog/*.md)
 TARGETS= \
@@ -9,6 +9,9 @@ TARGETS= \
 all: build render
 
 build: renderer
+
+dev:
+	bash sync-dev.sh
 
 render: $(TARGETS)
 
