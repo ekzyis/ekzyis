@@ -6,7 +6,24 @@ Comments:     https://stacker.news/items/230179
 
 ---
 
+<details open>
+<summary><b><a name="index">index</a></b></summary>
+<div class="flex flex-column">
+<a href="#introduction">0. introduction</a>
+<a href="#initial-configuration">1. initial configuration</a>
+<a href="#end-device-configuration">2. end device configuration</a>
+<a href="#router-configuration">3. router configuration</a>
+<a class="subh" href="#router-firewall-configuration"><i>3.1 firewall</i></a>
+<a class="subh" href="#router-kernel-params"><i>3.1 kernel parameters</i></a>
+<a href="#tcpdump">4. inspecting network traffic with tcpdump</a>
+</div>
+</details>
+
+---
+
+<a class="header" name="introduction">
 # introduction
+</a>
 
 In my [previous blog post](/blog/20230809-demystifying-wireguard-and-iptables),
 I have shown you how to setup your own VPN with [WireGuard](https://wireguard.com/) and [`iptables`](https://wiki.archlinux.org/title/iptables).
@@ -27,7 +44,9 @@ To get a deeper understanding how this forwarding works, we will take a brief lo
 
 ---
 
+<a class="header" name="initial-configuration">
 # initial configuration
+</a>
 
 The end devices will start with a point-to-point connection to the router with 10.172.16.1 as its internal IP address.
 
@@ -104,7 +123,9 @@ PublicKey = <PUBLIC KEY OF PEER>
 
 ---
 
+<a class="header" name="end-device-configuration">
 # end device configuration
+</a>
 
 The only change we have to do on the end devices is to route all IP addresses within the VPN to the router peer.
 We configure this in the WireGuard configuration file at _/etc/wireguard/wg0.conf_:
@@ -126,9 +147,13 @@ $ wg syncconf wg0 <(wg-quick strip wg0)
 
 ---
 
+<a class="header" name="router-configuration">
 # router configuration
+</a>
 
+<a class="header" name="router-firewall-configuration">
 ## firewall
+</a>
 
 The router requires no additional WireGuard configuration.
 
@@ -146,7 +171,9 @@ However, the router firewall needs to allow forwarding packets inside the VPN:
 + -A FORWARD -i wg0 -o wg0 -j ACCEPT
 ```
 
+<a class="header" name="router-kernel-params">
 ## kernel parameters
+</a>
 
 We also need to allow IP forwarding in the kernel. We can configure kernel parameters with `sysctl`.
 
@@ -185,7 +212,9 @@ $ sysctl -p
 
 ---
 
+<a class="header" name="tcpdump">
 # inspecting the network traffic with tcpdump
+</a>
 
 We now should have a connection between every peer via the router.
 

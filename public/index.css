@@ -12,6 +12,7 @@ body {
 a {
   color: #8787a4;
   text-decoration: underline;
+  width: fit-content;
 }
 a:hover {
   background: #8787A4;
@@ -20,6 +21,17 @@ a:hover {
 a > code:hover {
   background-color: #8787A4;
 }
+a.header {
+  color: inherit;
+  text-decoration: none;
+}
+a.subh {
+  padding: 0 .3em;
+}
+a.header:hover {
+  color: inherit;
+}
+
 
 nav > a {
   margin: 0 3px;
@@ -136,4 +148,23 @@ pre {
 
 .bg-transparent {
   background-color: transparent !important;
+}
+
+details > summary {
+  list-style: none;
+  color: #8787a4;
+  text-decoration: underline;
+  width: fit-content;
+  cursor: pointer;
+}
+details > summary:hover {
+  background: #8787A4;
+  color: #ffffff;
+}
+details > summary > code:hover {
+  background-color: #8787A4;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
 }

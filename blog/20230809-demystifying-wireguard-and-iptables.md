@@ -6,7 +6,30 @@ Comments:     https://stacker.news/items/221471
 
 ---
 
+<details open>
+<summary><b><a name="index">index</a></b></summary>
+<div class="flex flex-column">
+<a href="#introduction">0. introduction</a>
+<a href="#iptables-primer">1. iptables primer</a>
+<a href="#wireguard">2. wireguard</a>
+<a class="subh" href="#wireguard-installation"><i>2.1 installation</i></a>
+<a class="subh" href="#wireguard-configuration"><i>2.1 configuration</i></a>
+<a class="subh" href="#wireguard-interface-control"><i>2.2 interface control</i></a>
+<a href="#firewall">3. firewall configuration</a>
+<a class="subh" href="#firewall-initial-configuration"><i>3.1 initial</i></a>
+<a class="subh" href="#firewall-local-output-configuration"><i>3.1 local output</i></a>
+<a class="subh" href="#firewall-remote-input-configuration"><i>3.2 remote input</i></a>
+<a class="subh" href="#firewall-remote-output-configuration"><i>3.3 remote output</i></a>
+<a class="subh" href="#firewall-local-input-configuration"><i>3.4 local input</i></a>
+<a class="subh" href="#firewall-final-configuration"><i>3.5 final</i></a>
+</div>
+</details>
+
+---
+
+<a class="header" name="introduction">
 # introduction
+</a>
 
 In this blog post, I will show you how to setup [WireGuard](https://wireguard.com) and
 configure your Linux firewall with [`iptables`](https://wiki.archlinux.org/title/iptables).
@@ -29,7 +52,9 @@ With a good understanding, you will be able to help yourself a lot better in cas
 
 ---
 
+<a class="header" name="iptables-primer">
 # iptables primer
+</a>
 
 `iptables` is a command line utility for configuring Linux kernel firewalls.
 
@@ -163,9 +188,13 @@ or ask a question in the [comments]({{- .Comments -}}).
 
 ---
 
+<a class="header" name="wireguard">
 # wireguard
+</a>
 
+<a class="header" name="wireguard-installation">
 ## installation
+</a>
 
 Follow the instructions [here](https://www.wireguard.com/install) to install WireGuard on your local and remote machine.<br />
 When you are done, you should be able to run the following command:
@@ -175,7 +204,9 @@ $ wg --version
 wireguard-tools v1.0.20210914 - https://git.zx2c4.com/wireguard-tools/
 ```
 
+<a class="header" name="wireguard-configuration">
 ## configuration
+</a>
 
 WireGuard is a peer-to-peer (P2P) protocol like Bitcoin.
 This means that by default, the protocol does not distinguish between servers and clients.
@@ -331,7 +362,9 @@ $ chown root:root -R /etc/wireguard
 $ chmod 600 -R /etc/wireguard
 ```
 
+<a class="header" name="wireguard-interface-control">
 ## interface control
+</a>
 
 We are now done with all WireGuard configuration.
 Run this on the local and remote machine to bring the interfaces up:
@@ -373,9 +406,13 @@ This is because we did not properly configure our firewalls yet.
 
 ---
 
+<a class="header" name="firewall">
 # firewall configuration with iptables
+</a>
 
+<a class="header" name="firewall-initial-configuration">
 ## initial configuration
+</a>
 
 We are starting with the following minimal set of firewall rules for the local machine:
 
@@ -435,7 +472,9 @@ By first setting the INPUT chain policy to ACCEPT in the receiving machine,
 we can focus on a single machine at every step since we know
 that only the OUTPUT rules can currently be responsible for any connection failure.
 
+<a class="header" name="firewall-local-output-configuration">
 ## local OUTPUT chain configuration
+</a>
 
 As mentioned, we will set the INPUT chain policy of the remote filter table to ACCEPT first:
 
@@ -610,7 +649,9 @@ Done. The changes we applied to the local firewall configuration are:
 + -A OUTPUT -d 139.162.153.133/32 -o enp3s0 -p udp -m udp --dport 51913 -j ACCEPT
 ```
 
+<a class="header" name="firewall-remote-input-configuration">
 ## switch remote INPUT chain policy back to DROP
+</a>
 
 We will set the remote INPUT chain policy back to DROP now.
 
@@ -664,7 +705,9 @@ Done. We applied the following changes to the remote firewall:
   -A OUTPUT -m state --state ESTABLISHED -j ACCEPT
 ```
 
+<a class="header" name="firewall-remote-output-configuration">
 ## remote OUTPUT chain configuration
+</a>
 
 We will take care of pinging the local machine from the remote machine now. As you can see, having a connection
 from one direction does not mean that the other direction works, too (even though response packets arrive).
@@ -757,7 +800,9 @@ Done. We effectively only added a single rule to the remote firewall:
 + -A OUTPUT -o wg0 -j ACCEPT
 ```
 
+<a class="header" name="firewall-local-input-configuration">
 ## switch local INPUT policy back to DROP
+</a>
 
 We have a bidirectional connection now. The only thing left to do is to revert back to
 a local INPUT chain policy of DROP and keep the connection up.
@@ -836,7 +881,9 @@ but limit incoming UDP packets with a source IP address and port filter:
   -A OUTPUT -d 139.162.153.133/32 -o enp3s0 -p udp -m udp --dport 51913 -j ACCEPT
 ```
 
+<a class="header" name="firewall-final-configuration">
 ## final configuration
+</a>
 
 _local firewall configuration:_
 

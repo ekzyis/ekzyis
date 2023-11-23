@@ -6,7 +6,24 @@ Comments:     https://stacker.news/items/265524
 
 ---
 
+<details open>
+<summary><b><a name="index">index</a></b></summary>
+<div class="flex flex-column">
+<a href="#introduction">0. introduction</a>
+<a href="#nat-primer">1. NAT primer</a>
+<a href="#port-forwarding">2. port forwarding</a>
+<a class="subh" href="#port-forwarding-initial"><i>2.1 initial configuration</i></a>
+<a class="subh" href="#port-forwarding-internal"><i>2.2 HTTP server on 10.172.16.2 <> 10.172.16.1</i></a>
+<a class="subh" href="#port-forwarding-internet"><i>2.3 HTTP server on 10.172.16.2 <> 93.184.216.34</i></a>
+<a class="subh" href="#port-forwarding-final"><i>2.4 final configuration</i></a>
+</div>
+</details>
+
+---
+
+<a class="header" name="introduction">
 # introduction
+</a>
 
 Today, we will implement port forwarding with [`iptables`](https://wiki.archlinux.org/title/iptables). We will do this to expose a service to the public internet which is running inside a VPN.
 
@@ -24,7 +41,9 @@ Therefore, we start with a primer about NAT which stands for _Network Address Tr
 
 ---
 
+<a class="header" name="nat-primer">
 # NAT primer
+</a>
 
 Network Address Translation was developed to mitigate the issue of not having enough IPv4 addresses for every device which wants to connect to the internet. IPv4 addresses are only 32 bits long which means there are only 2<sup>32</sup> = 4,294,967,296 addresses available. This may sound like a lot but when considering that more and more devices are connected to the internet (which isn't going to stop anytime soon) and that the world population is around 8 billion people, there simply aren't enough IPv4 addresses to go around. Hence a solution needed to be found.
 
@@ -59,7 +78,9 @@ The reversal in both methods is automatically handled using the NAT table.
 
 ---
 
+<a class="header" name="port-forwarding">
 # Port forwarding
+</a>
 
 We will now apply this knowledge to expose an HTTP server running inside a VPN. Our setup will work like this:
 
@@ -67,7 +88,9 @@ We will now apply this knowledge to expose an HTTP server running inside a VPN. 
 
 We will have to use DNAT _and_ SNAT since we need to change the destination IP address to 10.172.16.2 _and_ the source IP address to 10.172.16.1 since we can only route internal IP addresses (10.172.16.0/24) over the virtual network interface to the HTTP server.
 
+<a class="header" name="port-forwarding-initial">
 ## initial configuration
+</a>
 
 We will start with the following configuration of the VPN router which will also act as a NAT gateway:
 
@@ -132,7 +155,9 @@ _firewall configuration @ 10.172.16.2:_
 -A OUTPUT -d 93.184.216.34/32 -o enp3s0 -p udp -m udp --dport 51913 -j ACCEPT
 ```
 
+<a class="header" name="port-forwarding-internal">
 ## HTTP server on 10.172.16.2 <> 10.172.16.1
+</a>
 
 With the existing configuration, we can run an HTTP server on 10.172.16.2 and access it from 10.172.16.1.
 
@@ -155,7 +180,9 @@ Content-type: text/html; charset=utf-8
 Content-Length: 187
 ```
 
+<a class="header" name="port-forwarding-internet">
 ## HTTP server on 10.172.16.2 <> 93.184.216.34
+</a>
 
 Our goal is to access the HTTP server using the public IP address of the VPN server.
 With the following command, we try exactly this. We try to access the HTTP server running on the same host but inside the VPN over the public internet:
@@ -253,7 +280,9 @@ Content-type: text/html; charset=utf-8
 Content-Length: 187
 ```
 
+<a class="header" name="port-forwarding-final">
 ## final configuration
+</a>
 
 The final firewall configuration of 10.172.16.1 is this:
 
