@@ -1,4 +1,5 @@
-html/pages/blog
-public/**/*.html
-hot-reload
-renderer
+# development
+_hotreload
+
+# build
+tailwindcss
