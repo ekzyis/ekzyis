@@ -21,5 +21,5 @@ Therefore, the goal of this site is to provide you something unique. It eliminat
 
 In any way, this whole site is meant to be a [complex search query to find fascinating people](https://www.henrikkarlsson.xyz/p/search-query). I will leave my introduction at this for now.
 
-Why don't you introduce yourself to me now?
+[Why don't you introduce yourself to me now?](https://stacker.news/items/505345)
 
