@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# https://gohugo.io/hosting-and-deployment/deployment-with-rsync/
+
+set -e
+
+RSYNC_OPTS="-avh --delete"
+
+hugo
+rsync $RSYNC_OPTS --dry-run public/ ekzy.is:/var/www/ek
+
+echo
+read -p "Continue deploy? [yn] " yn
+echo
+[ "$yn" == "y" ] && rsync $RSYNC_OPTS public/ ekzy.is:/var/www/ek
