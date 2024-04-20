@@ -1,4 +1,3 @@
-html/pages/blog
-public/**/*.html
-hot-reload
-renderer
+# hugo
+public/
+.hugo_build.lock

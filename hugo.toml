@@ -1,0 +1,14 @@
+baseURL = 'https://ekzy.is/'
+languageCode = 'en-us'
+title = 'ekzyis'
+theme = 'holy'
+
+[menu]
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 10
+
+[params]
+commit = "000000"
