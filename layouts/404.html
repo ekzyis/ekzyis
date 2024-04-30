@@ -1,7 +1,12 @@
-{{ define "main" }}
-  <main id="main">
-    <div>
-      404 Not Found
-    </div>
-  </main>
+{{ define "title"}}
+    404 |  NOT FOUND
+{{ end }}
+
+{{ define "main"}}
+<div class="wrapper">
+    <main class="main-404" aria-label="Content">
+        <h1>{{ T "errors.404" }}</h1>
+        <p>{{ T "errors.404_description" }}</p>
+    </main>
+</div>
 {{ end }}

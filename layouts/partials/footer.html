@@ -1,0 +1,17 @@
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+        {{- partial "socialIcons.html" site.Params.socialIcons -}}
+    </div>
+    <small class="footer_commit">
+        running <a href="https://git.ekzy.is/ekzyis/ekzyis/commit/{{ site.Params.commit }}" target="_blank" rel="noopener noreferrer me">{{ site.Params.commit }}</a>
+    </small>
+</footer>
+
+{{- if .Site.Params.goToTop -}}
+<a href="#" title="{{ T "footer.go_to_top" }}" id="totop">
+    {{ partial "svgs/arrowUp.svg" (dict "height" 48 "width" 48) . }}
+</a>
+{{- end -}}
