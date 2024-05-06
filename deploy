@@ -9,7 +9,7 @@ COMMIT=$(git rev-parse --short HEAD)
 
 sed -i -e "s/^commit\s*=.*$/commit = \"$COMMIT\"/" hugo.toml
 
-rm -r public/
+rm -rf public/
 hugo
 rsync $RSYNC_OPTS --dry-run public/ ekzy.is:/var/www/ek
 
