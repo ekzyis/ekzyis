@@ -1,0 +1,21 @@
+<div class="container my-3">
+    <div class="nav">
+        <nav class="mb-3 sm:px-3">
+            {{ $currentPage := . }}
+            <a href="{{ .Site.Home.Permalink }}">ekzyis</a>
+            <div class="flex float-right items-center">
+                {{ range site.Menus.main }}
+                    {{ if $currentPage.IsMenuCurrent .Menu . }}
+                        <a class="px-2 font-semibold" href="{{ .URL }}">{{ .Name }}</a>
+                    {{ else }}
+                        <a class="px-2" href="{{ .URL }}">{{ .Name }}</a>
+                    {{ end }}
+                    <span>|</span>
+                {{ end }}
+                <a id="mode" class="px-2" href="#">
+                    {{ partial "svg/sun.svg" (dict "height" 21 "width" 21 "title" "LIGHT") . }}
+                </a>
+            </div>
+        </nav>
+    </div>
+</div>

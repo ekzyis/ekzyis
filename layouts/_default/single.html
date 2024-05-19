@@ -1,12 +1,12 @@
 {{ define "main" }}
-<div class="wrapper post">
-    <main class="page-content" aria-label="Content">
+<div class="container">
+    <main class="post">
         <article>
-            <header class="header">
-                <h1 class="header-title">{{ .Title }}</h1>
-                {{ with resources.GetMatch .Params.banner }}
+            <header class="post-header">
+                <h1 class="post-title">{{ .Title }}</h1>
+                {{ with .Resources.GetMatch .Params.banner }}
                 {{ $image := .Fit "1920x1080" }}
-                <img class="banner" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}">
+                <img class="post-banner" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}">
                 {{ end }}
                 {{ with .Date }}
                 {{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
@@ -15,12 +15,10 @@
                 </div>
                 {{ end }}
             </header>
-            {{ partial "toc.html" .}}
-            <div class="page-content">
+            <div class="post-content">
                 {{ .Content }}
             </div>
         </article>
-        {{- partial "comments.html" . -}}
     </main>
 </div>
 {{ end }}

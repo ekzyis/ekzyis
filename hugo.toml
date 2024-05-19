@@ -1,35 +1,12 @@
-title = "ekzyis"
 baseURL = 'https://ekzy.is/'
-
-# This is what goes in <html lang="">
 languageCode = 'en-us'
+title = 'ekzyis'
 
-# This defines how dates are formatted
-defaultContentLanguage = "en-gb"
-
-# Enable emojis globally
-enableEmoji = true
-ignoreErrors = ["additional-script-loading-error"] # ignore error of loading additional scripts.
-
-# traditional way: theme component resides in directory 'themes' 
-# theme = "hugo-blog-awesome"
-
-# set markup.highlight.noClasses=false to enable code highlight
-[markup]
-  [markup.highlight]
-    noClasses = false
-  [markup.goldmark.renderer]
-    unsafe = true
-	[markup.tableOfContents]
-		startLevel = 2 # ToC starts from H2
-		endLevel = 4 # ToC ends at H4
-		ordered = false # generates <ul> instead of <ol>
-
-[[params.socialIcons]]
+[[params.socials]]
 name = "github"
 url = "https://github.com/ekzyis"
 
-[[params.socialIcons]]
+[[params.socials]]
 name = "Rss"
 url = "/index.xml"
 

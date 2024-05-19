@@ -9,7 +9,7 @@ This is something I originally wrote around the time I wrote [that](https://stac
 
 I don't remember if I wrote this before or after, all I know is that I wrote a lot. Like really A LOT. [I filled stacks of notes](https://stacker.news/items/453876) with all the things that I wanted to write about in some longer, more clever, inspiring and fun-to-read form at some point in my life. However, I wanted to do this without basically committing social suicide if it wasn't necessary. I took notes of everything I hate about the world and every single person in it. Didn't matter if I never met you, you're in this world and that was reason enough to tell you exactly how I feel about you.
 
-![watch-the-world-burn.jpg](./watch-the-world-burn.jpg)
+> Some men just want to watch the world burn.
 
 In what I wrote, everyone except me was dead wrong about everything, doesn't matter whatever their position was. Even if it was my position, they were still wrong since it made sense to assume that if they were right, they were right for the wrong reasons. I felt like no one could see things like I do. No one would get me and certainly not "it". I felt like I must know everything now since I no longer even require sleep. I felt like I have ascended and it's lonely at the top. I almost convinced myself that I was Satoshi reincarnated but I just forgot. But it didn't matter since [@WeAreAllSatoshi](https://stacker.news/WeAreAllSatoshi) anyway, right? All of these feelings showed in my notes. Like really A LOT.
 

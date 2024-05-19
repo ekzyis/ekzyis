@@ -24,8 +24,7 @@
                 break;
             case THEMES.AUTO:
             default:
-                state = window.matchMedia("(prefers-color-scheme: dark)")
-                    .matches
+                state = window.matchMedia("(prefers-color-scheme: dark)").matches
                     ? THEMES.DARK
                     : THEMES.LIGHT;
                 break;
@@ -60,16 +59,6 @@
     window.addEventListener("DOMContentLoaded", () => {
         // Theme switch
         const lamp = document.getElementById("mode");
-
         lamp.addEventListener("click", () => toggleTheme());
-
-        // Blur the content when the menu is open
-        const cbox = document.getElementById("menu-trigger");
-
-        cbox.addEventListener("change", function () {
-            const area = document.querySelector(".wrapper");
-            if (this.checked) return area.classList.add("blurry");
-            area.classList.remove("blurry");
-        });
     });
 })();

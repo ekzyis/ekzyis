@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background-color: #fff;
+    --color: #434648;
+    --text-decoration-color: #d2c7c7;
+    --border-color: #ececec;
+    --link-color: #003fff;
+    --post-meta-color: #6b7886;
+    --post-header-color: #0d122b;
+    --footer-color: var(--post-meta-color);
+    --quote-color: #525b66;
+    --quote-border-color: #c4c8cc;
+}
+
+@layer base {
+    body {
+        background-color: var(--background-color);
+        color: var(--color);
+        font: 16px/1.85 Roboto,sans-serif;
+        /* FIXME: border-color transition does not work */
+        transition: background-color 150ms ease-in, border-color 150ms ease-in;
+    }
+
+    a {
+        text-decoration-color: var(--text-decoration-color);
+    }
+
+    a:hover {
+        color: var(--link-color);
+        text-decoration-color: var(--link-color);
+    }
+
+    hr {
+        border-color: var(--border-color);
+    }
+
+    /* roboto-regular - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(fonts/Roboto/roboto-v30-latin-regular.eot); /* IE9 Compat Modes */
+        src: url(fonts/Roboto/roboto-v30-latin-regular.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+            url(fonts/Roboto/roboto-v30-latin-regular.woff2) format('woff2'), /* Super Modern Browsers */
+            url(fonts/Roboto/roboto-v30-latin-regular.woff) format('woff'), /* Modern Browsers */
+            url(fonts/Roboto/roboto-v30-latin-regular.ttf) format('truetype'), /* Safari, Android, iOS */
+            url(fonts/Roboto/roboto-v30-latin-regular.svg#Roboto) format('svg'); /* Legacy iOS */
+    }
+}

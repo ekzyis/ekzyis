@@ -1,0 +1,19 @@
+html.dark {
+    --background-color: #131418;
+    --color: #babdc4;
+    --border-color: #1b1d25;
+    --link-color: #77a8fd;
+    --post-meta-color: #767f87;
+    --post-header-color: #eaeaea;
+    --quote-color: #9b9ba3;
+    --quote-border-color: #4a4d56;
+
+    a#mode {
+        line {
+            fill: none;
+        }
+        circle {
+            fill: none;
+        }
+    }
+}

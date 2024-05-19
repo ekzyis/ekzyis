@@ -1,0 +1,16 @@
+a#mode {
+    display: block;
+    line {
+        stroke: var(--color);
+        fill: var(--color);
+    }
+    circle {
+        fill: var(--color);
+        stroke: var(--color);
+    }
+}
+
+.nav {
+    border: solid 1px transparent;
+    border-bottom: solid 1px var(--border-color);
+}
