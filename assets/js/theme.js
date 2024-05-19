@@ -44,7 +44,6 @@
 
     // init theme ASAP, then do the rest.
     initTheme(getThemeState());
-    requestAnimationFrame(() => body.classList.remove("notransition"))
     const toggleTheme = () => {
         const state = getThemeState();
         if (state === THEMES.DARK) {
