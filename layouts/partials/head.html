@@ -24,4 +24,6 @@
     <link rel="stylesheet" href="{{ $post.RelPermalink }}" />
     <link rel="stylesheet" href="{{ $footer.RelPermalink }}" />
     {{ end }}
+    {{ $htmx := resources.Get "js/htmx.js" | minify | fingerprint }}
+    <script src="{{ $htmx.RelPermalink }}" integrity="{{ $htmx.Data.Integrity }}"></script>
 </head>

@@ -124,3 +124,11 @@ blockquote {
     margin-bottom: 10px;
     font-size: 1em;
 }
+
+a {
+    text-decoration-color: var(--footer-color);
+}
+
+a:hover {
+    text-decoration-color: var(--link-color);
+}
