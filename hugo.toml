@@ -10,5 +10,10 @@ url = "https://github.com/ekzyis"
 name = "Rss"
 url = "/index.xml"
 
+[[params.socials]]
+name = "pgpkey"
+url = "/pgp.txt"
+fingerprint = "EBAF 75DA 7279 CB48"
+
 [params]
 commit = "000000"
