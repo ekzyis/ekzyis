@@ -7,7 +7,12 @@
         </a>
         {{- end -}}
     </div>
-    <small>
-        running <a class="underline" href="https://git.ekzy.is/ekzyis/ekzyis/commit/{{ site.Params.commit }}" target="_blank" rel="noopener noreferrer me">{{ site.Params.commit }}</a>
-    </small>
+    <div class="flex flex-col leading-normal pt-1">
+        <small>
+            running <a class="underline" href="https://git.ekzy.is/ekzyis/ekzyis/commit/{{ site.Params.commit }}" target="_blank" rel="noopener noreferrer me">{{ site.Params.commit }}</a>
+        </small>
+        <small>
+            analytics by <a class="underline" href="https://plausible.io/ekzy.is" target="_blank" rel="noopener noreferrer me">plausible.io</a>
+        </small>
+    </div>
 </footer>

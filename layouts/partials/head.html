@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ $nav.RelPermalink }}" integrity="{{ $nav.Data.Integrity }}" />
     <link rel="stylesheet" href="{{ $post.RelPermalink }}" integrity="{{ $post.Data.Integrity }}" />
     <link rel="stylesheet" href="{{ $footer.RelPermalink }}" integrity="{{ $footer.Data.Integrity }}" />
+    <script defer data-api="/api/event" data-domain="ekzy.is" src="/js/script.js"></script>
     {{ else }}
     {{ $dark   := resources.Get "css/dark.css" }}
     {{ $nav    := resources.Get "css/nav.css"  }}
