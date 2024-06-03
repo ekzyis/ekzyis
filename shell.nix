@@ -1,6 +1,8 @@
 { pkgs ? import <nixpkgs> {} }:
-  pkgs.mkShell {
-    nativeBuildInputs = with pkgs.buildPackages; [
-      go hugo tailwindcss
-    ];
+
+pkgs.mkShell {
+  nativeBuildInputs = with pkgs.buildPackages;
+  [
+    go hugo tailwindcss
+  ];
 }
