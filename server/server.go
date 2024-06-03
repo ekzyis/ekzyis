@@ -60,19 +60,5 @@ func HandleContentMeta(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprintf(w,
-		""+
-			"<span class=\"px-1\">|</span>"+
-			"<span>"+
-			"<a"+
-			" class=\"underline\""+
-			" href=\"https://stacker.news/items/%d\""+
-			" target=\"_blank\""+
-			" rel=\"noopener noreferrer me\">"+
-			"%d comments"+
-			"</a>"+
-			"</span>"+
-			"<span class=\"px-1\">|</span>"+
-			"<span>%d sats</span>",
-		id, item.NComments, item.Sats)
+	contentMeta(item).Render(r.Context(), w)
 }
