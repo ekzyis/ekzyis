@@ -10,6 +10,9 @@ function randInt(n) {
 async function glitch(node) {
     if (!node) return
 
+    // only glitch these titles
+    if (![title1, title2].includes(node.innerHTML)) return
+
     const r1 = randInt(10)
     for (let i = 0; i < r1; ++i) {
         const r2 = randInt(100)
