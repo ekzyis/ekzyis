@@ -132,3 +132,10 @@ a {
 a:hover {
     text-decoration-color: var(--link-color);
 }
+
+pre {
+    padding: 5px 5px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    font-size: small;
+}
