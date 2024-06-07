@@ -2,6 +2,10 @@ baseURL = 'https://ekzy.is/'
 languageCode = 'en-us'
 title = 'ekzyis'
 
+[markup]
+  [markup.highlight]
+    style = 'catppuccin-mocha'
+
 [[params.socials]]
 name = "github"
 url = "https://github.com/ekzyis"
