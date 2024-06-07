@@ -139,3 +139,8 @@ pre {
     scrollbar-width: thin;
     font-size: small;
 }
+
+.footnotes {
+    border-top: solid 2px var(--border-color);
+    font-size: small;
+}
