@@ -26,6 +26,4 @@
     {{ end }}
     {{ $htmx := resources.Get "js/htmx.js" | minify | fingerprint }}
     <script src="{{ $htmx.RelPermalink }}" integrity="{{ $htmx.Data.Integrity }}"></script>
-    {{ $glitch := resources.Get "js/glitch.js" | minify | fingerprint }}
-    <script defer src="{{ $glitch.RelPermalink }}" integrity="{{ $glitch.Data.Integrity }}"></script>
 </head>
