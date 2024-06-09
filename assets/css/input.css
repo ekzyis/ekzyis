@@ -50,4 +50,13 @@
             url(fonts/Roboto/roboto-v30-latin-regular.ttf) format('truetype'), /* Safari, Android, iOS */
             url(fonts/Roboto/roboto-v30-latin-regular.svg#Roboto) format('svg'); /* Legacy iOS */
     }
+
+    li {
+        list-style-type: auto;
+        list-style-position: inside;
+    }
+
+    li > p {
+        display: inline;
+    }
 }

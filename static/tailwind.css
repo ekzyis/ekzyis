@@ -481,6 +481,15 @@ hr {
   /* Legacy iOS */
 }
 
+li {
+  list-style-type: auto;
+  list-style-position: inside;
+}
+
+li > p {
+  display: inline;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
