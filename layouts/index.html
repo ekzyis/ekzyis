@@ -5,7 +5,7 @@
         {{/* Show last 5 posts in reverse date order */}}
         {{ $pagesToShow := .Site.RegularPages }}
         {{ $posts := $pagesToShow.ByDate.Reverse }}
-        {{ range first 5 $posts }}
+        {{ range $posts }}
         <article class="post-item">
             <h4 class="post-item-title">
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
