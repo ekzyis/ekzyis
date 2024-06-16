@@ -16,6 +16,7 @@
 
 .post-header {
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .post-title {
@@ -50,7 +51,6 @@
     color: var(--post-header-color);
     font-weight: 700;
     letter-spacing: .03rem;
-    margin-top: 30px;
 }
 
 .post-content h1 {
@@ -143,6 +143,11 @@ pre {
     overflow-x: auto;
     scrollbar-width: thin;
     font-size: small;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin-bottom: 20px;
 }
 
 .footnotes {
