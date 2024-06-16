@@ -1,9 +1,11 @@
 a#mode {
     display: block;
+
     line {
         stroke: var(--color);
         fill: var(--color);
     }
+
     circle {
         fill: var(--color);
         stroke: var(--color);

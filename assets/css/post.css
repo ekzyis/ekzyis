@@ -41,7 +41,12 @@
     padding-top: 8px;
 }
 
-.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
     color: var(--post-header-color);
     font-weight: 700;
     letter-spacing: .03rem;
@@ -80,7 +85,7 @@
     text-decoration: underline;
 }
 
-.post-content > p {
+.post-content>p {
     padding-top: 15px;
     padding-bottom: 15px;
 }
