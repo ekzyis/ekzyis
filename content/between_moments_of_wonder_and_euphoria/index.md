@@ -2,6 +2,7 @@
 title: Between Moments of Wonder and Euphoria
 date: 2024-07-13
 banner: landscape.jpg
+sn_id: 607554
 ---
 
 ## A Mostly Harmless Substance
