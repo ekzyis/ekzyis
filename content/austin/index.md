@@ -3,6 +3,7 @@ title: Austin's Orange Glow
 date: 2024-06-23
 banner: austin_orange_glow.jpg
 draft: true
+sn_id: 674266
 ---
 
 # Apple Country in my head

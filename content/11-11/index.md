@@ -2,6 +2,7 @@
 title: (I think) I finally understand DarthCoin
 date: 2023-12-12
 draft: true
+sn_id: 349363
 ---
 
 [Similar to how @siggy47 gets why bitcoiners like bear markets now](https://stacker.news/items/318223), I think I finally can start to grasp why [@DarthCoin](https://stacker.news/DarthCoin) is so toxic all the time. Prepare yourself for a very long and hopefully funny story :)
