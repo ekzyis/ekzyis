@@ -157,3 +157,20 @@ hr {
     border-top: solid 2px var(--border-color);
     font-size: small;
 }
+
+figure {
+    margin: 1em 0;
+}
+
+figcaption {
+    color: var(--post-meta-color);
+    font-size: small;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+ul>li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
