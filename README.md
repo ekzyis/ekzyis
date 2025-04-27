@@ -1,4 +1,4 @@
-![](https://m.stacker.news/44923)
+![](./content/about/psychedelic-digital-sky.jpg)
 
 <div align="center">
 
