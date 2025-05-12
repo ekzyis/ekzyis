@@ -4,7 +4,7 @@ date: 2025-05-11T08:11:03.874Z
 sn_id: 977206
 ---
 
-![](https://m.stacker.news/91261)
+![](./remember.jpg)
 
 I've been reading @plebpoet's [journal](https://www.plebpoet.com/journal.html). I'll write a few words every now and then and hope they survive.
 
