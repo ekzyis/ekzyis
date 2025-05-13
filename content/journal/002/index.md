@@ -1,6 +1,7 @@
 ---
 title: journal-002
-date: 2025-05-12
+date: 2025-05-12T10:13:26.539Z
+sn_id: 977987
 ---
 
 {{< figure src="/moon.jpg" caption="looking into the past?" >}}
