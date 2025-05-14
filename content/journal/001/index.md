@@ -2,9 +2,8 @@
 title: journal-001
 date: 2025-05-11T08:11:03.874Z
 sn_id: 977206
+banner: remember.jpg
 ---
-
-![](./remember.jpg)
 
 I've been reading @plebpoet's [journal](https://www.plebpoet.com/journal.html). I'll write a few words every now and then and hope they survive.
 

@@ -2,10 +2,7 @@
 title: journal-002
 date: 2025-05-12T10:13:26.539Z
 sn_id: 977987
----
-
-{{< figure src="/moon.jpg" caption="looking into the past?" >}}
-
+banner: moon.jpg
 ---
 
 I am so sick of dwelling on the past. I keep dwelling on it so I can write about it one day, so I can let it go.
