@@ -1,6 +1,7 @@
 ---
 title: journal-003
 date: 2025-05-13
+sn_id: 978850
 ---
 
 > My words echo in my head
