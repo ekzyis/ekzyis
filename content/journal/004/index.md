@@ -2,6 +2,7 @@
 title: journal-004
 date: 2025-05-14
 banner: colorado.jpg
+sn_id: 979677
 ---
 
 This starts to feel like work, but I think it's going to pay off.
