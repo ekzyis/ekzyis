@@ -1,6 +1,7 @@
 ---
 title: journal-005
 date: 2025-05-15
+sn_id: 980582
 ---
 
 The first thing I see in the morning is the color and brightness of the sky through a small window near the ceiling. It allows me to guess what time it is and I got pretty damn good at it, like Eugene Sledge killing Japs.
