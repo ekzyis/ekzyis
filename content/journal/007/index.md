@@ -10,7 +10,7 @@ something has changed. I could have easily skipped you today, but I didn't.
 
 I just came back from walking for an hour toward Austin's skyline from the remainder of a party. Since it's cockroach weather, I got pretty sweaty, but that was fine. It was part of the deal of getting a nice long walk in for myself, and I was looking forward to the shower. I also almost took a nice photo of my shadow, but it wasn't nice enough to save. Still working on my photography skills.
 
-Before I went to the end of the party, I went to watch _Final Destination Bloodlines_ with @Car. It was a very good movie. I was worried I’d be too scared—sometimes I get spooked by my own hair—but it was juuust right. I even clapped at the end to see if anybody else would clap. Nobody else clapped, but that was fine, because I clapped for all of them.
+Before I went to the end of the party, I went to watch _Final Destination Bloodlines_ with [@Car](https://stacker.news/Car). It was a very good movie. I was worried I’d be too scared—sometimes I get spooked by my own hair—but it was juuust right. I even clapped at the end to see if anybody else would clap. Nobody else clapped, but that was fine, because I clapped for all of them.
 
 ---
 
