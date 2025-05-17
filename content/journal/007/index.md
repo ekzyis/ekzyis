@@ -19,17 +19,17 @@ Today, I fixed a very annoying bug with our Nostr embeds ([#2151](https://github
 When I looked into the issue again with a fresh perspective, I noticed a key difference between the Nostr embeds where the button worked and those where it didn’t: the broken ones contained a redirect. This broke the embed because the query parameter `embed=true` would get lost during the redirect. I submitted a [PR](https://github.com/fiatjaf/njump/pull/107) to fix this in [njump](https://njump.me/) and [@fiatjaf](https://stacker.news/fiatjaf) merged and deployed it right away. The beauty of FOSS.
 
 ```diff
-// if we originally got a note code or an nevent with no hints
-// augment the URL to point to an nevent with hints -- redirect
-if p, ok := decoded.(nostr.EventPointer); (ok && p.Author == "" && len(p.Relays) == 0) || prefix == "note" {
+  // if we originally got a note code or an nevent with no hints
+  // augment the URL to point to an nevent with hints -- redirect
+  if p, ok := decoded.(nostr.EventPointer); (ok && p.Author == "" && len(p.Relays) == 0) || prefix == "note" {
 -   http.Redirect(w, r, "/"+data.nevent, http.StatusFound)
 +   url := "/" + data.nevent
 +   if r.URL.RawQuery != "" {
-+       url += "?" + r.URL.RawQuery
++     url += "?" + r.URL.RawQuery
 +   }
 +   http.Redirect(w, r, url, http.StatusFound)
     return
-}
+  }
 ```
 
 I also fixed the following migration error that I mentioned [yesterday](/journal/006):
