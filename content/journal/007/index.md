@@ -16,7 +16,7 @@ Before I went to the end of the party, I went to watch _Final Destination Bloodl
 
 Today, I fixed a very annoying bug with our Nostr embeds ([#2151](https://github.com/stackernews/stacker.news/issues/2151)). When you clicked on 'show full note,' it would only work for some notes. The others wouldn’t expand to show the full note but instead just displayed a scrollbar. The embed stayed so tiny, the text was literally unreadable.
 
-When I looked into the issue again with a fresh perspective, I noticed a key difference between the Nostr embeds where the button worked and those where it didn’t: the broken ones contained a redirect. This broke the embed because the query parameter `embed=true` would get lost during the redirect. I submitted a [PR](https://github.com/fiatjaf/njump/pull/107) to fix this in [njump](https://github.com/fiatjaf/njump/pull/107) and [@fiatjaf](https://stacker.news/fiatjaf) merged and deployed it right away. The beauty of FOSS.
+When I looked into the issue again with a fresh perspective, I noticed a key difference between the Nostr embeds where the button worked and those where it didn’t: the broken ones contained a redirect. This broke the embed because the query parameter `embed=true` would get lost during the redirect. I submitted a [PR](https://github.com/fiatjaf/njump/pull/107) to fix this in [njump](https://njump.me/) and [@fiatjaf](https://stacker.news/fiatjaf) merged and deployed it right away. The beauty of FOSS.
 
 ```diff
 // if we originally got a note code or an nevent with no hints
