@@ -1,6 +1,6 @@
 ---
 title: journal-002
-date: 2025-05-12T10:13:26.539Z
+date: 2025-05-11
 sn_id: 977987
 banner: moon.jpg
 ---

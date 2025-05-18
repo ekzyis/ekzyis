@@ -1,6 +1,6 @@
 ---
 title: journal-001
-date: 2025-05-11T08:11:03.874Z
+date: 2025-05-10
 sn_id: 977206
 banner: remember.jpg
 ---
