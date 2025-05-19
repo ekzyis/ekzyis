@@ -4,9 +4,9 @@ date: 2025-05-15
 sn_id: 981392
 ---
 
-Dear journal,
+Dear Journal,
 
-you were meant to be a developer diary. You were meant to contain the progress I made every day on the new wallets. You don't, because I was too embarrassed of my progress. I am usually in PlebLab from 12pm to 12am so you would think I get a lot of stuff done. I don't. I am so long in PlebLab _because_ I don't get much stuff done, because I am ashamed of myself, because I think I need to work longer to compensate how slow I am.
+You were meant to be a developer diary. You were meant to contain the progress I made every day on the new wallets. You don't, because I was too embarrassed of my progress. I am usually in PlebLab from 12pm to 12am so you would think I get a lot of stuff done. I don't. I am so long in PlebLab _because_ I don't get much stuff done, because I am ashamed of myself, because I think I need to work longer to compensate how slow I am.
 
 I think it's a terrible idea to share this. I'm still considering if I will, but at the same time, it feels important to share this. I will feel relieved.
 

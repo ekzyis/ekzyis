@@ -4,9 +4,9 @@ date: 2025-05-16
 sn_id: 982124
 ---
 
-Dear journal,
+Dear Journal,
 
-something has changed. I could have easily skipped you today, but I didn't.
+Something has changed. I could have easily skipped you today, but I didn't.
 
 I just came back from walking for an hour toward Austin's skyline from the remainder of a party. Since it's cockroach weather, I got pretty sweaty, but that was fine. It was part of the deal of getting a nice long walk in for myself, and I was looking forward to the shower. I also almost took a nice photo of my shadow, but it wasn't nice enough to save. Still working on my photography skills.
 
