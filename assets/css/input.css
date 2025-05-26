@@ -17,6 +17,9 @@
 
 @layer base {
     body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100svh;
         background-color: var(--background-color);
         color: var(--color);
         font: 16px/1.85 Roboto, sans-serif;
