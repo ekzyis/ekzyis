@@ -23,6 +23,7 @@
         background-color: var(--background-color);
         color: var(--color);
         font: 16px/1.85 Roboto, sans-serif;
+        overflow-y: scroll;
         /* FIXME: border-color transition does not work */
         /* transition: background-color 1s ease-in-out, border-color 1s ease-in-out; */
     }
