@@ -88,6 +88,10 @@
     padding-bottom: 15px;
 }
 
+.post-content>p>img {
+    margin: auto;
+}
+
 .post-index {
     max-width: calc(720px - (30px * 2));
     padding-left: 30px;
