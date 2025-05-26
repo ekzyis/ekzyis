@@ -18,10 +18,10 @@ module.exports = {
       addComponents({
         '.container': {
           '@screen lg': {
-            maxWidth: '768px',
+            maxWidth: '1280px',
           },
           '@screen xl': {
-            maxWidth: '768px',
+            maxWidth: '1280px',
           },
         }
       })
