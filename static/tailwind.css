@@ -454,7 +454,7 @@ body {
   color: var(--color);
   font: 16px/1.85 Roboto, sans-serif;
   /* FIXME: border-color transition does not work */
-  transition: background-color 150ms ease-in, border-color 150ms ease-in;
+  /* transition: background-color 1s ease-in-out, border-color 1s ease-in-out; */
 }
 
 a {
