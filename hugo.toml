@@ -7,7 +7,7 @@ title = 'ekzyis'
     style = 'catppuccin-mocha'
 
 [[menu.main]]
-name = "journal"
+name = "Journal"
 url = "/journal"
 weight = 1
 
