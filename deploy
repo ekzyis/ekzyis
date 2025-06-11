@@ -11,7 +11,7 @@ sed -i -e "s/^commit\s*=.*$/commit = \"$COMMIT\"/" hugo.toml
 
 rm -rf public/
 
-hugo
+hugo --minify
 tailwindcss -i assets/css/input.css -o static/tailwind.css
 
 rsync $RSYNC_OPTS --dry-run public/ ekzy.is:/var/www/ek
