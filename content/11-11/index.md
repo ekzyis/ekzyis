@@ -97,7 +97,7 @@ I think one day I just woke up and I thought:
 
 And I think then it was official: I entered the anger phase, lol :)
 
-I actually don't know how long this post already is since I am writing it outside of SN since I am too fucking afraid we might have a bug, we didn't implement [this feature yet](https://github.com/stackernews/stacker.news/issues/216) or my browser might crash or I don't fucking know what life has planned next for me. But I am getting to my theory of why @DarthCoin is just so insufferable sometimes, soon, hang on :)
+I actually don't know how long this post already is since I am writing it outside of SN since I am too fucking afraid we might have a bug, we didn't implement [this feature yet](https://github.com/stackernews/stacker.news/issues/216) or my browser might crash or I don't fucking know what life has planned next for me. But I am getting to my theory of why [@DarthCoin](https://stacker.news/DarthCoin) is just so insufferable sometimes, soon, hang on :)
 
 Then I started to talk to IRL friends about my breakup. That actually helped me and they were very understanding.
 
@@ -113,7 +113,7 @@ But you know what?
 
 > AT LEAST TAKE ME FUCKING SERIOUS WHEN I AM TRYING TO LITERALLY TELL YOU HOW FUCKING SERIOUS I AM.
 
-Long story short, I literally started to burn some very old bridges - more or less temporarily - because I just couldn't interact with them anymore.
+Long story short, I literally started to burn some very old bridges—more or less temporarily—because I just couldn't interact with them anymore.
 
 > THEY JUST DON'T GET IT. THIS IS A WASTE OF TIME.
 
