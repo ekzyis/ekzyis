@@ -6,7 +6,7 @@ sn_id: 454525
 
 ---------DISCLAIMER BEGIN---------
 
-This is something I originally wrote around the time I wrote [that](https://stacker.news/items/349363) as you might guess while reading this.
+This is something I originally wrote around the time I wrote [this](/11-11) as you might guess while reading this.
 
 I don't remember if I wrote this before or after, all I know is that I wrote a lot. Like really A LOT. [I filled stacks of notes](https://stacker.news/items/453876) with all the things that I wanted to write about in some longer, more clever, inspiring and fun-to-read form at some point in my life. However, I wanted to do this without basically committing social suicide if it wasn't necessary. I took notes of everything I hate about the world and every single person in it. Didn't matter if I never met you, you're in this world and that was reason enough to tell you exactly how I feel about you.
 
