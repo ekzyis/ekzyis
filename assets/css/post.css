@@ -177,3 +177,8 @@ ul>li {
     list-style-type: disc;
     list-style-position: inside;
 }
+
+img {
+    max-height: 600px;
+    object-fit: contain;
+}
