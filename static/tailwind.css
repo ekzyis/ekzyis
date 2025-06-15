@@ -731,6 +731,10 @@ li>p {
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-relaxed {
   line-height: 1.625;
 }
