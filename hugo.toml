@@ -6,11 +6,6 @@ title = 'ekzyis'
   [markup.highlight]
     style = 'catppuccin-mocha'
 
-[[menu.main]]
-name = "Journal"
-url = "/journal"
-weight = 1
-
 [[params.socials]]
 name = "github"
 url = "https://github.com/ekzyis"
