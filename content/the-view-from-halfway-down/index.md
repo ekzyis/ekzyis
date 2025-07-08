@@ -4,7 +4,6 @@ date: 2024-01-23
 sn_id: 398641
 ---
 
-
 {{< youtube u1_EBSlnDlU >}}
 
 _Ignore the YT channel name even though it's kind of funny how unfitting it is for this scene from [_Bojack Horseman_](https://www.rottentomatoes.com/tv/bojack_horseman)._
