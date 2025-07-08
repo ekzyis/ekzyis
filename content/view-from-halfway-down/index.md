@@ -15,7 +15,7 @@ I always wondered how people can be multiple things at once. You know, the peopl
 
 > Hacker. Engineer. Writer.
 
-How do they have time for all these things? I just didn't understand. I struggled (and still do) with consistently being one thing. It felt like they have more time than me. 
+How do they have time for all these things? I just didn't understand. I struggled (and still do) with consistently being one thing. It felt like they have more time than me.
 
 > _What is their secret? Do they sleep less? Are they more efficient with their time? Are they just better at multitasking?[^1] Is it all three things combined?_
 
@@ -39,7 +39,7 @@ But the best part is that even though I only took three physics classes—classi
 
 But back to writing. How did writing all these posts shape my view on the world?
 
-I mentioned in a previous post that writing is thinking: 
+I mentioned in a previous post that writing is thinking:
 
 > When I started this series, the words streamed out of my fingers. They still do but significantly less. I noticed that it's very related to my experience during the day. When I do a lot of different things (and have less sleep to have more time awake), I experience a lot more things that I want to write about (duh). I think this is related to this "open loop" that Henrik Karlsson is talking writing about. My brain had to process so much during my sleep that I woke up with a lot of ideas what I could write about and how — since I basically already was thinking about tomorrow's post the whole day prior and went to sleep with these thoughts; too tired to do anything else.
 >

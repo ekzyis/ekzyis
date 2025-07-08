@@ -41,7 +41,7 @@ For example, this is the HTML fragment that I included in my [HTML template](htt
 {{ end }}
 ```
 
-On page load (`hx-trigger="load"`), a GET request to /api/content_meta?sn_id=<id> is triggered (`hx-get`) and the response replaces `<span>` (`hx-target`).[^1] 
+On page load (`hx-trigger="load"`), a GET request to /api/content_meta?sn_id=<id> is triggered (`hx-get`) and the response replaces `<span>` (`hx-target`).[^1]
 
 For the backend, I went with go and [`net/http`](https://pkg.go.dev/net/http) which is part of go's stdlib. I also learned about [`templ`](https://templ.guide/) which makes it possible to write something like JSX in go.[^2]
 

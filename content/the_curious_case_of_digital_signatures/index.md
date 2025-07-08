@@ -9,11 +9,11 @@ sn_id: 436752
 [@Natalia](https://stacker.news/Natalia) asked [some good questions](https://stacker.news/items/436029) in the [@saloon](https://stacker.news/saloon) today:
 
 > Playing around PGP last night ( yes, late into the game - it takes time to sort things out one by one. ) so here is my understanding of the logic of verifying software:
-> 
+>
 > 1. you import the specific APP's public key from the terminal
 > 2. download both the software and the signature file (asc)
 > 3. copy and paste a line of code into the terminal to verify
-> 
+>
 > **But how does it work in the background - is it verifying the signature file matches with the public key? and how things be if someone changed the app, the signature then unmatched with the public key?** 🤔
 
 I like such questions since they motivate me to dig deeper. I actually didn't really know anymore how it works in detail so I wasn't able to answer these questions with confidence but I would have loved to. I mean, I am the founder of [~crypto](https://stacker.news/~crypto)! What kind of LARPer would I be if I can't even explain how `gpg --verify` works?
@@ -179,7 +179,7 @@ Looks like `gpg` indeed threw an error! Congratulations, you are not insane (yet
 You are not sure what they mean though. So you start reading [the documentation](https://www.gnupg.org/gph/en/manual/r697.html) of `gpg --verify` since [RTFM](https://archive.ph/KbrZ6) is always a good start to understand things better:
 
 > `verify <signature> <document>`
-> 
+>
 > This command verifies a document against a signature to ensure that the document has not been altered since the signature was created. If `<signature>` is omitted, gpg will look in `<document>` for a clearsign signature.
 
 Since we only gave a single argument to `gpg --verify`, `gpg` tried to find a _clearsign signature_ in the provided file. But what is a clearsign signature? You start reading [more documentation](https://www.gnupg.org/gph/en/manual/x135.html), this time for `gpg --sign`:
@@ -190,19 +190,19 @@ Since we only gave a single argument to `gpg --verify`, `gpg` tried to find a _c
 >
 > ```
 > alice% gpg --clearsign doc
-> 
+>
 > You need a passphrase to unlock the secret key for
 > user: "Alice (Judge) <alice@cyb.org>"
 > 1024-bit DSA key, ID BB7576AC, created 1999-06-04
-> 
+>
 > -----BEGIN PGP SIGNED MESSAGE-----
 > Hash: SHA1
-> 
+>
 > [...]
 > -----BEGIN PGP SIGNATURE-----
 > Version: GnuPG v0.9.7 (GNU/Linux)
 > Comment: For info see http://www.gnupg.org
-> 
+>
 > iEYEARECAAYFAjdYCQoACgkQJ9S6ULt1dqz6IwCfQ7wP6i/i8HhbcOSKF4ELyQB1
 > oCoAoOuqpRqEzr4kOkQqHRLE/b8/Rw2k
 > =y6kj
@@ -266,7 +266,7 @@ gpg: can't hash datafile: No data
 
 Mhh, same error. So something is wrong. You double-check the file names and realize that when you strip `.txt.asc`, you get `sparrow-1.8.2-manifest` and not `sparrow-1.8.2-x86_64.tar.gz`! So `gpg` could still not find what you seem to call "software", the documentation seems to call "document" and the program itself seems to call "datafile" (consistency must be a virtue) simply by stripping suffixes. Everything makes enough sense again—for now.
 
-You check the download page again and see that there is a file named `sparrow-1.8.2-manifest.txt`. 
+You check the download page again and see that there is a file named `sparrow-1.8.2-manifest.txt`.
 
 > _That looks very promising. It's the same file name as the signature just without `.asc` at the end. Now it should work._
 
@@ -325,7 +325,7 @@ Haven't you done your due diligence in the previous chapter? Well, I have and I 
 > gpg: WARNING: This key is not certified with a trusted signature!
 > gpg:          There is no indication that the signature belongs to the owner.
 > ```
-> 
+>
 > This simply means that you have not explicitly marked the public key as trusted in your own instance of GPG. In this case it is good practice to check the key against other sources, for example https://keybase.io/craigraw (click on the link next to the key icon to see the full public key). You can read more about validating keys in the [GnuPG Privacy Handbook](https://www.gnupg.org/gph/en/manual/x334.html).
 
 But we want to focus on verification for now. Never lose your sanity from multiple directions at once.
@@ -349,7 +349,7 @@ gpg:          There is no indication that the signature belongs to the owner.
 Primary key fingerprint: D4D0 D320 2FC0 6849 A257  B38D E946 1833 4C67 4B40
 ```
 
-It still works. That was expected but it's weird. 
+It still works. That was expected but it's weird.
 
 > _We didn't even need the software for `gpg --verify`. How does that make sense? I thought we want to verify the authenticity and integrity of it?_
 

@@ -3,7 +3,7 @@ title: About
 date: 2024-04-13T12:27:51.281Z
 banner: psychedelic-digital-sky.jpg
 menu: main
-sn_id: 505345 
+sn_id: 505345
 ---
 
 Hi, I'm ek. I guess this is the part where I introduce myself in an interesting and unique way such that reading this is worth your time and you don't immediately leave. [Attention is a scarce resource](https://en.wikipedia.org/wiki/Attention_economy) after all.

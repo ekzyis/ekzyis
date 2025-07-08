@@ -60,7 +60,7 @@ In something like the last 3 months before she broke up with me, I felt like som
 
 > I feel like something is wrong, I think you don't like me anymore. We keep visiting each other during the weekends, but I don't think you actually want to. What is going on? I am really worried about you.
 
-She kept insisting that either a) nothing is wrong or b) it has nothing to do with me. 
+She kept insisting that either a) nothing is wrong or b) it has nothing to do with me.
 
 Oh, what kind of foreshadowing is this? :)
 
