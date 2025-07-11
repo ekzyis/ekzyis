@@ -19,13 +19,6 @@
             </time>
         </article>
         {{ end }}
-        {{ if gt (len $posts) 5 }}
-        <p>
-            {{ range $firstSection := (where .Site.Sections "Section" "in" (first 1 (.Site.Params.mainSections))) }}
-            <a href="{{ $firstSection.Permalink }}">{{ T "home.see_all_posts" }}</a>
-            {{ end }}
-        </p>
-        {{ end }}
     </main>
 </div>
 {{ end }}

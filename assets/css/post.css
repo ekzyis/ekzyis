@@ -116,8 +116,11 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    border: solid 1px transparent;
     border-top: solid 1px var(--border-color);
+}
+
+.post-item:first-of-type {
+    border-top: none;
 }
 
 .post-item-meta {
