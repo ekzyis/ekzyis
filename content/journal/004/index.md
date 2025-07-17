@@ -1,5 +1,5 @@
 ---
-title: journal-004
+title: Trust Is the Scaling Solution
 date: 2025-05-13
 banner: colorado.jpg
 sn_id: 979677

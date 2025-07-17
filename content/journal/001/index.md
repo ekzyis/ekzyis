@@ -1,5 +1,5 @@
 ---
-title: journal-001
+title: I miss her
 date: 2025-05-10
 sn_id: 977206
 banner: remember.jpg
