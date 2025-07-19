@@ -1,0 +1,133 @@
+.post {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .post {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.post-header {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.post-title {
+    color: var(--post-header-color);
+    font-size: 2em;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.post-banner {
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    color: var(--post-meta-color);
+    padding-top: 3px;
+    line-height: 1.2;
+}
+
+.post-content {
+    padding-top: 8px;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: var(--post-header-color);
+    font-weight: 700;
+    letter-spacing: .03rem;
+}
+
+.post-content h1 {
+    font-size: 24px
+}
+
+.post-content h2 {
+    font-size: 22px
+}
+
+.post-content h3 {
+    font-size: 20px
+}
+
+.post-content h4 {
+    font-size: 20px
+}
+
+.post-content h5 {
+    font-size: 16px
+}
+
+.post-content h6 {
+    font-size: 14px
+}
+
+.post-content a {
+    color: var(--link-color);
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+.post-content>p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.post-content img {
+    margin: auto;
+    max-height: 70vh;
+}
+
+.post-index {
+    max-width: calc(720px - (30px * 2));
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .post-index {
+        max-width: calc(720px - (15px * 2));
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.post-item {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-top: solid 1px var(--border-color);
+}
+
+.post-item:first-of-type {
+    border-top: none;
+}
+
+.post-item-meta {
+    text-wrap: nowrap;
+}
+
+.footnotes {
+    border-top: solid 2px var(--border-color);
+    font-size: small;
+}
