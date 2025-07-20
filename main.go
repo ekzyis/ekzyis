@@ -151,6 +151,7 @@ func executeTemplates(posts []Post) error {
 		"html/template/head.html",
 		"html/template/nav.html",
 		"html/template/footer.html",
+		"html/template/post/list.html",
 	)
 	if err != nil {
 		return fmt.Errorf("error parsing templates: %v", err)
