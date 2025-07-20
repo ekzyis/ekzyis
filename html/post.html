@@ -2,9 +2,9 @@
 <html lang="en-us">
 {{ template "head" }}
 <body>
-{{ template "nav" }}
+{{ template "nav" .BaseURL }}
 <div class="container">
-    {{ template "post/single" . }}
+    {{ template "post/single" .Post }}
 </div>
 {{ template "footer" }}
 </body>

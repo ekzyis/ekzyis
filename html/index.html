@@ -2,7 +2,7 @@
 <html lang="en-us">
 {{ template "head" }}
 <body>
-{{ template "nav" }}
+{{ template "nav" .BaseURL }}
 <div class="container my-auto">
     <main class="post-index">
         {{ range .Posts }}

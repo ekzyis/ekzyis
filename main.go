@@ -37,8 +37,14 @@ type Post struct {
 	Images   []string
 }
 
-type TemplateData struct {
-	Posts []Post
+type IndexTemplateData struct {
+	Posts   []Post
+	BaseURL string
+}
+
+type PostTemplateData struct {
+	Post    Post
+	BaseURL string
 }
 
 var (
@@ -54,9 +60,14 @@ var (
 			),
 		),
 	)
+	baseUrl = "http://localhost:8080/"
 )
 
 func main() {
+	if os.Getenv("ENV") == "production" {
+		baseUrl = "https://ekzy.is"
+	}
+
 	mdFiles, err := walkMarkdownContent()
 	if err != nil {
 		fmt.Printf("error walking markdown content: %v\n", err)
@@ -249,7 +260,10 @@ func executeIndexTemplate(tmpl *template.Template, posts []Post) error {
 	}
 	defer outputFile.Close()
 
-	err = tmpl.ExecuteTemplate(outputFile, "index.html", TemplateData{Posts: posts})
+	err = tmpl.ExecuteTemplate(outputFile, "index.html", IndexTemplateData{
+		Posts:   posts,
+		BaseURL: baseUrl,
+	})
 	if err != nil {
 		return fmt.Errorf("error executing template: %v", err)
 	}
@@ -275,7 +289,10 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 		defer postFile.Close()
 
 		// Execute the single post template
-		err = tmpl.ExecuteTemplate(postFile, "post.html", post)
+		err = tmpl.ExecuteTemplate(postFile, "post.html", PostTemplateData{
+			Post:    post,
+			BaseURL: baseUrl,
+		})
 		if err != nil {
 			return fmt.Errorf("error executing single post template for %s: %v", post.Title, err)
 		}
