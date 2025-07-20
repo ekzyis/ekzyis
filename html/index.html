@@ -5,16 +5,15 @@
 {{ template "nav" }}
 <div class="container my-auto">
     <main class="post-index">
-        <h3 class="posts-item-note"></h3>
         {{ range .Posts }}
-            <article class="post-item{{ if .Hidden }} !hidden{{ end }}">
-                <h4 class="post-item-title">
-                    <a href="/{{ .URL }}/">{{ .Title }}</a>
-                </h4>
-                <time class="post-item-meta" datetime="{{ formatTime .Time "2006-01-02T15:04:05Z" }}">
-                    {{ formatTime .Time "2 Jan 2006" }}
-                </time>
-            </article>
+        <article class="post-item{{ if .Hidden }} !hidden{{ end }}">
+            <h4 class="post-item-title">
+                <a href="/{{ .URL }}/">{{ .Title }}</a>
+            </h4>
+            <time class="post-item-meta" datetime="{{ formatTime .Time "2006-01-02T15:04:05Z" }}">
+                {{ formatTime .Time "2 Jan 2006" }}
+            </time>
+        </article>
         {{ end }}
     </main>
 </div>
