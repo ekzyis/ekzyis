@@ -42,6 +42,10 @@ type IndexTemplateData struct {
 	BaseURL string
 }
 
+type ErrorTemplateData struct {
+	BaseURL string
+}
+
 type PostTemplateData struct {
 	Post    Post
 	BaseURL string
@@ -229,6 +233,7 @@ func executeTemplates(posts []Post) error {
 	tmpl, err := tmpl.ParseFiles(
 		"html/index.html",
 		"html/post.html",
+		"html/404.html",
 		"html/template/head.html",
 		"html/template/nav.html",
 		"html/template/footer.html",
@@ -242,6 +247,11 @@ func executeTemplates(posts []Post) error {
 	err = executeIndexTemplate(tmpl, posts)
 	if err != nil {
 		return fmt.Errorf("error executing index template: %v", err)
+	}
+
+	err = executeErrorTemplate(tmpl)
+	if err != nil {
+		return fmt.Errorf("error executing error template: %v", err)
 	}
 
 	err = executePostTemplates(tmpl, posts)
@@ -262,6 +272,25 @@ func executeIndexTemplate(tmpl *template.Template, posts []Post) error {
 
 	err = tmpl.ExecuteTemplate(outputFile, "index.html", IndexTemplateData{
 		Posts:   posts,
+		BaseURL: baseUrl,
+	})
+	if err != nil {
+		return fmt.Errorf("error executing template: %v", err)
+	}
+
+	fmt.Printf("written %s\n", outputPath)
+	return nil
+}
+
+func executeErrorTemplate(tmpl *template.Template) error {
+	outputPath := filepath.Join("public", "404.html")
+	outputFile, err := os.Create(outputPath)
+	if err != nil {
+		return fmt.Errorf("error creating output file: %v", err)
+	}
+	defer outputFile.Close()
+
+	err = tmpl.ExecuteTemplate(outputFile, "404.html", ErrorTemplateData{
 		BaseURL: baseUrl,
 	})
 	if err != nil {
