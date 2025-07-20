@@ -22,7 +22,8 @@ However, today the experience was really bad: the Waymo got stuck in a construct
 
 Anyway, when it drove into the site, there was a truck that had to move out of the way before we could continue. The Waymo got visibly confused about why there was a truck sideways on the street and started to back up. I think it wanted to turn around because it didn’t want to drive in reverse for more than a few meters. Even though the truck was already off the road, it kept backing up and trying to find a way to turn around. When it started to drive into a gap in the pylons, I got really worried and felt sorry for the construction workers—who probably don't get paid enough to deal with this shit—and who were also starting to get concerned about what the fuck was going on. I wasn't sure if the gap was meant for the Waymo to drive into or if it was only for construction vehicles.
 
-{{< figure src="./waymo.jpg" caption="Confused Waymo in construction site" >}}
+![](./waymo.jpg)
+Confused Waymo in construction site
 
 When the Waymo stayed there too long, trying to maneuver by driving back and forth but not really going anywhere, I seriously considered getting out and telling the workers that I'm really sorry, but I don't know what to do since the car drives itself.
 

@@ -1,0 +1,34 @@
+{{ define "post/single" }}
+<main class="post">
+    <article>
+        <header class="post-header">
+            <h1 class="post-title">{{ .Title }}</h1>
+            {{ if .Banner }}
+            <img class="post-banner" src="{{ .Banner }}">
+            {{ end }}
+            <div class="post-meta">
+                <time datetime="{{ formatTime .Time "2006-01-02T15:04:05Z" }}" itemprop="datePublished">
+                    {{ formatTime .Time "Jan 2, 2006" }}
+                </time>
+                {{ if .SnId }}
+                <span>
+                    <span class="px-1">|</span>
+                    <span>
+                        <a
+                            class="underline"
+                            href="https://stacker.news/items/{{- .SnId -}}"
+                            target="_blank"
+                            rel="noopener noreferrer me">{{ .Comments }} comments</a>
+                    </span>
+                    <span class="px-1">|</span>
+                    <span>{{ .Sats }} sats</span>
+                </span>
+                {{ end }}
+            </div>
+        </header>
+        <div class="post-content">
+            {{ .HTML }}
+        </div>
+    </article>
+</main>
+{{ end }}

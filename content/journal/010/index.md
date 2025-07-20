@@ -60,4 +60,4 @@ Now, I would like my next girlfriend not only to climb but also to go dancing wi
 
 I really liked this song today:
 
-{{< youtube 24Q670UxPGc >}}
+![](https://www.youtube.com/watch?v=24Q670UxPGc)

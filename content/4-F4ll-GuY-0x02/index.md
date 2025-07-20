@@ -15,7 +15,7 @@ The other world felt like a world full of sweet dreams. Dreams you are not in co
 
 You don't want to leave a world that could care less about you but it doesn't. A world that tries to convince you that everything will be fine as long as you just let go, give up control and have trust in the process. A world that loves you just as you were. Not as you are, but as you were before you were born. A world that tries to teach you something but how hard that lesson is going to be is up to you. That's part of the lesson.
 
-{{< youtube 38FMDG7tiA4 >}}
+![](https://www.youtube.com/watch?v=38FMDG7tiA4)
 
 But you are just too human and need to find a problem in everything so you can try to solve it and give meaning to your insignificant existence. And if there isn't one, you make one: YOU become the problem.
 

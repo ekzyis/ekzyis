@@ -661,6 +661,22 @@ img {
      object-fit: contain;
 }
 
+figure:has(iframe) {
+  position: relative;
+  padding-bottom: 56.25% !important;
+  height: 0;
+  overflow: hidden;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -711,6 +727,18 @@ img {
   }
 }
 
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .float-right {
   float: right;
 }
@@ -729,12 +757,28 @@ img {
   margin-bottom: 0.75rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .\!hidden {
   display: none !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .flex-col {
@@ -743,6 +787,11 @@ img {
 
 .items-center {
   align-items: center;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-2 {
@@ -762,17 +811,21 @@ img {
   text-decoration-line: underline;
 }
 
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 :root {
   --background-color: #131418;
   --color: #babdc4;
   --border-color: #1b1d25;
   --link-color: #77a8fd;
-  --text-decoration-color: #d2c7c7;
+  --text-decoration-color: #767f87;
   --post-meta-color: #767f87;
   --post-header-color: #eaeaea;
   --quote-color: #9b9ba3;
   --quote-border-color: #4a4d56;
-  --footer-color: var(--post-meta-color);
+  --footer-color: #767f87;
 }
 
 @media (min-width: 640px) {

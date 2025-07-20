@@ -70,7 +70,8 @@ Excited to finally be able to move around freely again, I passed a sign that men
 
 # PlebLab
 
-{{< figure src="/sn_cropped.jpg" caption="The Stacker News Door" >}}
+![](./sn_cropped.jpg)
+The Stacker News Door
 
 * supertestnet introducing me to everyone; ek vs ek-zee-kee-yas
 
