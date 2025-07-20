@@ -92,21 +92,19 @@ func main() {
 }
 
 func walkMarkdownContent() ([]string, error) {
-	pattern := filepath.Join(contentDir, "*", "index.md")
-	markdownFiles, err := filepath.Glob(pattern)
+	blogFiles, err := filepath.Glob(filepath.Join(contentDir, "*", "index.md"))
 	if err != nil {
 		return nil, err
 	}
 
-	var filteredFiles []string
-	for _, path := range markdownFiles {
-		// journal posts have their own page
-		if !strings.Contains(path, "/journal/") {
-			filteredFiles = append(filteredFiles, path)
-		}
+	journalFiles, err := filepath.Glob(filepath.Join(contentDir, "journal", "*", "index.md"))
+	if err != nil {
+		return nil, err
 	}
 
-	return filteredFiles, nil
+	files := append(blogFiles, journalFiles...)
+
+	return files, nil
 }
 
 func parsePosts(paths []string) ([]Post, error) {
@@ -244,9 +242,29 @@ func executeTemplates(posts []Post) error {
 		return fmt.Errorf("error parsing templates: %v", err)
 	}
 
-	err = executeIndexTemplate(tmpl, posts)
+	var blogPosts []Post
+	var journalPosts []Post
+	for _, post := range posts {
+		if !strings.Contains(post.Path, "/journal/") {
+			blogPosts = append(blogPosts, post)
+		} else {
+			journalPosts = append(journalPosts, post)
+		}
+	}
+
+	err = executeIndexTemplate(tmpl, "public/index.html", blogPosts)
 	if err != nil {
 		return fmt.Errorf("error executing index template: %v", err)
+	}
+
+	journalDir := filepath.Join("public", "journal")
+	err = os.MkdirAll(journalDir, 0755)
+	if err != nil {
+		return fmt.Errorf("error creating directory for journal: %v", err)
+	}
+	err = executeIndexTemplate(tmpl, "public/journal/index.html", journalPosts)
+	if err != nil {
+		return fmt.Errorf("error executing journal index template: %v", err)
 	}
 
 	err = executeErrorTemplate(tmpl)
@@ -262,8 +280,7 @@ func executeTemplates(posts []Post) error {
 	return nil
 }
 
-func executeIndexTemplate(tmpl *template.Template, posts []Post) error {
-	outputPath := filepath.Join("public", "index.html")
+func executeIndexTemplate(tmpl *template.Template, outputPath string, posts []Post) error {
 	outputFile, err := os.Create(outputPath)
 	if err != nil {
 		return fmt.Errorf("error creating output file: %v", err)
