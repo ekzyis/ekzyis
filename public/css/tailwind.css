@@ -772,6 +772,7 @@ img {
   --post-header-color: #eaeaea;
   --quote-color: #9b9ba3;
   --quote-border-color: #4a4d56;
+  --footer-color: var(--post-meta-color);
 }
 
 @media (min-width: 640px) {
