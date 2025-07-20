@@ -16,6 +16,8 @@ import (
 	"github.com/alecthomas/chroma/v2/styles"
 	sn "github.com/ekzyis/snappy"
 	figure "github.com/mangoumbrella/goldmark-figure"
+	"github.com/tdewolff/minify/v2"
+	"github.com/tdewolff/minify/v2/html"
 	"github.com/yuin/goldmark"
 	highlighting "github.com/yuin/goldmark-highlighting/v2"
 	"github.com/yuin/goldmark/extension"
@@ -49,6 +51,29 @@ type ErrorTemplateData struct {
 type PostTemplateData struct {
 	Post    Post
 	BaseURL string
+}
+
+type MinifyWriter struct {
+	w   io.Writer
+	buf bytes.Buffer
+	m   *minify.M
+}
+
+func NewHtmlMinifyWriter(w io.Writer) *MinifyWriter {
+	m := minify.New()
+	m.AddFunc("text/html", html.Minify)
+	return &MinifyWriter{
+		w: w,
+		m: m,
+	}
+}
+
+func (mw *MinifyWriter) Write(p []byte) (n int, err error) {
+	return mw.buf.Write(p)
+}
+
+func (mw *MinifyWriter) Close() error {
+	return mw.m.Minify("text/html", mw.w, &mw.buf)
 }
 
 var (
@@ -287,7 +312,9 @@ func executeIndexTemplate(tmpl *template.Template, outputPath string, posts []Po
 	}
 	defer outputFile.Close()
 
-	err = tmpl.ExecuteTemplate(outputFile, "index.html", IndexTemplateData{
+	mw := NewHtmlMinifyWriter(outputFile)
+	defer mw.Close()
+	err = tmpl.ExecuteTemplate(mw, "index.html", IndexTemplateData{
 		Posts:   posts,
 		BaseURL: baseUrl,
 	})
@@ -307,7 +334,9 @@ func executeErrorTemplate(tmpl *template.Template) error {
 	}
 	defer outputFile.Close()
 
-	err = tmpl.ExecuteTemplate(outputFile, "404.html", ErrorTemplateData{
+	mw := NewHtmlMinifyWriter(outputFile)
+	defer mw.Close()
+	err = tmpl.ExecuteTemplate(mw, "404.html", ErrorTemplateData{
 		BaseURL: baseUrl,
 	})
 	if err != nil {
@@ -335,7 +364,9 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 		defer postFile.Close()
 
 		// Execute the single post template
-		err = tmpl.ExecuteTemplate(postFile, "post.html", PostTemplateData{
+		mw := NewHtmlMinifyWriter(postFile)
+		defer mw.Close()
+		err = tmpl.ExecuteTemplate(mw, "post.html", PostTemplateData{
 			Post:    post,
 			BaseURL: baseUrl,
 		})

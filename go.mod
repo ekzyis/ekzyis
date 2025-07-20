@@ -7,6 +7,7 @@ require (
 	github.com/alecthomas/chroma/v2 v2.19.0
 	github.com/ekzyis/snappy v0.8.0
 	github.com/mangoumbrella/goldmark-figure v1.3.0
+	github.com/tdewolff/minify/v2 v2.23.9
 	github.com/yuin/goldmark v1.7.12
 	github.com/yuin/goldmark-highlighting/v2 v2.0.0-20230729083705-37449abec8cc
 	gopkg.in/yaml.v3 v3.0.1
@@ -14,5 +15,6 @@ require (
 
 require (
 	github.com/dlclark/regexp2 v1.11.5 // indirect
+	github.com/tdewolff/parse/v2 v2.8.1 // indirect
 	gopkg.in/guregu/null.v4 v4.0.0 // indirect
 )

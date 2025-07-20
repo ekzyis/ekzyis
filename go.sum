@@ -23,6 +23,12 @@ github.com/mangoumbrella/goldmark-figure v1.3.0/go.mod h1:iIL+fhdmCQDpE0l/TKtGho
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+github.com/tdewolff/minify/v2 v2.23.9 h1:s8hX6wQzOqmanyLxmlynInRPVgZ/xASy6sUHfGsW6kU=
+github.com/tdewolff/minify/v2 v2.23.9/go.mod h1:VW3ISUd3gDOZuQ/jwZr4sCzsuX+Qvsx87FDMjk6Rvno=
+github.com/tdewolff/parse/v2 v2.8.1 h1:J5GSHru6o3jF1uLlEKVXkDxxcVx6yzOlIVIotK4w2po=
+github.com/tdewolff/parse/v2 v2.8.1/go.mod h1:Hwlni2tiVNKyzR1o6nUs4FOF07URA+JLBLd6dlIXYqo=
+github.com/tdewolff/test v1.0.11 h1:FdLbwQVHxqG16SlkGveC0JVyrJN62COWTRyUFzfbtBE=
+github.com/tdewolff/test v1.0.11/go.mod h1:XPuWBzvdUzhCuxWO1ojpXsyzsA5bFoS3tO/Q3kFuTG8=
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.4.15/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
 github.com/yuin/goldmark v1.7.12 h1:YwGP/rrea2/CnCtUHgjuolG/PnMxdQtPMO5PvaE2/nY=
