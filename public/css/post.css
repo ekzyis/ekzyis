@@ -130,4 +130,5 @@
 .footnotes {
     border-top: solid 2px var(--border-color);
     font-size: small;
+    color: var(--footnotes-color);
 }

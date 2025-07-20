@@ -13,6 +13,7 @@
     --quote-color: #9b9ba3;
     --quote-border-color: #4a4d56;
     --footer-color: #767f87;
+    --footnotes-color: #767f87;
 }
 
 @layer base {
