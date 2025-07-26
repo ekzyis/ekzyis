@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+RSYNC_OPTS="-avh --delete"
+
+set -e
+
+rm -r public/
+cp -r static/ public/
+
+ENV=production go run content.go
+tailwindcss -i input.css -o public/css/tailwind.css
+
+rsync $RSYNC_OPTS --dry-run public/ ekzy.is:/var/www/ek
+
+echo
+read -n 1 -p "Continue deploy? [yn] " yn
+echo
+
+[ "$yn" == "y" ] && set -x && rsync $RSYNC_OPTS public/ ekzy.is:/var/www/ek
