@@ -211,7 +211,7 @@ func parsePost(path string) (*Post, error) {
 
 	// url
 	dir := filepath.Dir(path)
-	url := strings.TrimPrefix(dir, contentDir+"/")
+	url := strings.ReplaceAll(strings.ToLower(strings.TrimPrefix(dir, contentDir+"/")), "_", "-")
 
 	// markdown
 	markdown := string(parts[2])
