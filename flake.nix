@@ -22,7 +22,7 @@
         apps.default = {
           type = "app";
           program = toString (pkgs.writeShellScript "serve" ''
-            set -x
+            set -xe
             rm -r public/
             cp -r static/ public/
             ${pkgs.go}/bin/go run content.go
