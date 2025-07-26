@@ -389,10 +389,11 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 			return fmt.Errorf("error executing single post template for %s: %v", post.Title, err)
 		}
 
-		// copy images
+		// copy images as webp
 		for _, image := range post.Images {
 			dstImage := filepath.Join(postDir, filepath.Base(image))
-			err = copyFile(image, dstImage)
+			dstImage = strings.TrimSuffix(strings.TrimSuffix(dstImage, ".png"), ".jpg") + ".webp"
+			err = toWebp(image, dstImage)
 			if err != nil {
 				return fmt.Errorf("error copying image %s: %v", image, err)
 			}
@@ -404,22 +405,10 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 	return nil
 }
 
-func copyFile(src, dst string) error {
-	srcFile, err := os.Open(src)
+func toWebp(src, dst string) error {
+	err := exec.Command("ffmpeg", "-i", src, "-c:v", "libwebp", dst).Run()
 	if err != nil {
-		return fmt.Errorf("error opening source file %s: %v", src, err)
-	}
-	defer srcFile.Close()
-
-	dstFile, err := os.Create(dst)
-	if err != nil {
-		return fmt.Errorf("error creating destination file %s: %v", dst, err)
-	}
-	defer dstFile.Close()
-
-	_, err = io.Copy(dstFile, srcFile)
-	if err != nil {
-		return fmt.Errorf("error copying file %s: %v", src, err)
+		return fmt.Errorf("error converting image to webp: %v", err)
 	}
 
 	return nil

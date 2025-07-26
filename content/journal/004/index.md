@@ -1,7 +1,7 @@
 ---
 title: Trust Is the Scaling Solution
 date: 2025-05-13
-banner: colorado.jpg
+banner: colorado.webp
 sn_id: 979677
 ---
 
@@ -45,7 +45,7 @@ I wanted to go over and respect what he had to say by just listening to him, wit
 
 This made me think of the Map of Consciousness:
 
-![Map of Consciousness](map.png)
+![Map of Consciousness](map.webp)
 
 _ever since [@anon](https://stacker.news/anon) shared this with me in, I like to mention this map wherever I can._
 

@@ -14,6 +14,7 @@
           buildInputs = with pkgs; [
             caddy
             tailwindcss
+            ffmpeg
           ];
         };
 

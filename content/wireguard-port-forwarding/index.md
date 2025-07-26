@@ -14,7 +14,7 @@ However, since the HTTP server is running inside the VPN, we will need to use po
 
 Essentially, we will update the network topology from the [previous blog post](/wireguard-packet-forwarding) with a connection to the public internet:
 
-![star-network-internet.png](./star-network-internet.png)
+![star-network-internet.webp](./star-network-internet.webp)
 
 As always, after reading my blog post, you will not only be able to setup your own HTTP server inside a VPN; but will actually understand what happens at the network layer. With this knowledge, you will be able to adapt and find the best solution for your specific needs.
 
@@ -37,15 +37,15 @@ To enable internet access for hosts with only a private IPv4 address, every pack
 
 [^1]: A router in a private network has two IP addresses: a private address which is commonly the first IP address in the used ranged (so 192.168.0.1 if the range 192.168.0.0/16 is used) and a public one assigned by an internet service provider.
 
-![nat-send.png](./nat-send.png)
+![nat-send.webp](./nat-send.webp)
 
 The NAT gateway then stores this replacement in a NAT table:
 
-![nat-table.png](./nat-table.png)
+![nat-table.webp](./nat-table.webp)
 
 For arriving packets, this table is consulted to reverse the translation:
 
-![nat-recv.png](./nat-recv.png)
+![nat-recv.webp](./nat-recv.webp)
 
 The NAT IP address and NAT port are required to reverse this process. Without them, we would not be able to distinguish multiple connections from the private network to the same destination IP address.
 
@@ -59,7 +59,7 @@ The reversal in both methods is automatically handled using the NAT table.
 
 We will now apply this knowledge to expose an HTTP server running inside a VPN. Our setup will work like this:
 
-![nat-http.png](./nat-http.png)
+![nat-http.webp](./nat-http.webp)
 
 We will have to use DNAT _and_ SNAT since we need to change the destination IP address to 10.172.16.2 _and_ the source IP address to 10.172.16.1 since we can only route internal IP addresses (10.172.16.0/24) over the virtual network interface to the HTTP server.
 

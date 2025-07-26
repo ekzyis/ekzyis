@@ -52,7 +52,7 @@ The chains traverse through their rules in order until they find a matching rule
 
 The order of the chains is defined in this (simplified) flow chart taken from [here](https://wiki.archlinux.org/title/iptables#Basic_concepts):
 
-![iptables_flowchart.png](./iptables_flowchart.png)
+![iptables_flowchart.webp](./iptables_flowchart.webp)
 
 Packets that come in on any network interface enter this flow chart at the top
 and thus go first through the PREROUTING chain of the nat table.
@@ -514,7 +514,7 @@ This is because `wg0` is the _virtual network interface_, not the actual physica
 interface that sends the UDP packets. WireGuard works by wrapping all packets (like ICMP here) in UDP packets
 before sending them out "over the wire". The following chart should make more clear what this means:
 
-![wireguard_layering.png](./wireguard_layering.png)
+![wireguard_layering.webp](./wireguard_layering.webp)
 
 If we use the physical network interface
 (which is `enp3s0` for the local machine as can be seen in `ip address`), the ping works again:

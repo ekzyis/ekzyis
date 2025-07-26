@@ -52,7 +52,7 @@ Whatever signals my body was sending must have gotten completely overriden until
 
 I hope this set the stage enough for what comes next.
 
-![peace-and-love.jpg](./peace-and-love.jpg)
+![peace-and-love.webp](./peace-and-love.webp)
 a picture taken on a beautiful day in Spring 2020 that I found while searching for a specific, more related picture that I didn't find
 
 ---------DISCLAIMER END---------

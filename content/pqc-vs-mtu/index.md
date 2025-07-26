@@ -10,7 +10,7 @@ For a long time, I couldn't figure out why I couldn't access my self-hosted [vau
 
 I arrived at this intermediate conclusion by comparing the browser's TLS v1.3 handshake with the one from cURL. I noticed the browser's Client Hello is a lot bigger (1866 vs 517) and has a lot of TCP retransmissions:
 
-![](./tcp_retransmission.png)
+![](./tcp_retransmission.webp)
 Why is the Client Hello so big? Is it related to the TCP transmissions?
 
 I also noticed that if I forced Firefox—I couldn't figure this out with Brave—to use TLS v1.2 by setting `security.tls.version.max` to 3 in the advanced config (that you can visit if you type about:config into the address bar), the site loaded immediately. So it was definitely related to TLS v1.3, but specifically the implementation in Brave and Firefox, since I could use TLS v1.3 fine with cURL.
@@ -19,7 +19,7 @@ I also noticed that if I forced Firefox—I couldn't figure this out with Brave�
 
 I then looked further into why it was so big and noticed the unknown key share 4588. Thanks to this [blog post](https://www.netmeister.org/blog/tls-hybrid-kex.html), I learned that this is a post-quantum cryptography thing.
 
-![](./tcp_wow.png)
+![](./tcp_wow.webp)
 Unknown key share 4588 takes up most of the Client Hello TCP packet
 
 Fortunately, Firefox also had a setting to disable this via `security.tls.enable_kyber`.

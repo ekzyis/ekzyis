@@ -8,13 +8,13 @@ sn_id: 230179
 
 In my [previous blog post](/demystifying-wireguard-and-iptables), I have shown you how to setup your own VPN with [WireGuard](https://wireguard.com/) and [`iptables`](https://wiki.archlinux.org/title/iptables). We have established a point-to-point connection between two peers where one peer (10.172.16.1) was reachable from the internet:
 
-![point-to-point.png](./point-to-point.png)
+![point-to-point.webp](./point-to-point.webp)
 
 Today, I will explain how more peers can be added to our VPN.
 One peer ("the router") will be configured to forward packets between all other peers ("the end devices").
 Therefore, our VPN will become a star network:
 
-![star-network.png](./star-network.png)
+![star-network.webp](./star-network.webp)
 
 You could then [install WireGuard on your mobile dev](https://www.wireguard.com/install/#android-play-store-direct-apk-file) and reach all other machines in your VPN from anywhere with internet connection.
 

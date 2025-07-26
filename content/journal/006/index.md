@@ -18,7 +18,7 @@ _Disclaimer: all commit timestamps on Github are wrong because I rebase a lot._
 
 Yesterday, I thought I was done with designing the new wallet schema and I could start to update the Javascript code but then I noticed (again) that I forgot that I haven't updated four other tables (`DirectPayment`, `InvoiceForward`, `Withdrawal` and `WalletLog`) yet.
 
-![](./diff.png)
+![](./diff.webp)
 a snippet of the changeset in 25306b34
 
 I updated them in [`bc0df957`](https://github.com/stackernews/stacker.news/pull/2146/commits/bc0df95781815cc00f7781d7cfa8450bbaa72286) but I knew this wasn't going to work because the new wallets will have different IDs. This is what I fixed in [`25306b34`](https://github.com/stackernews/stacker.news/pull/2146/commits/25306b3408cab815810731ce198cdf5568ced630) today. To test that I actually fixed it, I added some payments to my test data in [`a9705e80`](https://github.com/stackernews/stacker.news/pull/2146/commits/a9705e806d61acffb4344c1eba177acad5e6a502).
