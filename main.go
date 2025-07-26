@@ -6,6 +6,7 @@ import (
 	"html/template"
 	"io"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"regexp"
 	"sort"
@@ -42,15 +43,18 @@ type Post struct {
 type IndexTemplateData struct {
 	Posts   []Post
 	BaseURL string
+	Commit  string
 }
 
 type ErrorTemplateData struct {
 	BaseURL string
+	Commit  string
 }
 
 type PostTemplateData struct {
 	Post    Post
 	BaseURL string
+	Commit  string
 }
 
 type MinifyWriter struct {
@@ -90,12 +94,20 @@ var (
 		),
 	)
 	baseUrl = "http://localhost:8080/"
+	commit  string
 )
 
 func main() {
 	if os.Getenv("ENV") == "production" {
 		baseUrl = "https://ekzy.is"
 	}
+
+	output, err := exec.Command("git", "rev-parse", "--short", "HEAD").Output()
+	if err != nil {
+		fmt.Printf("error getting commit: %v\n", err)
+		os.Exit(1)
+	}
+	commit = strings.TrimRight(string(output), "\n")
 
 	mdFiles, err := walkMarkdownContent()
 	if err != nil {
@@ -317,6 +329,7 @@ func executeIndexTemplate(tmpl *template.Template, outputPath string, posts []Po
 	err = tmpl.ExecuteTemplate(mw, "index.html", IndexTemplateData{
 		Posts:   posts,
 		BaseURL: baseUrl,
+		Commit:  commit,
 	})
 	if err != nil {
 		return fmt.Errorf("error executing template: %v", err)
@@ -338,6 +351,7 @@ func executeErrorTemplate(tmpl *template.Template) error {
 	defer mw.Close()
 	err = tmpl.ExecuteTemplate(mw, "404.html", ErrorTemplateData{
 		BaseURL: baseUrl,
+		Commit:  commit,
 	})
 	if err != nil {
 		return fmt.Errorf("error executing template: %v", err)
@@ -369,6 +383,7 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 		err = tmpl.ExecuteTemplate(mw, "post.html", PostTemplateData{
 			Post:    post,
 			BaseURL: baseUrl,
+			Commit:  commit,
 		})
 		if err != nil {
 			return fmt.Errorf("error executing single post template for %s: %v", post.Title, err)
