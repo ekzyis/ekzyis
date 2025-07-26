@@ -1,7 +1,7 @@
 ---
 title: Between Moments of Wonder and Euphoria
 date: 2024-07-13
-banner: landscape.jpg
+banner: landscape.webp
 sn_id: 607554
 ---
 

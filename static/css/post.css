@@ -127,60 +127,8 @@
     text-wrap: nowrap;
 }
 
-blockquote {
-    color: var(--quote-color);
-    opacity: .9;
-    border-left: 5px solid var(--quote-border-color);
-    padding: 0 0 0 1rem;
-    margin-left: .3rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1em;
-}
-
-a {
-    text-decoration-color: var(--footer-color);
-}
-
-a:hover {
-    text-decoration-color: var(--link-color);
-}
-
-pre {
-    padding: 5px 5px;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    font-size: small;
-    margin-bottom: 20px;
-}
-
-hr {
-    margin-bottom: 20px;
-}
-
 .footnotes {
     border-top: solid 2px var(--border-color);
     font-size: small;
-}
-
-figure {
-    margin: 1em 0;
-}
-
-figcaption {
-    color: var(--post-meta-color);
-    font-size: small;
-    text-align: center;
-    margin-top: 3px;
-    margin-bottom: 10px;
-}
-
-ul>li {
-    list-style-type: disc;
-    list-style-position: inside;
-}
-
-img {
-    max-height: 600px;
-    object-fit: contain;
+    color: var(--footnotes-color);
 }

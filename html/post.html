@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en-us">
+{{ template "head" }}
+<body>
+{{ template "nav" .BaseURL }}
+<div class="container">
+    {{ template "post/single" .Post }}
+</div>
+{{ template "footer" .Commit }}
+</body>
+</html>

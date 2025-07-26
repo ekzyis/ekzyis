@@ -24,7 +24,7 @@ Anyway, I didn't know if I was going to ever publish my feelings and let everyon
 
 > _Would I have enough time in my life to ever finish writing? To finish my thoughts? Or would I die in the most ridiculous way possible tomorrow? Snuffed out like a candle with all my dreams and aspirations [in an instant](https://www.goodreads.com/book/show/51037979-in-an-instant)? No time to ask for pen and paper in my last moments? At least it would be fun and painless, I guess. But would anyone care if one more light goes out? Would I care?_
 
-{{< youtube Tm8LGxTLtQk >}}
+![](https://www.youtube.com/watch?v=Tm8LGxTLtQk)
 
 Whatever I did, there was always something I needed to write down RIGHT NOW. And that never seemed to be code.
 
@@ -52,9 +52,8 @@ Whatever signals my body was sending must have gotten completely overriden until
 
 I hope this set the stage enough for what comes next.
 
-![peace-and-love.jpg](./peace-and-love.jpg)
-
-_a picture taken on a beautiful day in Spring 2020 that I found while searching for a specific, more related picture that I didn't find_
+![peace-and-love.webp](./peace-and-love.webp)
+a picture taken on a beautiful day in Spring 2020 that I found while searching for a specific, more related picture that I didn't find
 
 ---------DISCLAIMER END---------
 

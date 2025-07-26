@@ -1,7 +1,7 @@
 ---
 title: Austin's Orange Glow
 date: 2024-06-23
-banner: austin_orange_glow.jpg
+banner: austin_orange_glow.webp
 hidden: true
 sn_id: 674266
 ---
@@ -70,7 +70,8 @@ Excited to finally be able to move around freely again, I passed a sign that men
 
 # PlebLab
 
-{{< figure src="/sn_cropped.jpg" caption="The Stacker News Door" >}}
+![](./sn_cropped.webp)
+The Stacker News Door
 
 * supertestnet introducing me to everyone; ek vs ek-zee-kee-yas
 

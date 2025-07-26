@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en-us">
+{{ template "head" }}
+<body>
+{{ template "nav" .BaseURL }}
+<div class="container my-auto">
+    <main class="post-index">
+        {{ range .Posts }}
+        {{ template "post/list" . }}
+        {{ end }}
+    </main>
+</div>
+{{ template "footer" .Commit }}
+</body>
+</html>
