@@ -335,7 +335,7 @@ func executeIndexTemplate(tmpl *template.Template, outputPath string, posts []Po
 		return fmt.Errorf("error executing template: %v", err)
 	}
 
-	fmt.Printf("written %s\n", outputPath)
+	fmt.Printf("> %s\n", outputPath)
 	return nil
 }
 
@@ -357,7 +357,7 @@ func executeErrorTemplate(tmpl *template.Template) error {
 		return fmt.Errorf("error executing template: %v", err)
 	}
 
-	fmt.Printf("written %s\n", outputPath)
+	fmt.Printf("> %s\n", outputPath)
 	return nil
 }
 
@@ -397,9 +397,10 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 			if err != nil {
 				return fmt.Errorf("error copying image %s: %v", image, err)
 			}
+			fmt.Printf("> %s\n", dstImage)
 		}
 
-		fmt.Printf("written %s\n", postHTMLPath)
+		fmt.Printf("> %s\n", postHTMLPath)
 	}
 
 	return nil
