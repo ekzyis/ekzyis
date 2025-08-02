@@ -1,0 +1,117 @@
+%!TEX program = lualatex
+
+\documentclass{article}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{helvet}
+\usepackage{qrcode}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{tabularx}
+\usepackage{fontspec}
+
+\def\cosigner{1}
+
+
+% vvvvvvv INSERT YOUR DATA vvvvvvv
+
+% Insert your xpubs in \def.
+% I wasn't able to wrap the xpub's in the table so I used manual line breaks ...
+% Example xpubs from https://iancoleman.io/bip39/
+% xpub1:    xpub6ChxnJVMvRkxJRjxFjEGekRhAj8RnJ2zu9ssfzqaQ5gQdbVcTBNzSLR6T1PtWMFPSDen1T5T6EpgRwk4qHn6fGHaptGeub6DiHH2eGComBZ
+\def\xpubAA{xpub6ChxnJVMvRkxJRjxFjEGekRhAj8RnJ2zu9ssfzqaQ5gQdbVcTBNzSLR6T1PtWMFPSDen}
+\def\xpubAB{1T5T6EpgRwk4qHn6fGHaptGeub6DiHH2eGComBZ}
+% xpub2:    xpub6EgFkx9z7q5o1TWDv5qr94pUZUdDh5FmxPo91QhAwysc2PQpS8TE1FLguWidifQajAkT7suJthBcRciqANEWSqANbR31N3wdwGJEZYPp7Ak
+\def\xpubBA{xpub6EgFkx9z7q5o1TWDv5qr94pUZUdDh5FmxPo91QhAwysc2PQpS8TE1FLguWidifQajAkT}
+\def\xpubBB{7suJthBcRciqANEWSqANbR31N3wdwGJEZYPp7Ak}
+% xpub3:    xpub6E7Miz3Saj2eHfNrzcQgs22bdbyNbY54rXCFoH1tpXBcQsvzrYapeE6iHqhAtCPHgNvZdrwB7a71yhSaByRo7zdpdGqaPHcX3E2xSNsf1SP
+\def\xpubCA{xpub6E7Miz3Saj2eHfNrzcQgs22bdbyNbY54rXCFoH1tpXBcQsvzrYapeE6iHqhAtCPHgNvZ}
+\def\xpubCB{drwB7a71yhSaByRo7zdpdGqaPHcX3E2xSNsf1SP}
+
+% ^^^^^^^^ INSERT YOUR DATA ^^^^^^^^
+
+% Download font from https://www.fontspace.com/lightning-volt-font-f5999 and install as system font
+\title {\fontspec{Lightningvolt-xoqm}[Extension=.ttf] \fontsize{48}{1} \selectfont BITCOIN\\\fontsize{24}{1} \selectfont Cosigner \cosigner}
+\date{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\maketitle
+
+\newlength{\charwidth}
+\settowidth{\charwidth}{A}
+
+\qrset{height=5cm}
+
+\begin{figure}
+  \centering
+  \begin{subfigure}{0.3\textwidth}
+      \centering
+      \qrcode{\xpubAA\xpubAB}
+      \caption*{xpub1}
+      \label{fig:subfig1}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{0.3\textwidth}
+      \centering
+      \qrcode{\xpubBA\xpubBB}
+      \caption*{xpub2}
+      \label{fig:subfig2}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{0.3\textwidth}
+      \centering
+      \qrcode{\xpubCA\xpubCB}
+      \caption*{xpub3}
+      \label{fig:subfig3}
+  \end{subfigure}
+  \label{fig:main}
+\end{figure}
+
+BIP39 mnemonic phrase
+\begin{multicols}{3}
+\begin{enumerate}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+    \item \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}
+\end{enumerate}
+\end{multicols}
+
+\noindent
+
+\center
+
+\bgroup
+\def\arraystretch{3}
+\begin{tabularx}{\textwidth}{l>{\hspace{0pt}}X}
+  Fingerprint: & \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \\
+  Derivation: & \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}} \underline{\hspace{1.5\charwidth}}\\
+  xpub1: & \texttt{\xpubAA\newline \xpubAB} \\
+  xpub2: & \texttt{\xpubBA\newline \xpubBB} \\
+  xpub3: & \texttt{\xpubCA\newline \xpubCB} \\
+\end{tabularx}
+
+\end{document}
