@@ -4,6 +4,16 @@ date: 2025-07-13
 sn_id: 1037999
 ---
 
+**Update Aug 07, 2025:**
+
+_I figured out that my MTU was too high. The Arch Wiki mentions the problem [here](https://wiki.archlinux.org/title/WireGuard#Adjusting_the_MTU_value):_
+
+> In certain cases larger MTU values can lead to unstable or intermittent connection because of unreliable Path MTU discovery (PMTU) along the route.
+
+_After I set the MTU of the virtual network interface to 1380, the problems went away._
+
+---
+
 For a long time, I couldn't figure out why I couldn't access my self-hosted [vaultwarden](https://github.com/dani-garcia/vaultwarden) instance in a VPN via the browser (Brave) sometimes even though I could always access it fine via cURL or the Bitwarden CLI. When it didn't work, the site would just load until the connection times out.
 
 **But today, I figured it out a little bit more: Post-Quantum Cryptography in the TLS v1.3 handshake made the packets so big that my network interface must have choked—or something like that.**
