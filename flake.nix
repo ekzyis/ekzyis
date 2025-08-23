@@ -16,6 +16,8 @@
             caddy
             tailwindcss
             ffmpeg
+            s3cmd
+            certbot
           ];
         };
 
