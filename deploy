@@ -1,19 +1,23 @@
 #!/usr/bin/env bash
 
-RSYNC_OPTS="-avh --delete"
+S3CMD_OPTS="--guess-mime-type --no-mime-magic --acl-public --delete-removed --delete-after"
 
 set -e
 
-rm -r public/
-cp -r static/ public/
+log () {
+    echo "+" $@
+    $@
+}
 
-ENV=production go run content.go
-tailwindcss -i input.css -o public/css/tailwind.css
+log rm -r public/
+log cp -r static/ public/
+log go run content.go
+log tailwindcss -i input.css -o public/css/tailwind.css
 
-rsync $RSYNC_OPTS --dry-run public/ ekzy.is:/var/www/ek
+log s3cmd sync $S3CMD_OPTS --dry-run public/ s3://www.ekzy.is
 
 echo
 read -n 1 -p "Continue deploy? [yn] " yn
 echo
 
-[ "$yn" == "y" ] && set -x && rsync $RSYNC_OPTS public/ ekzy.is:/var/www/ek
+[ "$yn" == "y" ] && log s3cmd sync $S3CMD_OPTS public/ s3://www.ekzy.is

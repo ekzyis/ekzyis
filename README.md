@@ -19,7 +19,7 @@ $ nix run
 $ s3cmd ws-create --ws-index=index.html --ws-error=404.html s3://www.ekzy.is
 
 # deploy site
-$ s3cmd sync --guess-mime-type --no-mime-magic --acl-public --delete-removed --delete-after public/ s3://www.ekzy.is
+$ ./deploy
 
 # request cert manually and upload via Linode web interface
 $ sudo certbot certonly --manual
