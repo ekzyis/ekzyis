@@ -34,6 +34,7 @@
     color: var(--post-meta-color);
     padding-top: 3px;
     line-height: 1.2;
+    font-size: 0.875rem;
 }
 
 .post-content {
@@ -99,6 +100,7 @@
     padding-right: 30px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 2.5;
 }
 
 @media screen and (max-width: 768px) {
@@ -111,12 +113,12 @@
 
 .post-item {
     display: flex;
-    padding-top: 5px;
-    padding-bottom: 6px;
+    padding: .67rem 0;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     border-top: solid 1px var(--border-color);
+    line-height: 1.2;
 }
 
 .post-item:first-of-type {
@@ -125,6 +127,11 @@
 
 .post-item-meta {
     text-wrap: nowrap;
+    color: var(--post-meta-color);
+    /* font-size: 0.875rem is the same as text-sm from tailwind */
+    /* TODO: use @apply text-sm here instead */
+    /* https://tailwindcss.com/docs/functions-and-directives#apply-directive */
+    font-size: 0.875rem;
 }
 
 .footnotes {
