@@ -21,6 +21,9 @@ $ s3cmd ws-create --ws-index=index.html --ws-error=404.html s3://www.ekzy.is
 # deploy site
 $ ./deploy
 
+# configure cors
+$ s3cmd setcors cors.xml s3://www.ekzy.is
+
 # request cert manually and upload via Linode web interface
 $ sudo certbot certonly --manual
 ```
