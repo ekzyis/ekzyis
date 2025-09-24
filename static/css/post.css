@@ -132,6 +132,8 @@
     /* TODO: use @apply text-sm here instead */
     /* https://tailwindcss.com/docs/functions-and-directives#apply-directive */
     font-size: 0.875rem;
+    width: 100px;
+    text-align: end;
 }
 
 .footnotes {
