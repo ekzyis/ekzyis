@@ -7,9 +7,7 @@
             <img class="post-banner" src="{{ .Banner }}">
             {{ end }}
             <div class="post-meta">
-                <time datetime="{{ formatTime .Time "2006-01-02T15:04:05Z" }}" itemprop="datePublished">
-                    {{ formatTime .Time "Jan 2, 2006" }}
-                </time>
+                <span>{{ .Sats }} sats</span>
                 {{ if .SnId }}
                 <span>
                     <span class="px-1">|</span>
@@ -20,10 +18,12 @@
                             target="_blank"
                             rel="noopener noreferrer me">{{ .Comments }} comments</a>
                     </span>
-                    <span class="px-1">|</span>
-                    <span>{{ .Sats }} sats</span>
                 </span>
                 {{ end }}
+                <span class="px-1">|</span>
+                <time datetime="{{ formatTime .Time "2006-01-02T15:04:05Z" }}" itemprop="datePublished">
+                    {{ formatTime .Time "Jan 2, 2006" }}
+                </time>
             </div>
         </header>
         <div class="post-content">
