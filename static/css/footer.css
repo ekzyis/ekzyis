@@ -13,6 +13,10 @@ footer a:hover {
     text-decoration-color: var(--link-color);
 }
 
+footer a.stackernews:hover {
+    color: #fada5e;
+}
+
 footer svg {
     display: inline;
     width: 24px;
