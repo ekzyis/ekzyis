@@ -96,6 +96,14 @@ var (
 )
 
 func main() {
+	fmt.Printf(
+		`       ___.         .__.__       .___
+___  __\_ |__  __ __|__|  |    __| _/
+\  \/  /| __ \|  |  \  |  |   / __ |
+ >    < | \_\ \  |  /  |  |__/ /_/ |
+/__/\_ \|___  /____/|__|____/\____ |
+      \/    \/                    \/
+   xbuild: because it sounds cool` + "\n\n")
 	flag.BoolVar(&updateMetadata, "M", false, "Update metadata from Stacker News API")
 	flag.Parse()
 
