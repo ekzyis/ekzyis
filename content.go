@@ -126,6 +126,12 @@ func main() {
 }
 
 func walkMarkdownContent() ([]string, error) {
+	// if files are passed as arguments, use them instead of walking the content directory
+	args := flag.Args()
+	if len(args) > 0 {
+		return args, nil
+	}
+
 	blogFiles, err := filepath.Glob(filepath.Join(contentDir, "*", "index.md"))
 	if err != nil {
 		return nil, err
