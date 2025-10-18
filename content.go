@@ -2,6 +2,7 @@ package main
 
 import (
 	"bytes"
+	"flag"
 	"fmt"
 	"html/template"
 	"io"
@@ -90,10 +91,14 @@ var (
 			),
 		),
 	)
-	commit string
+	commit         string
+	updateMetadata bool
 )
 
 func main() {
+	flag.BoolVar(&updateMetadata, "M", false, "Update metadata from Stacker News API")
+	flag.Parse()
+
 	output, err := exec.Command("git", "rev-parse", "--short", "HEAD").Output()
 	if err != nil {
 		fmt.Printf("error getting commit: %v\n", err)
@@ -192,13 +197,16 @@ func parsePost(path string) (*Post, error) {
 	// stacker news
 	snId, _ := frontmatter["sn_id"].(int)
 	var comments, sats int
-	if snId > 0 {
+	if updateMetadata && snId > 0 {
+		fmt.Printf("> updating metadata for %s\n", path)
+		fmt.Printf(">> fetching item %d from Stacker News\n", snId)
 		item, err := sn.NewClient().Item(snId)
 		if err != nil {
-			return nil, fmt.Errorf("failed to get sn item %d: %v", snId, err)
+			return nil, fmt.Errorf(">> failed to fetch item %d: %v", snId, err)
 		}
 		comments = item.NComments
 		sats = item.Sats
+		fmt.Printf(">> new metadata: %d comments, %d sats\n", comments, sats)
 	}
 
 	// url
