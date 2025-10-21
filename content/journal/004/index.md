@@ -61,4 +61,4 @@ I already had this idea for a while, but hearing [@bitcoinplebdev](https://stack
 
 This conversation also made me think again about how I feel that there's sooo much more potential in [@PlebLab](https://stacker.news/PlebLab), but we're not tapping into it, because we don't know how and/or we're sooo busy already anyway.
 
-I also realized today that this is exactly the special thing I felt when I met [@plebpoet](https://stacker.news/plebpoet) for the first time: I see so much potential in her, but also in our friendship, but I don't know how to tap into it without being weirder than apprioriate.
+I also realized today that this is exactly the special thing I felt when I met [@plebpoet](https://stacker.news/plebpoet) for the first time: I see so much potential in her, but also in our friendship, but I don't know how to tap into it without being weirder than appropriate.
