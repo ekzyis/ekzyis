@@ -18,7 +18,7 @@ How do they have time for all these things? I just didn't understand. I struggle
 
 > _What is their secret? Do they sleep less? Are they more efficient with their time? Are they just better at multitasking?[^1] Is it all three things combined?_
 
-But I think I am starting to understand now. They don't _have_ the time for all these things. They _take_ the time. And I don't see all the things they say no to and wouldn't put in their bio anyway[^2]. And maybe all these things are connected in some way so they are just being authentic and going from one thing to the other is more like a flow. Just like our mood swings but we're still the same person, we can be a programmer and a writer.[^3]
+But I think I am starting to understand now. They don't _have_ the time for all these things. They _take_ the time. And I don't see all the things they say no to and wouldn't put in their bio anyway.[^2] And maybe all these things are connected in some way so they are just being authentic and going from one thing to the other is more like a flow. Just like our mood swings but we're still the same person, we can be a programmer and a writer.[^3]
 
 That's just who they are. And they figured it out.
 
