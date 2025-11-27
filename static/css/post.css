@@ -133,6 +133,7 @@
     /* https://tailwindcss.com/docs/functions-and-directives#apply-directive */
     font-size: 0.875rem;
     width: 100px;
+    padding-left: .67rem;
     text-align: end;
 }
 
