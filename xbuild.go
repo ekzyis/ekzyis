@@ -33,6 +33,7 @@ type Post struct {
 	Hidden   bool
 	URL      string
 	Banner   string
+	Tags     []string
 	SnId     int
 	Comments int
 	Sats     int
@@ -140,17 +141,10 @@ func walkMarkdownContent() ([]string, error) {
 		return args, nil
 	}
 
-	blogFiles, err := filepath.Glob(filepath.Join(contentDir, "*", "index.md"))
+	files, err := filepath.Glob(filepath.Join(contentDir, "*", "index.md"))
 	if err != nil {
 		return nil, err
 	}
-
-	journalFiles, err := filepath.Glob(filepath.Join(contentDir, "journal", "*", "index.md"))
-	if err != nil {
-		return nil, err
-	}
-
-	files := append(blogFiles, journalFiles...)
 
 	return files, nil
 }
@@ -208,6 +202,10 @@ func parsePost(path string) (*Post, error) {
 	// banner
 	banner, _ := frontmatter["banner"].(string)
 
+	// tags
+	rawTags, _ := frontmatter["tags"].(string)
+	tags := strings.Split(rawTags, ",")
+
 	// stacker news
 	snId, _ := frontmatter["sn_id"].(int)
 	var comments, sats int
@@ -260,6 +258,7 @@ func parsePost(path string) (*Post, error) {
 		Time:     time,
 		Hidden:   hidden,
 		Banner:   banner,
+		Tags:     tags,
 		SnId:     snId,
 		Comments: comments,
 		Sats:     sats,
@@ -293,29 +292,9 @@ func executeTemplates(posts []Post) error {
 		return fmt.Errorf("error parsing templates: %v", err)
 	}
 
-	var blogPosts []Post
-	var journalPosts []Post
-	for _, post := range posts {
-		if !strings.Contains(post.Path, "/journal/") {
-			blogPosts = append(blogPosts, post)
-		} else {
-			journalPosts = append(journalPosts, post)
-		}
-	}
-
-	err = executeIndexTemplate(tmpl, "public/index.html", blogPosts)
+	err = executeIndexTemplate(tmpl, "public/index.html", posts)
 	if err != nil {
 		return fmt.Errorf("error executing index template: %v", err)
-	}
-
-	journalDir := filepath.Join("public", "journal")
-	err = os.MkdirAll(journalDir, 0755)
-	if err != nil {
-		return fmt.Errorf("error creating directory for journal: %v", err)
-	}
-	err = executeIndexTemplate(tmpl, "public/journal/index.html", journalPosts)
-	if err != nil {
-		return fmt.Errorf("error executing journal index template: %v", err)
 	}
 
 	err = executeErrorTemplate(tmpl)

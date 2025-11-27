@@ -12,6 +12,8 @@
     --post-header-color: #eaeaea;
     --quote-color: #9b9ba3;
     --quote-border-color: #4a4d56;
+    --tag-background-color: hsla(0, 0%, 100%, .1); /* #4a4d56; */
+    --tag-color: #969696;
     --footer-color: #767f87;
     --footnotes-color: #767f87;
 }

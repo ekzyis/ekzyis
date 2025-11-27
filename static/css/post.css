@@ -31,10 +31,14 @@
 }
 
 .post-meta {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
     color: var(--post-meta-color);
     padding-top: 3px;
     line-height: 1.2;
     font-size: 0.875rem;
+    flex-wrap: wrap;
 }
 
 .post-content {
@@ -123,6 +127,24 @@
 
 .post-item:first-of-type {
     border-top: none;
+}
+
+.post-item-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.post-item-tags {
+    font-size: 0.7rem;
+}
+
+.post-item-tags>span {
+    background-color: var(--tag-background-color);
+    padding: .125rem .25rem;
+    border-radius: .25rem;
+    color: var(--tag-color);
 }
 
 .post-item-meta {

@@ -1,8 +1,19 @@
 {{ define "post/list" }}
 <article class="post-item{{ if .Hidden }} !hidden{{ end }}">
-    <h4 class="post-item-title">
-        <a href="/{{ .URL }}/">{{ .Title }}</a>
-    </h4>
+    <div class="post-item-title">
+        <h4>
+            <a href="/{{ .URL }}/">
+                {{ .Title }}
+            </a>
+        </h4>
+        {{ if .Tags }}
+        <div class="post-item-tags">
+            {{ range .Tags }}
+            {{ if . }}<span>{{ . }}</span>{{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
     <time class="post-item-meta" datetime="{{ formatTime .Time "2006-01-02T15:04:05Z" }}">
         {{ formatTime .Time "2 Jan 2006" }}
     </time>

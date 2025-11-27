@@ -2,6 +2,7 @@
 title: A girl told me she likes my shoes, gotta talk about it
 date: 2025-10-26
 sn_id: 1265480
+tags: mostly-harmless
 ---
 
 I think I just fell in love with a girl I just met at a kebap place. I just came back and gotta talk about it while it's still fresh:

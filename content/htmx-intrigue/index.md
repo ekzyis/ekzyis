@@ -2,6 +2,7 @@
 title: HTMX Intrigue
 date: 2024-06-07T06:48:38.417Z
 sn_id: 564849
+tags: dev
 ---
 
 > ### htmx in a nutshell

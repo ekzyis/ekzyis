@@ -2,6 +2,7 @@
 title: Demystifying WireGuard and iptables
 date: 2023-08-09
 sn_id: 221471
+tags: networking,wireguard
 ---
 
 # introduction

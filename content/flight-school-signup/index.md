@@ -2,6 +2,7 @@
 title: I signed up for flight school
 date: 2025-09-22
 sn_id: 1232455
+tags: flying
 ---
 
 ![](./plane.webp)

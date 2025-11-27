@@ -2,6 +2,7 @@
 title: The View from Halfway Down
 date: 2024-01-23
 sn_id: 398641
+tags: zap-to-zero
 ---
 
 ![](https://www.youtube.com/watch?v=u1_EBSlnDlU)

@@ -2,6 +2,7 @@
 title: WireGuard Packet Forwarding
 date: 2023-08-21
 sn_id: 230179
+tags: networking,wireguard
 ---
 
 # introduction

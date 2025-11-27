@@ -2,6 +2,7 @@
 title: internet feelings
 date: 2024-11-19T20:09:04.857Z
 sn_id: 774628
+tags: poetry
 ---
 
 Here’s a [little poem](https://stacker.news/items/621774) I wrote while I was in Nashville for the Bitcoin Circlejerk 2024. I came up with it because I felt a little lost, as I often do around people, but this time I felt especially lost because I had to walk home in the dark for an hour, and my phone’s battery was almost dead. My VISA card was declined by Uber for no apparent reason.
