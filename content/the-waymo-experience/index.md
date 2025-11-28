@@ -2,7 +2,7 @@
 title: The Waymo Experience
 date: 2025-05-12
 sn_id: 978850
-tags: journal
+tags: journal ai
 ---
 
 > My words echo in my head
