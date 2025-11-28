@@ -2,7 +2,7 @@
 title: WireGuard Port Forwarding
 date: 2023-09-25
 sn_id: 265524
-tags: networking,wireguard
+tags: networking wireguard
 ---
 
 # introduction

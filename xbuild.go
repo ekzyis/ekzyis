@@ -204,7 +204,7 @@ func parsePost(path string) (*Post, error) {
 
 	// tags
 	rawTags, _ := frontmatter["tags"].(string)
-	tags := strings.Split(rawTags, ",")
+	tags := strings.Split(rawTags, " ")
 
 	// stacker news
 	snId, _ := frontmatter["sn_id"].(int)

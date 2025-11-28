@@ -2,7 +2,7 @@
 title: How to encrypt and decrypt files using openssl and a password
 date: 2025-04-07
 sn_id: 937345
-tags: crypto,openssl
+tags: crypto openssl
 ---
 
 Every time I feel like I should save something encrypted—especially because my [NixOS installation is not using FDE](https://nixos.wiki/wiki/Full_Disk_Encryption), but that's a story for another day—, I realize I have no idea how to do this except that it should be possible with `openssl` which is quite embarrassing as the founder of ~crypto and ~security.
