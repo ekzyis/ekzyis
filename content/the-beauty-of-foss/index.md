@@ -2,7 +2,7 @@
 title: The Beauty of FOSS
 date: 2025-05-16
 sn_id: 982124
-tags: journal
+tags: journal dev
 ---
 
 Dear Journal,

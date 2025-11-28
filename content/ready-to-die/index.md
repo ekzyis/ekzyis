@@ -2,7 +2,7 @@
 title: I'm learning how to fly because I'm ready to die
 date: 2025-11-18
 sn_id: 1285081
-tags: flying
+tags: flying death
 ---
 
 With my first flight lessons getting closer, I keep thinking about what my first takeoff will be like. Going down the runway at full throttle for the first time, I'll probably already feel like I'm about to die.
