@@ -83,7 +83,7 @@ I immediately gave myself an imaginary facepalm and thought that was obviously a
 
 This follow-up seemed to have worked wonders—as if she realized I cared about her. Then she did something I will never forget, something no girl had ever done before. She smiled at me and gave me a compliment out of the blue. She had liked my shoes ever since I walked in. I was shocked. My heart was exploding. She smiled at me before I even told her what I planned to tell her. And apparently, she had noticed me from the beginning and was also considering saying something to me???
 
-I didn't wait any longer and said that I also wanted to tell her something, too. I leaned over and whispered into her ear that I thought her hair is really very beautiful.
+I didn't wait any longer and said that I wanted to tell her something, too. I leaned over and whispered into her ear that I thought her hair is really very beautiful.
 
 Her face lit up, and for a few moments, we just grinned at each other, unable to fully comprehend what had just happened. My heart was melting. She was grinning so much that I felt like we had just become friends and could now talk about anything. She really appreciated me saying so, and I really appreciated her saying so. For a moment, I considered saying that I also really like my shoes because it’s true, but fortunately, I didn’t, because I didn’t want to sound arrogant or actually get into a conversation about my shoes, haha.
 
