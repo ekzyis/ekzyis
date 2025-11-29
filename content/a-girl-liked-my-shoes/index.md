@@ -144,3 +144,6 @@ I only knew the initial direction she had taken, but a crossing came very quickl
 She was gone. It was okay, though, because I had gotten more than I expected.
 
 Now I will eat my kebap while it's still fresh.
+
+![the shoes](shoes.webp)
+the shoes
