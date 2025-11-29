@@ -3,7 +3,7 @@ title: Between Moments of Wonder and Euphoria
 date: 2024-07-13
 banner: landscape.webp
 sn_id: 607554
-tags: drugs
+tags: story drugs
 ---
 
 ## A Mostly Harmless Substance

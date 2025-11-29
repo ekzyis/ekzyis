@@ -3,7 +3,7 @@ title: I miss her
 date: 2025-05-10
 sn_id: 977206
 banner: remember.webp
-tags: journal relationship
+tags: journal love
 ---
 
 I've been reading [@plebpoet](https://stacker.news/plebpoet)'s [journal](https://www.plebpoet.com/journal.html). I'll write a few words every now and then and hope they survive.
