@@ -25,7 +25,7 @@
           type = "app";
           program = toString (pkgs.writeShellScript "serve" ''
             set -xe
-            rm -r public/
+            rm -rf public/
             cp -r static/ public/
             ${pkgs.go}/bin/go run xbuild.go
             ${pkgs.tailwindcss}/bin/tailwindcss -i input.css -o public/css/tailwind.css
