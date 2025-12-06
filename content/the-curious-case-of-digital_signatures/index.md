@@ -416,7 +416,7 @@ This means that during verification with the public key, we reverse the encrypti
 
 Makes sense? Still reading?
 
-If so, you potentially even learned a lot about how _digital certificates_ work on accident. They are basically digital signatures that verify the identify of entities via trusted third parties ([Certificate Authorities](https://www.digicert.com/blog/what-is-a-certificate-authority)) and with more metadata associated. At least that's my simplistic explanation. But how the [Public Key Infrastructure](https://www.okta.com/identity-101/public-key-infrastructure/) works is a topic for another day.
+If so, you potentially even learned a lot about how _digital certificates_ work on accident. They are basically digital signatures that verify the identity of entities via trusted third parties ([Certificate Authorities](https://www.digicert.com/blog/what-is-a-certificate-authority)) and with more metadata associated. At least that's my simplistic explanation. But how the [Public Key Infrastructure](https://www.okta.com/identity-101/public-key-infrastructure/) works is a topic for another day.
 
 
 
