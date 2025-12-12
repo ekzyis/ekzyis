@@ -243,7 +243,7 @@ func parsePost(path string) (*Post, error) {
 			if err != nil {
 				return err
 			}
-			if !info.IsDir() && regexp.MustCompile(`\.(png|jpg)$`).MatchString(path) {
+			if !info.IsDir() && regexp.MustCompile(`\.(png|jpg|webp)$`).MatchString(path) {
 				images = append(images, path)
 			}
 			return nil
@@ -382,6 +382,15 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 		// copy images as webp
 		for _, image := range post.Images {
 			dstImage := filepath.Join(postDir, filepath.Base(image))
+			if strings.HasSuffix(image, ".webp") {
+				// already webp, just copy it
+				err = copyFile(image, dstImage)
+				if err != nil {
+					return err
+				}
+				fmt.Printf("> %s\n", dstImage)
+				continue
+			}
 			dstImage = strings.TrimSuffix(strings.TrimSuffix(dstImage, ".png"), ".jpg") + ".webp"
 			err = toWebp(image, dstImage)
 			if err != nil {
@@ -393,6 +402,15 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 		fmt.Printf("> %s\n", postHTMLPath)
 	}
 
+	return nil
+}
+
+func copyFile(src, dst string) error {
+	// copying a file using go is ridiculously more code
+	err := exec.Command("cp", src, dst).Run()
+	if err != nil {
+		return fmt.Errorf("error copying file %s to %s: %v", src, dst, err)
+	}
 	return nil
 }
 
