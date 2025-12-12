@@ -123,13 +123,13 @@ ___  __\_ |__  __ __|__|  |    __| _/
 
 	posts, err := parsePosts(mdFiles)
 	if err != nil {
-		fmt.Printf("error parsing markdown: %v", err)
+		fmt.Printf("error parsing markdown: %v\n", err)
 		os.Exit(1)
 	}
 
 	err = executeTemplates(posts)
 	if err != nil {
-		fmt.Printf("error executing templates: %v", err)
+		fmt.Printf("error executing templates: %v\n", err)
 		os.Exit(1)
 	}
 }
