@@ -5,6 +5,14 @@ sn_id: 1265480
 tags: story love
 ---
 
+---------DISCLAIMER BEGIN---------
+
+Unsurprisingly, [some people might find this post disgusting](https://stacker.news/items/1332680). That's okay, I get it. It's easy to read more into this and judge me from afar, or maybe I even deserve this judgment, I don't know. All I know is that this post contains my raw, honest emotions, outside of whatever jurisdiction you might find yourself in, and I think raw, honest emotions have, or should have, a place in this world. That's all. Thanks for reading, if you decide to do so!
+
+---------DISCLAIMER END---------
+
+---
+
 I think I just fell in love with a girl I just met at a kebap place. I just came back and gotta talk about it while it's still fresh:
 
 ---
