@@ -54,7 +54,7 @@ As luck would have it, it only took a few minutes of walking to find my way back
 
 It was a note I had written to myself before I left. I had totally forgotten about it. In that moment, I felt like I had a guardian watching over me, and that guardian was my past self. Apparently, my past self knew me so well that it could anticipate how I might be feeling when I came home and decided to show some compassion by writing a note. It didn't even need many words. It knew exactly what to say and was nonchalant about it.
 
-Just moments before, I wondered how I could have been so stupid to go out at this hour while tripping, but now I saw my nature in it: The competitive part of my past self might have simply challenged me to "fuck around and find out", whereas the compassionate part wrote this note.
+Just moments before, I wondered how I could have been so stupid to go out at this hour while tripping, but now I saw my nature in it: The competitive part of my past self might have simply challenged me to "fuck around and find out," whereas the compassionate part wrote this note.
 
 I hung up my clothes to dry in the basement as the note was reminding me while pondering how many parts of myself I was truly aware of from moment to moment. I could be very lazy but also incredibly competitive. I showed compassion for everyone, including my past self, but seemed to usually neglect my current self. I could find purpose in helping others, yet struggled with not expecting anything in return. There was definitely something sinister in some of my actions that I had never really acknowledged.
 
