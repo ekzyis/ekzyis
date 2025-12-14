@@ -93,6 +93,10 @@
     padding-bottom: 15px;
 }
 
+.post-content>p>code {
+    word-break: break-word;
+}
+
 .post-content img {
     margin: auto;
     max-height: 70vh;
