@@ -2,7 +2,7 @@
 
 **Started**
 
-* _How to Win Friends and Influence People_ by Dale Carnegie (p. 69)
+* _How to Win Friends and Influence People_ by Dale Carnegie (p. 89)
 * _Broken Money_ by Lyn Alden (p. 139)
 * _The Mandibles_ by Lionel Shriver (p. 15)
 * _Heart of Darkness_ by Joseph Conrad (p. xiv)
