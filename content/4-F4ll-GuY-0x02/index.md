@@ -66,6 +66,7 @@ That's when I realized that "You must have fallen like a cat" was simply a joke 
 When I was moved to a normal room from intensive care, my parents were allowed to visit me. When they saw me, lying in this bed and barely able to speak and definitely not able to move, they started arguing:
 
 > He: Why did you not stop him from going on that roof?!
+>
 > She: Why weren't you there to help the tenant yourself?!
 
 I didn't want to hear this. I wanted them to go away. They couldn't help me. They only made it worse. They didn't even notice me anymore. For all it was worth, they could have had this conversation in the hallway already or at home or wherever. Why did they have to argue in front of me? I did not have the energy to say anything though. I knew it wouldn't help anyway.
