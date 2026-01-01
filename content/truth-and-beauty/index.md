@@ -94,7 +94,7 @@ No, I wouldn’t say so! I want to write about motherhood. A year ago, we were w
 
 I listen to a lot when I am working at my job watering plants in various offices around Austin; about 80% of that are audiobooks and 20% is just entertainment.
 
-_When I asked what her fancy job description is, she mentioned it was "plant technician" and I laughed a little because I didn’t understand what could be technical about it. She rightfully corrected me and said "technician" doesn’t mean it has to be about tech, it just means that you know what you’re doing. We then talked about the details of caring for plants. I feel bad that my initial reaction was to laugh but she took it well. She also mentioned that @supertestnet described it as being an "aquafarer"._
+_When I asked what her fancy job description is, she mentioned it was "plant technician" and I laughed a little because I didn’t understand what could be technical about it. She rightfully corrected me and said "technician" doesn’t mean it has to be about tech, it just means that you know what you’re doing. We then talked about the details of caring for plants. I feel bad that my initial reaction was to laugh but she took it well. She also mentioned that [@supertestnet](https://stacker.news/supertestnet) described it as being an "aquafarer"._
 
 ---
 
