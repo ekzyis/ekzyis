@@ -2,6 +2,7 @@
 title: Truth and Beauty - An Interview with PlebPoet
 date: 2024-12-26
 tags: interview
+sn_id: 824438
 ---
 
 ![](./madeira.webp)
