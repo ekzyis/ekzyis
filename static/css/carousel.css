@@ -16,6 +16,7 @@
 .quote-carousel blockquote {
     position: absolute;
     height: fit-content;
+    align-self: center;
     inset: 0;
     opacity: 0;
     animation: quote-fade calc(var(--duration) * var(--quote-count)) ease-in-out infinite;
