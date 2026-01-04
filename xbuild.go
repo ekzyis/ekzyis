@@ -42,6 +42,10 @@ var (
 			Quote:  "Because in the end it doesn't matter how feature-rich and easy-to-use the Lightning Network is if it can't keep user funds safe.",
 			Author: "Matt Morehouse",
 		},
+		{
+			Quote:  "What would the person I want to be do?",
+			Author: "ekzyis",
+		},
 	}
 )
 
