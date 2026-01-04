@@ -1,0 +1,45 @@
+.quote-carousel {
+    --duration: 8s;
+    position: relative;
+    /* the biggest quote has 3 lines of text on screens with width smaller than 480px */
+    min-height: 6rem;
+    margin-bottom: 0.5rem;
+}
+
+/* the biggest quote quote has one less line of text on screens with width greater than 480px, so we reduce the min-height */
+@media (min-width: 480px) {
+    .quote-carousel {
+        min-height: 5rem;
+    }
+}
+
+.quote-carousel blockquote {
+    position: absolute;
+    height: fit-content;
+    inset: 0;
+    opacity: 0;
+    animation: quote-fade calc(var(--duration) * var(--quote-count)) ease-in-out infinite;
+    animation-delay: calc(var(--i) * var(--duration));
+}
+
+.quote-carousel blockquote p {
+    line-height: 1.25rem;
+}
+
+.quote-carousel blockquote cite {
+    display: block;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/* Each animation starts at a different time due to the animation-delay
+ * property. However, each animation will then cycle through the same animation,
+ * without any delay after each cycle. This means that the quotes will start
+ * overlapping. To fix this, we need to pause the animations after each cycle,
+ * but since there's no CSS property for that, we do this manually here using
+ * percentages that depend on the number of quotes.
+ */
+@keyframes quote-fade {
+    0%, 33%, 100% { opacity: 0; }
+    3%, 30% { opacity: 1; } /* fade in */
+}

@@ -5,6 +5,14 @@
 {{ template "nav" }}
 <div class="container my-auto">
     <main class="post-index">
+        <div class="quote-carousel" style="--quote-count: {{ len .Quotes }}">
+            {{ range $i, $q := .Quotes }}
+            <blockquote style="--i: {{ $i }}">
+                <p>{{ $q.Quote }}</p>
+                <cite>{{ $q.Author }}</cite>
+            </blockquote>
+            {{ end }}
+        </div>
         {{ range .Posts }}
         {{ template "post/list" . }}
         {{ end }}

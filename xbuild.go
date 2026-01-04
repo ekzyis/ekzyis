@@ -26,6 +26,31 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
+var (
+	quotes = []Quote{
+		{
+			// https://stacker.news/items/536315
+			Quote:  "I'm as much a bitcoiner as I'm not.",
+			Author: "ekzyis",
+		},
+		{
+			// https://stacker.news/items/547681
+			Quote:  "It's easier to give people the same grace you give yourself when you remember this is their first time in this life, too.",
+			Author: "plebpoet",
+		},
+		{
+			Quote:  "Because in the end it doesn't matter how feature-rich and easy-to-use the Lightning Network is if it can't keep user funds safe.",
+			Author: "Matt Morehouse",
+		},
+	}
+)
+
+type Quote struct {
+	Quote  string
+	Author string
+	URL    string
+}
+
 type Post struct {
 	Path     string
 	Title    string
@@ -43,6 +68,7 @@ type Post struct {
 }
 
 type IndexTemplateData struct {
+	Quotes []Quote
 	Posts  []Post
 	Commit string
 }
@@ -320,6 +346,7 @@ func executeIndexTemplate(tmpl *template.Template, outputPath string, posts []Po
 	mw := NewHtmlMinifyWriter(outputFile)
 	defer mw.Close()
 	err = tmpl.ExecuteTemplate(mw, "index.html", IndexTemplateData{
+		Quotes: quotes,
 		Posts:  posts,
 		Commit: commit,
 	})
