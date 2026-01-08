@@ -9,7 +9,7 @@
             {{ range $i, $q := .Quotes }}
             <blockquote style="--i: {{ $i }}">
                 <p>{{ $q.Quote }}</p>
-                <cite>{{ $q.Author }}</cite>
+                {{ if $q.Author }}<cite>{{ $q.Author }}</cite>{{ end }}
             </blockquote>
             {{ end }}
         </div>

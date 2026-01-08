@@ -44,8 +44,7 @@ var (
 			Author: "Matt Morehouse",
 		},
 		{
-			Quote:  "What would the person I want to be do?",
-			Author: "ekzyis",
+			Quote: "What would the person you want to be do?",
 		},
 	}
 )
