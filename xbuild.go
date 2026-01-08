@@ -39,6 +39,7 @@ var (
 			Author: "plebpoet",
 		},
 		{
+			// https://morehouse.github.io/lightning/fake-channel-dos/
 			Quote:  "Because in the end it doesn't matter how feature-rich and easy-to-use the Lightning Network is if it can't keep user funds safe.",
 			Author: "Matt Morehouse",
 		},
