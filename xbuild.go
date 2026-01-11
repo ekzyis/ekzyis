@@ -46,6 +46,16 @@ var (
 		{
 			Quote: "What would the person you want to be do?",
 		},
+		{
+			// https://www.youtube.com/watch?v=l5NK8zdIK-g (17:53)
+			Quote:  "Get enough sleep. Drink more water.",
+			Author: "Gibi ASMR",
+		},
+		{
+			// https://www.youtube.com/watch?v=l5NK8zdIK-g (34:57)
+			Quote:  "We are insanely social creatures, as much as we pretend that we aren't.",
+			Author: "Gibi ASMR",
+		},
 	}
 )
 

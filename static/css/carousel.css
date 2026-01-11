@@ -41,6 +41,6 @@
  * percentages that depend on the number of quotes.
  */
 @keyframes quote-fade {
-    0%, 25%, 100% { opacity: 0; }
-    2%, 23% { opacity: 1; } /* fade in */
+    0%, 16%, 100% { opacity: 0; }
+    2%, 14% { opacity: 1; } /* fade in */
 }
