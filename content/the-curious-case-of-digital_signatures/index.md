@@ -394,7 +394,7 @@ It says "OK". Well, that's not very intimate like what a lover probably would sa
 
 So what we just did was to basically verify the authenticity and integrity of the file that contained the hashes for all binaries with `gpg --verify`. When the hashes could be trusted, we could use them to make sure that the software was not tampered with. But why not simply provide a digital signature for the binary itself?
 
-I actually don't know. But my educated guess is that it's related to convenience. Instead of providing a signature for every binary, the hashes are signed. Using `sha25sum --check` with `--ignore-missing` then simply ignores all files that don't exist. So I am basically guessing that there is no way to do something similar with digital signatures. Maybe someone knows more?
+I actually don't know. But my educated guess is that it's related to convenience. Instead of providing a signature for every binary, the hashes are signed. Using `sha256sum --check` with `--ignore-missing` then simply ignores all files that don't exist. So I am basically guessing that there is no way to do something similar with digital signatures. Maybe someone knows more?
 
 # Wait ... but why (does it work)?
 
