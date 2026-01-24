@@ -2,6 +2,7 @@
 title: What Is Your Spirit Animal?
 date: 2023-12-24
 sn_id: 364589
+tags: essay
 ---
 
 I always felt (or at least as long as I can remember) that foxes are my spirit animals. However, I never looked up what that _actually_ means.
