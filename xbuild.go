@@ -26,6 +26,9 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
+// posts without any of these tags appear only on /other/.
+var techTags = []string{"bitcoin", "dev", "crypto", "networking", "wireguard", "nostr"}
+
 var (
 	quotes = []Quote{
 		{
@@ -209,6 +212,36 @@ func parsePosts(paths []string) ([]Post, error) {
 	return posts, nil
 }
 
+// filterPostsByTag returns posts that have (match=true) or don't have (match=false) any of the given tags.
+func filterPostsByTag(posts []Post, tags []string, match bool) []Post {
+	if len(tags) == 0 {
+		if match {
+			return nil
+		}
+		return posts
+	}
+	tagSet := make(map[string]bool)
+	for _, t := range tags {
+		if t != "" {
+			tagSet[t] = true
+		}
+	}
+	var out []Post
+	for _, p := range posts {
+		hasTag := false
+		for _, t := range p.Tags {
+			if tagSet[t] {
+				hasTag = true
+				break
+			}
+		}
+		if hasTag == match {
+			out = append(out, p)
+		}
+	}
+	return out
+}
+
 func parsePost(path string) (*Post, error) {
 
 	content, err := os.ReadFile(path)
@@ -332,9 +365,17 @@ func executeTemplates(posts []Post) error {
 		return fmt.Errorf("error parsing templates: %v", err)
 	}
 
-	err = executeIndexTemplate(tmpl, "public/index.html", posts)
+	techPosts := filterPostsByTag(posts, techTags, true)
+	otherPosts := filterPostsByTag(posts, techTags, false)
+
+	err = executeIndexTemplate(tmpl, "public/index.html", techPosts)
 	if err != nil {
 		return fmt.Errorf("error executing index template: %v", err)
+	}
+
+	err = executeIndexTemplate(tmpl, "public/other.html", otherPosts)
+	if err != nil {
+		return fmt.Errorf("error executing other index template: %v", err)
 	}
 
 	err = executeErrorTemplate(tmpl)
