@@ -6,7 +6,7 @@ sn_id: 979677
 tags: journal bitcoin
 ---
 
-This starts to feel like work, but I think it's going to pay off.
+This [the journal] starts to feel like work, but I think it's going to pay off.
 
 ---
 
