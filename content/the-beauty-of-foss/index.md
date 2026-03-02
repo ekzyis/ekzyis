@@ -33,7 +33,7 @@ When I looked into the issue again with a fresh perspective, I noticed a key dif
   }
 ```
 
-I also fixed the following migration error that I mentioned [yesterday](/journal/006):
+I also fixed the following migration error that I mentioned [yesterday](/confession):
 
 ```
 app  | 2025-05-16T20:56:53.127625000Z Applying migration `20250516042253_wallet_v2`
