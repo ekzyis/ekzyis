@@ -1,4 +1,4 @@
-module ekzyis-v2
+module github.com/ekzyis/ekzyis
 
 go 1.24.3
 
