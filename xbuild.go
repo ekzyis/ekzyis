@@ -23,6 +23,7 @@ import (
 	"github.com/yuin/goldmark"
 	highlighting "github.com/yuin/goldmark-highlighting/v2"
 	"github.com/yuin/goldmark/extension"
+	goldmarkHtml "github.com/yuin/goldmark/renderer/html"
 	"gopkg.in/yaml.v3"
 )
 
@@ -125,6 +126,8 @@ func (mw *MinifyWriter) Close() error {
 var (
 	contentDir = "content"
 	mdParser   = goldmark.New(
+		// allow raw HTML in markdown, required for grid of images
+		goldmark.WithRendererOptions(goldmarkHtml.WithUnsafe()),
 		goldmark.WithExtensions(
 			extension.Footnote,
 			figure.Figure,

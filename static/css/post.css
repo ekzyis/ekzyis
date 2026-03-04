@@ -172,3 +172,21 @@
     font-size: small;
     color: var(--footnotes-color);
 }
+
+.post-content .img-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.post-content .img-grid p,
+.post-content .img-grid figure {
+    margin: 0;
+}
+
+.post-content .img-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
