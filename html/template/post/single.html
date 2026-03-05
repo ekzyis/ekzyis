@@ -7,8 +7,8 @@
             <img class="post-banner" src="{{ .Banner }}">
             {{ end }}
             <div class="post-meta">
-                <span>{{ .Sats }} sats</span>
                 {{ if .SnId }}
+                <span>{{ .Sats }} sats</span>
                 <span>|</span>
                 <span>
                     <a
@@ -17,8 +17,8 @@
                         target="_blank"
                         rel="noopener noreferrer me">{{ .Comments }} comments</a>
                 </span>
-                {{ end }}
                 <span>|</span>
+                {{ end }}
                 <time datetime="{{ formatTime .Time "2006-01-02T15:04:05Z" }}" itemprop="datePublished">
                     {{ formatTime .Time "Jan 2, 2006" }}
                 </time>
