@@ -2,7 +2,7 @@
 title: wtf, nix is magic
 date: 2024-04-20
 sn_id: 512757
-tags: dev
+tags: dev nixos
 ---
 
 I just installed NixOS and entered this into my /etc/nixos/configuration.nix:
