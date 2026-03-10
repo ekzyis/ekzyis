@@ -54,7 +54,7 @@ He then went on how he got into PlebLab. I didn't really get the whole story, bu
 
 The following (just like everything before), is just me paraphrasing what I heard:
 
-> I kept sticking around—I thought there were many others trying to get in. @Car would keep seeing me outside [in the lobby?]. But it turns out the world is smaller than I thought. There was nobody else I was competing with.
+> I kept sticking around—I thought there were many others trying to get in. Car would keep seeing me outside [in the lobby?]. But it turns out the world is smaller than I thought. There was nobody else I was competing with.
 
 ---
 
