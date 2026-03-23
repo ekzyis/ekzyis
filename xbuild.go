@@ -48,7 +48,9 @@ var (
 			Author: "Matt Morehouse",
 		},
 		{
-			Quote: "What would the person you want to be do?",
+			// https://www.goodreads.com/book/show/2761.The_Denial_of_Death
+			Quote:  "The problem is that we all want to be more than a shitting and fucking creature that dies.",
+			Author: "Review of The Denial of Death by Ernest Becker",
 		},
 		{
 			// https://www.youtube.com/watch?v=l5NK8zdIK-g (17:53)
