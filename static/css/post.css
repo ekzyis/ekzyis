@@ -88,13 +88,17 @@
     text-decoration: underline;
 }
 
-.post-content p {
+.post-content p,ul {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .post-content>p>code {
     word-break: break-word;
+}
+
+.post-content h2 + p:has(sub) {
+    margin-top: 0;
 }
 
 .post-content>pre:has(code) {
