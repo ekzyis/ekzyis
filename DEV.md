@@ -18,6 +18,9 @@ $ s3cmd setcors cors.xml s3://www.ekzy.is
 
 # request cert manually and upload via Linode web interface
 $ sudo certbot certonly --manual
+
+# stacker.news links for @-mentions
+$ sed -E 's/(^|[^a-zA-Z0-9])@([a-zA-Z0-9_-]+)/\1[@\2](https:\/\/stacker.news\/\2)/g'
 ```
 
 **📑 useful links**

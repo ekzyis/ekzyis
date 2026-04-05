@@ -72,19 +72,20 @@ type Quote struct {
 }
 
 type Post struct {
-	Path     string
-	Title    string
-	Time     time.Time
-	Hidden   bool
-	URL      string
-	Banner   string
-	Tags     []string
-	SnId     int
-	Comments int
-	Sats     int
-	Markdown string
-	HTML     template.HTML
-	Images   []string
+	Path      string
+	Title     string
+	Time      time.Time
+	Hidden    bool
+	Frontpage bool
+	URL       string
+	Banner    string
+	Tags      []string
+	SnId      int
+	Comments  int
+	Sats      int
+	Markdown  string
+	HTML      template.HTML
+	Images    []string
 }
 
 type IndexTemplateData struct {
@@ -277,6 +278,13 @@ func parsePost(path string) (*Post, error) {
 	// hidden
 	hidden, _ := frontmatter["hidden"].(bool)
 
+	// can this post be on the frontpage?
+	frontpage, ok := frontmatter["frontpage"].(bool)
+	if !ok {
+		// default to true if omitted
+		frontpage = true
+	}
+
 	// banner
 	banner, _ := frontmatter["banner"].(string)
 
@@ -331,19 +339,20 @@ func parsePost(path string) (*Post, error) {
 	}
 
 	return &Post{
-		Path:     path,
-		Title:    title,
-		Time:     time,
-		Hidden:   hidden,
-		Banner:   banner,
-		Tags:     tags,
-		SnId:     snId,
-		Comments: comments,
-		Sats:     sats,
-		URL:      url,
-		Markdown: markdown,
-		HTML:     html,
-		Images:   images,
+		Path:      path,
+		Title:     title,
+		Time:      time,
+		Hidden:    hidden,
+		Frontpage: frontpage,
+		Banner:    banner,
+		Tags:      tags,
+		SnId:      snId,
+		Comments:  comments,
+		Sats:      sats,
+		URL:       url,
+		Markdown:  markdown,
+		HTML:      html,
+		Images:    images,
 	}, nil
 }
 
@@ -370,8 +379,19 @@ func executeTemplates(posts []Post) error {
 		return fmt.Errorf("error parsing templates: %v", err)
 	}
 
-	techPosts := filterPostsByTag(posts, techTags, true)
-	otherPosts := filterPostsByTag(posts, techTags, false)
+	var techPosts, otherPosts []Post
+	techTagged := filterPostsByTag(posts, techTags, true)
+	otherPosts = filterPostsByTag(posts, techTags, false)
+	for _, p := range techTagged {
+		if p.Frontpage {
+			techPosts = append(techPosts, p)
+		} else {
+			otherPosts = append(otherPosts, p)
+		}
+	}
+	sort.Slice(otherPosts, func(i, j int) bool {
+		return otherPosts[i].Time.After(otherPosts[j].Time)
+	})
 
 	err = executeIndexTemplate(tmpl, "public/index.html", techPosts)
 	if err != nil {
