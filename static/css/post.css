@@ -28,6 +28,7 @@
 
 .post-banner {
     margin-bottom: 10px;
+    max-height: 70vh;
 }
 
 .post-meta {
@@ -93,6 +94,10 @@
     margin-bottom: 15px;
 }
 
+.post-content figcaption p {
+    margin-top: 0;
+}
+
 .post-content>p>code {
     word-break: break-word;
 }
@@ -113,7 +118,6 @@
 
 .post-content img {
     margin: auto;
-    max-height: 70vh;
 }
 
 .post-index {
