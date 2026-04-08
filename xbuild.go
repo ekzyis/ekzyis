@@ -379,12 +379,12 @@ func executeTemplates(posts []Post) error {
 		return fmt.Errorf("error parsing templates: %v", err)
 	}
 
-	var techPosts, otherPosts []Post
-	techTagged := filterPostsByTag(posts, techTags, true)
+	var frontpagePosts, otherPosts []Post
+	techPosts := filterPostsByTag(posts, techTags, true)
 	otherPosts = filterPostsByTag(posts, techTags, false)
-	for _, p := range techTagged {
+	for _, p := range techPosts {
 		if p.Frontpage {
-			techPosts = append(techPosts, p)
+			frontpagePosts = append(frontpagePosts, p)
 		} else {
 			otherPosts = append(otherPosts, p)
 		}
@@ -393,7 +393,7 @@ func executeTemplates(posts []Post) error {
 		return otherPosts[i].Time.After(otherPosts[j].Time)
 	})
 
-	err = executeIndexTemplate(tmpl, "public/index.html", techPosts)
+	err = executeIndexTemplate(tmpl, "public/index.html", frontpagePosts)
 	if err != nil {
 		return fmt.Errorf("error executing index template: %v", err)
 	}
