@@ -2,7 +2,7 @@
 <article class="post-item">
     <div class="post-item-title">
         <h4>
-            <a href="/{{ .URL }}/">
+            <a href="{{ .URL }}" {{ if hasPrefix .URL "https:" }}target="_blank"{{ end }}>
                 {{ .Title }}
             </a>
         </h4>

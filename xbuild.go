@@ -29,7 +29,7 @@ import (
 )
 
 // posts without any of these tags appear only on /other/.
-var techTags = []string{"bitcoin", "dev", "crypto", "networking", "wireguard", "nostr"}
+var techTags = []string{"bitcoin", "dev", "crypto", "networking", "wireguard", "nostr", "nixos", "github", "fuzzing"}
 
 var (
 	quotes = []Quote{
@@ -312,8 +312,11 @@ func parsePost(path string) (*Post, error) {
 	}
 
 	// url
-	dir := filepath.Dir(path)
-	url := strings.ReplaceAll(strings.ToLower(strings.TrimPrefix(dir, contentDir+"/")), "_", "-")
+	url, ok := frontmatter["url"].(string)
+	if !ok {
+		dir := filepath.Dir(path)
+		url = strings.ReplaceAll(strings.ToLower(strings.TrimPrefix(dir, contentDir+"/")), "_", "-")
+	}
 
 	// markdown
 	markdown := string(parts[2])
@@ -366,6 +369,7 @@ func executeTemplates(posts []Post) error {
 			"formatTime": func(t time.Time, format string) string {
 				return t.Format(format)
 			},
+			"hasPrefix": strings.HasPrefix,
 		},
 	)
 
