@@ -10,6 +10,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"regexp"
+	"slices"
 	"sort"
 	"strings"
 	"time"
@@ -226,17 +227,11 @@ func filterPostsByTag(posts []Post, tags []string, match bool) []Post {
 		}
 		return posts
 	}
-	tagSet := make(map[string]bool)
-	for _, t := range tags {
-		if t != "" {
-			tagSet[t] = true
-		}
-	}
 	var out []Post
 	for _, p := range posts {
 		hasTag := false
 		for _, t := range p.Tags {
-			if tagSet[t] {
+			if slices.Contains(tags, t) {
 				hasTag = true
 				break
 			}
