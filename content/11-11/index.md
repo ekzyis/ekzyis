@@ -1,7 +1,7 @@
 ---
 title: (I think) I finally understand DarthCoin
 date: 2023-12-12
-hidden: true
+private: true
 sn_id: 349363
 ---
 

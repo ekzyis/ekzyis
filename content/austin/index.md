@@ -2,7 +2,7 @@
 title: Austin's Orange Glow
 date: 2024-06-23
 banner: austin_orange_glow.webp
-hidden: true
+private: true
 sn_id: 674266
 ---
 
