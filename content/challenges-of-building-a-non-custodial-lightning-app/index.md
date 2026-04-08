@@ -8,3 +8,6 @@ tags: bitcoin
 My talk from October 3, 2025 got uploaded!
 
 ![](https://www.youtube.com/watch?v=xne_iK1I8yc)
+
+You can find the slides
+[here](https://github.com/stackernews/sn-talks/blob/develop/btcpp-berlin-2025/slides.pdf).
