@@ -1,7 +1,7 @@
 ---
 title: Fixing A High-Impact Bug In Saving Satoshi
 date: 2025-12-03
-tags: github web
+tags: web dev
 ---
 
 Around the same time [I resigned from Stacker

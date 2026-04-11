@@ -29,7 +29,7 @@ import (
 )
 
 // posts without any of these tags appear only on /other/.
-var techTags = []string{"bitcoin", "dev", "crypto", "networking", "wireguard", "nostr", "nixos", "github", "fuzzing"}
+var techTags = []string{"bitcoin", "dev", "crypto", "networking", "wireguard", "nostr", "nixos", "fuzz"}
 
 var (
 	quotes = []Quote{
