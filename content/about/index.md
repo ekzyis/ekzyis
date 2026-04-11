@@ -5,6 +5,8 @@ banner: psychedelic-digital-sky.webp
 sn_id: 505345
 ---
 
+<div class="xl:float-left xl:w-[calc(100%-490px)]">
+
 Hi, I'm ek. I guess this is the part where I introduce myself in an interesting and unique way such that reading this is worth your time and you don't immediately leave. [Attention is a scarce resource](https://en.wikipedia.org/wiki/Attention_economy) after all.
 
 However, I would actually prefer to not introduce myself. I would prefer to let my words speak for themselves—my words here and in what I write about on this site. So let me introduce you to my site.
@@ -23,3 +25,11 @@ In any way, this whole site is meant to be a [complex search query to find fasci
 
 [Why don't you introduce yourself to me now?](https://stacker.news/items/505345)
 
+</div>
+
+<div class="xl:float-right">
+
+![](./me.webp)
+me
+
+</div>
