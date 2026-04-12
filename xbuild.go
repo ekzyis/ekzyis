@@ -315,7 +315,10 @@ func parsePost(path string) (*Post, error) {
 	url, ok := frontmatter["url"].(string)
 	if !ok {
 		dir := filepath.Dir(path)
-		url = strings.ReplaceAll(strings.ToLower(strings.TrimPrefix(dir, contentDir+"/")), "_", "-")
+		// slash at the end is required so images can use relative links
+		// without the slash at the end, src="./diff.webp" would be relative to root
+		// TODO: load images even when there's no / at the end
+		url = "/" + strings.ReplaceAll(strings.ToLower(strings.TrimPrefix(dir, contentDir+"/")), "_", "-") + "/"
 	}
 
 	// markdown
