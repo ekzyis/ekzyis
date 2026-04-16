@@ -86,7 +86,7 @@ type Post struct {
 	Path      string
 	Title     string
 	Time      time.Time
-	Public    bool
+	Publish   bool
 	Frontpage bool
 	URL       string
 	Banner    *Banner
@@ -239,7 +239,7 @@ func filterPostsByTag(posts []Post, tags []string, match bool) []Post {
 	}
 	var out []Post
 	for _, p := range posts {
-		if !p.Public {
+		if !p.Publish {
 			continue
 		}
 		hasTag := false
@@ -283,13 +283,11 @@ func parsePost(path string) (*Post, error) {
 		return nil, fmt.Errorf("failed to parse date for %s: %v", path, frontmatter["date"])
 	}
 
-	// Should this post be published at all? (They aren't really private,
-	// because the repository is public. They just aren't included in the
-	// website's HTML.)
-	private, ok := frontmatter["private"].(bool)
+	// Should this post be published?
+	publish, ok := frontmatter["publish"].(bool)
 	if !ok {
 		// publish by default
-		private = false
+		publish = true
 	}
 
 	// can this post be on the frontpage?
@@ -374,7 +372,7 @@ func parsePost(path string) (*Post, error) {
 		Path:      path,
 		Title:     title,
 		Time:      time,
-		Public:    !private,
+		Publish:   publish,
 		Frontpage: frontpage,
 		Banner:    banner,
 		Tags:      tags,

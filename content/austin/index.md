@@ -2,7 +2,7 @@
 title: Austin's Orange Glow
 date: 2024-06-23
 banner: austin_orange_glow.jpg
-private: true
+publish: false
 sn_id: 674266
 ---
 
