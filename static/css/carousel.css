@@ -1,5 +1,5 @@
 .quote-carousel {
-    --duration: 8s;
+    --duration: 6s;
     position: relative;
     /* the biggest quote has 3 lines of text on screens with width smaller than 480px */
     min-height: 6rem;
@@ -42,7 +42,7 @@
  */
 @keyframes quote-fade {
     /* this needs to be 0%, 1/n%, 100% (n = number of quotes) */
-    0%, 16%, 100% { opacity: 0; } /* fade out */
+    0%, 14%, 100% { opacity: 0; } /* fade out */
     /* 2%, (1/n - 2)% */
-    2%, 14% { opacity: 1; } /* fade in */
+    2%, 12% { opacity: 1; } /* fade in */
 }
