@@ -19,7 +19,7 @@
 
 * _Fahrenheit 451_ by Ray Bradbury
 * _Brave New World_ by Aldous Huxley
-* _Patriotism_ by Yukio Mishima 
+* _Patriotism_ by Yukio Mishima
 * _Harrison Berger_ by Kurt Vonnegut, Jr.
 
 ---2024---
