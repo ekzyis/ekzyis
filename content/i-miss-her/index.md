@@ -2,7 +2,7 @@
 title: I miss her
 date: 2025-05-10
 sn_id: 977206
-banner: remember.webp
+banner: remember.jpg
 tags: journal love
 ---
 

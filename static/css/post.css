@@ -27,6 +27,9 @@
 }
 
 .post-banner {
+    display: block;
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
     max-height: 70vh;
 }

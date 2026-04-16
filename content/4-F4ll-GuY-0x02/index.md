@@ -1,7 +1,7 @@
 ---
 title: 4_F4ll_GuY_0x02.md
 date: 2024-03-21T22:46:03.079Z
-banner: fall-guy.webp
+banner: fall-guy.jpg
 sn_id: 474909
 tags: story death
 ---

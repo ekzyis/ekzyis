@@ -2,7 +2,7 @@
 title: Life is about Awareness
 date: 2024-02-05
 sn_id: 413652
-banner: palebluedot.webp
+banner: palebluedot.jpg
 tags: essay life love
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: About
 date: 2024-04-13T12:27:51.281Z
-banner: psychedelic-digital-sky.webp
+banner: psychedelic-digital-sky.jpg
 sn_id: 505345
 ---
 

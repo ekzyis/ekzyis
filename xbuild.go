@@ -12,6 +12,7 @@ import (
 	"regexp"
 	"slices"
 	"sort"
+	"strconv"
 	"strings"
 	"time"
 
@@ -75,6 +76,12 @@ type Quote struct {
 	URL    string
 }
 
+type Banner struct {
+	Src    string
+	Width  int
+	Height int
+}
+
 type Post struct {
 	Path      string
 	Title     string
@@ -82,7 +89,7 @@ type Post struct {
 	Public    bool
 	Frontpage bool
 	URL       string
-	Banner    string
+	Banner    *Banner
 	Tags      []string
 	SnId      int
 	Comments  int
@@ -293,7 +300,19 @@ func parsePost(path string) (*Post, error) {
 	}
 
 	// banner
-	banner, _ := frontmatter["banner"].(string)
+	banner := &Banner{}
+	banner.Src, ok = frontmatter["banner"].(string)
+	if ok {
+		path := filepath.Join(filepath.Dir(path), banner.Src)
+		banner.Width, banner.Height, err = imageDimensions(path)
+		if err != nil {
+			return nil, fmt.Errorf(">> failed to get image dimensions: %s: %v", path, err)
+		}
+		// TODO: fix awkward behavior wrt image paths in frontmatter vs content
+		banner.Src = toWebpPath(banner.Src)
+	} else {
+		banner = nil
+	}
 
 	// tags
 	rawTags, _ := frontmatter["tags"].(string)
@@ -512,7 +531,7 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 				fmt.Printf("> %s\n", dstImage)
 				continue
 			}
-			dstImage = strings.TrimSuffix(strings.TrimSuffix(dstImage, ".png"), ".jpg") + ".webp"
+			dstImage = toWebpPath(dstImage)
 			err = toWebp(image, dstImage)
 			if err != nil {
 				return fmt.Errorf("error copying image %s: %v", image, err)
@@ -535,6 +554,10 @@ func copyFile(src, dst string) error {
 	return nil
 }
 
+func toWebpPath(path string) string {
+	return strings.TrimSuffix(strings.TrimSuffix(path, ".png"), ".jpg") + ".webp"
+}
+
 func toWebp(src, dst string) error {
 	err := exec.Command("ffmpeg", "-i", src, "-c:v", "libwebp", dst).Run()
 	if err != nil {
@@ -542,4 +565,29 @@ func toWebp(src, dst string) error {
 	}
 
 	return nil
+}
+
+func imageDimensions(path string) (int, int, error) {
+	cmd := exec.Command("ffprobe",
+		"-v", "error",
+		"-select_streams", "v:0",
+		"-show_entries", "stream=width,height",
+		"-of", "csv=p=0:s=x",
+		path,
+	)
+	out, err := cmd.Output()
+	if err != nil {
+		return 0, 0, err
+	}
+	s := strings.TrimSpace(string(out))
+	parts := strings.Split(s, "x")
+	if len(parts) != 2 {
+		return 0, 0, err
+	}
+	w, err1 := strconv.Atoi(parts[0])
+	h, err2 := strconv.Atoi(parts[1])
+	if err1 != nil || err2 != nil || w <= 0 || h <= 0 {
+		return 0, 0, err
+	}
+	return w, h, nil
 }

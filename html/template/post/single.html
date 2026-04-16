@@ -4,7 +4,7 @@
         <header class="post-header">
             <h1 class="post-title">{{ .Title }}</h1>
             {{ if .Banner }}
-            <img class="post-banner" src="{{ .Banner }}">
+            <img class="post-banner" src="{{ .Banner.Src }}" width="{{ .Banner.Width }}" height="{{ .Banner.Height }}">
             {{ end }}
             <div class="post-meta">
                 {{ if .SnId }}
