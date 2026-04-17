@@ -36,7 +36,7 @@ var (
 	quotes = []Quote{
 		{
 			// https://stacker.news/items/536315
-			Quote:  "I'm as much a bitcoiner as I'm not.",
+			Quote:  "I'm a bitcoiner as much as I'm not.",
 			Author: "ekzyis",
 		},
 		{
@@ -65,7 +65,8 @@ var (
 			Author: "Gibi ASMR, again",
 		},
 		{
-			Quote: "Wow, you made it to the end of these *very* inspiring quotes!",
+			Quote:  "Wow, you made it to the end of these *very* inspiring quotes!",
+			Author: "Sarcasm",
 		},
 	}
 )
