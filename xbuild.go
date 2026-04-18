@@ -493,6 +493,10 @@ func executeErrorTemplate(tmpl *template.Template) error {
 
 func executePostTemplates(tmpl *template.Template, posts []Post) error {
 	for _, post := range posts {
+		if strings.HasPrefix(post.URL, "https:") {
+			// this post will link to an external site, no template execution needed
+			continue
+		}
 		postDir := filepath.Join("public", post.URL)
 		err := os.MkdirAll(postDir, 0755)
 		if err != nil {
