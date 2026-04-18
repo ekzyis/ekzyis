@@ -1,7 +1,6 @@
 ---
 title: LaTeX Template for Bitcoin Multi-Signature Wallets
 date: 2023-05-23
-url: https://gist.github.com/ekzyis/7736e2446dbb8ed2cdb587071c42380b
 sn_id: 1064197
 tags: bitcoin
 ---
