@@ -2,7 +2,6 @@
 title: I just failed my PPL theoretical exam pre-test—AMA!
 date: 2025-10-30
 sn_id: 1269593
-tags: flying
 ---
 
 Welcome to [~flying](https://stacker.news/~flying)!

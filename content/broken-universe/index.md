@@ -2,7 +2,6 @@
 title: broken_universe.md
 date: 2025-01-06
 sn_id: 838623
-tags: idea story
 ---
 
 I just found a file named `broken_universe.md` on my computer, and I had

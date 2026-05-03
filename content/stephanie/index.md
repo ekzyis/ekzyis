@@ -2,7 +2,7 @@
 title: Stephanie
 date: 2025-05-22
 sn_id: 987273
-tags: journal story love
+tags: journal story
 ---
 
 Dear Journal,

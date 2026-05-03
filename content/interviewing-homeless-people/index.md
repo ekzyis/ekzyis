@@ -2,7 +2,6 @@
 title: Interviewing Homeless People
 date: 2025-02-11
 sn_id: 883141
-tags: idea interview
 ---
 
 I don't know if this started before or after I met

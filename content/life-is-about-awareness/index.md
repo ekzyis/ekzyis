@@ -3,7 +3,6 @@ title: Life is about Awareness
 date: 2024-02-05
 sn_id: 413652
 banner: palebluedot.jpg
-tags: essay life love
 ---
 
 > Some say we're never meant to grow up

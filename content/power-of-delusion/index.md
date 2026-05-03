@@ -2,7 +2,6 @@
 title: The Power of Delusion?
 date: 2026-01-24
 sn_id: 1418727
-tags: essay
 ---
 
 I just showered. While cleaning the shower, which I hate, because I lose a lot
