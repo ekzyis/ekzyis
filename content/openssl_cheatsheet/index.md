@@ -1,7 +1,7 @@
 ---
 title: OpenSSL Cheatsheet
 date: 2025-04-07
-tags: crypto openssl
+frontpage: true
 ---
 
 ## Encryption & Decryption

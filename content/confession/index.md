@@ -2,7 +2,8 @@
 title: Confession
 date: 2025-05-15
 sn_id: 981392
-tags: journal dev
+tags: journal
+frontpage: true
 ---
 
 Dear Journal,

@@ -3,7 +3,8 @@ title: Trust Is the Scaling Solution
 date: 2025-05-13
 banner: colorado.jpg
 sn_id: 979677
-tags: journal bitcoin
+tags: journal
+frontpage: true
 ---
 
 This [the journal] starts to feel like work, but I think it's going to pay off.

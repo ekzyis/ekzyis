@@ -2,7 +2,7 @@
 title: A Summary of My Thoughts on Nostr
 date: 2025-04-20
 sn_id: 950309
-tags: nostr
+frontpage: true
 ---
 
 _This is a copy of [my reply](https://njump.me/nevent1qvzqqqqqqypzp5vla32qylgfwpj5sg5q4ct6drg264ls7hp05a8zfu7mhv0xc4y4qythwumn8ghj7cnfw33k76twv4ezuum0vd5kzmp0qy08wumn8ghj7mn0wd68yttsw43zuam9d3kx7unyv4ezumn9wshsz9thwden5te0wfjkccte9ejxzmt4wvhxjme0qqsrlytwzycut5tvqp85anz6lg3relgn7t88q3zjkjq24t60qkd3z9gm76yfw) to [@MaxAWebster](https://stacker.news/MaxAWebster)._[^1]

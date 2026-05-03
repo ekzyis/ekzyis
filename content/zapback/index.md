@@ -1,8 +1,8 @@
 ---
 title: Zapback / Last Pay Wins for Friends
 date: 2025-05-05
-tags: bitcoin dev
 sn_id: 971491
+frontpage: true
 ---
 
 Hi! This is a little game I've been working on over the past few weekends.

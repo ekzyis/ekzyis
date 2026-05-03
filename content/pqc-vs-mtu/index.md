@@ -2,7 +2,7 @@
 title: Post-Quantum TLS vs. MTU?
 date: 2025-07-13
 sn_id: 1037999
-tags: networking wireguard crypto
+frontpage: true
 ---
 
 **Update Aug 07, 2025:**

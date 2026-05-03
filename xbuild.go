@@ -10,7 +10,6 @@ import (
 	"os/exec"
 	"path/filepath"
 	"regexp"
-	"slices"
 	"sort"
 	"strconv"
 	"strings"
@@ -28,9 +27,6 @@ import (
 	goldmarkHtml "github.com/yuin/goldmark/renderer/html"
 	"gopkg.in/yaml.v3"
 )
-
-// posts without any of these tags appear only on /other/.
-var techTags = []string{"bitcoin", "dev", "crypto", "networking", "wireguard", "nostr", "nixos", "fuzz"}
 
 var (
 	quotes = []Quote{
@@ -230,33 +226,6 @@ func parsePosts(paths []string) ([]Post, error) {
 	return posts, nil
 }
 
-// filterPostsByTag returns posts that have (match=true) or don't have (match=false) any of the given tags.
-func filterPostsByTag(posts []Post, tags []string, match bool) []Post {
-	if len(tags) == 0 {
-		if match {
-			return nil
-		}
-		return posts
-	}
-	var out []Post
-	for _, p := range posts {
-		if !p.Publish {
-			continue
-		}
-		hasTag := false
-		for _, t := range p.Tags {
-			if slices.Contains(tags, t) {
-				hasTag = true
-				break
-			}
-		}
-		if hasTag == match {
-			out = append(out, p)
-		}
-	}
-	return out
-}
-
 func parsePost(path string) (*Post, error) {
 
 	content, err := os.ReadFile(path)
@@ -294,8 +263,8 @@ func parsePost(path string) (*Post, error) {
 	// can this post be on the frontpage?
 	frontpage, ok := frontmatter["frontpage"].(bool)
 	if !ok {
-		// default to true if omitted
-		frontpage = true
+		// default to false if omitted
+		frontpage = false
 	}
 
 	// banner
@@ -412,18 +381,19 @@ func executeTemplates(posts []Post) error {
 	}
 
 	var frontpagePosts, otherPosts []Post
-	techPosts := filterPostsByTag(posts, techTags, true)
-	otherPosts = filterPostsByTag(posts, techTags, false)
-	for _, p := range techPosts {
+	sort.Slice(posts, func(i, j int) bool {
+		return posts[i].Time.After(posts[j].Time)
+	})
+	for _, p := range posts {
+		if !p.Publish {
+			continue
+		}
 		if p.Frontpage {
 			frontpagePosts = append(frontpagePosts, p)
 		} else {
 			otherPosts = append(otherPosts, p)
 		}
 	}
-	sort.Slice(otherPosts, func(i, j int) bool {
-		return otherPosts[i].Time.After(otherPosts[j].Time)
-	})
 
 	err = executeIndexTemplate(tmpl, "public/index.html", frontpagePosts)
 	if err != nil {

@@ -1,7 +1,7 @@
 ---
 title: Bitcoin Core Cheatsheet
 date: 2026-03-05
-tags: bitcoin dev nixos
+frontpage: true
 ---
 
 Build [Bitcoin Core](https://github.com/bitcoin/bitcoin) with
