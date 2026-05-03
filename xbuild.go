@@ -282,10 +282,6 @@ func parsePost(path string) (*Post, error) {
 		banner = nil
 	}
 
-	// tags
-	rawTags, _ := frontmatter["tags"].(string)
-	tags := strings.Split(rawTags, " ")
-
 	// stacker news
 	snId, _ := frontmatter["sn_id"].(int)
 	var comments, sats int
@@ -345,7 +341,6 @@ func parsePost(path string) (*Post, error) {
 		Publish:   publish,
 		Frontpage: frontpage,
 		Banner:    banner,
-		Tags:      tags,
 		SnId:      snId,
 		Comments:  comments,
 		Sats:      sats,

@@ -6,13 +6,6 @@
                 {{ .Title }}
             </a>
         </h4>
-        {{ if .Tags }}
-        <div class="post-item-tags">
-            {{ range .Tags }}
-            {{ if . }}<span>{{ . }}</span>{{ end }}
-            {{ end }}
-        </div>
-        {{ end }}
     </div>
     <time class="post-item-meta" datetime="{{ formatTime .Time "2006-01-02T15:04:05Z" }}">
         {{ formatTime .Time "2 Jan 2006" }}

@@ -22,11 +22,6 @@
                 <time datetime="{{ formatTime .Time "2006-01-02T15:04:05Z" }}" itemprop="datePublished">
                     {{ formatTime .Time "Jan 2, 2006" }}
                 </time>
-                <div class="post-item-tags">
-                    {{ range .Tags }}
-                    {{ if . }}<span>{{ . }}</span>{{ end }}
-                    {{ end }}
-                </div>
             </div>
         </header>
         <div class="post-content">

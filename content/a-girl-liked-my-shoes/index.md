@@ -2,7 +2,6 @@
 title: A girl told me she likes my shoes, gotta talk about it
 date: 2025-10-26
 sn_id: 1265480
-tags: story
 ---
 
 ---------DISCLAIMER BEGIN---------

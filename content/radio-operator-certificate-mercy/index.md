@@ -2,7 +2,6 @@
 title: Mercy for My Flight Radiotelephone Operator's Certificate
 date: 2025-11-13
 sn_id: 1281843
-tags: story
 ---
 
 ![](./certificate.webp)

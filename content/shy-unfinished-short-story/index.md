@@ -1,7 +1,6 @@
 ---
 title: shy, unfinished short story
 date: 2026-02-01
-tags: story
 sn_id: 1424165
 ---
 
