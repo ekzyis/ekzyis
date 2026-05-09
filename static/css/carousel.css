@@ -42,7 +42,7 @@
  */
 @keyframes quote-fade {
     /* this needs to be 0%, 1/n%, 100% (n = number of quotes) */
-    0%, 14%, 100% { opacity: 0; } /* fade out */
+    0%, 33%, 100% { opacity: 0; } /* fade out */
     /* 2%, (1/n - 2)% */
-    2%, 12% { opacity: 1; } /* fade in */
+    5%, 28% { opacity: 1; } /* fade in */
 }

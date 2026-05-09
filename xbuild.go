@@ -45,25 +45,6 @@ var (
 			Quote:  "Because in the end it doesn't matter how feature-rich and easy-to-use the Lightning Network is if it can't keep user funds safe.",
 			Author: "Matt Morehouse",
 		},
-		{
-			// https://www.goodreads.com/book/show/2761.The_Denial_of_Death
-			Quote:  "The problem is that we all want to be more than a shitting and fucking creature that dies.",
-			Author: "Review of The Denial of Death by Ernest Becker",
-		},
-		{
-			// https://www.youtube.com/watch?v=l5NK8zdIK-g (17:53)
-			Quote:  "Get enough sleep. Drink more water.",
-			Author: "Gibi ASMR",
-		},
-		{
-			// https://www.youtube.com/watch?v=l5NK8zdIK-g (34:57)
-			Quote:  "We are insanely social creatures, as much as we pretend that we aren't.",
-			Author: "Gibi ASMR, again",
-		},
-		{
-			Quote:  "Wow, you made it to the end of these *very* inspiring quotes!",
-			Author: "Sarcasm",
-		},
 	}
 )
 
