@@ -3,7 +3,7 @@
 {{ template "head" . }}
 <body>
 {{ template "nav" }}
-<div class="container justify-center">
+<div class="container content-center">
     <main class="post-index">
         <div class="quote-carousel" style="--quote-count: {{ len .Quotes }}">
             {{ range $i, $q := .Quotes }}
