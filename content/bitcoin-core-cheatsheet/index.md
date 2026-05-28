@@ -4,8 +4,8 @@ date: 2026-03-05
 frontpage: true
 ---
 
-Build [Bitcoin Core](https://github.com/bitcoin/bitcoin) with
-[bitcoin-nix-tools](https://github.com/uncomputable/bitcoin-nix-tools):
+**Build [Bitcoin Core](https://github.com/bitcoin/bitcoin) with
+[bitcoin-nix-tools](https://github.com/uncomputable/bitcoin-nix-tools):**
 
 ```
 $ git clone git@github.com:bitcoin/bitcoin
@@ -20,7 +20,7 @@ $ cmake --build build -j8
 compile_commands.json in build/. It is needed to enable code navigation with
 `clangd`. It will look for this file in build/ by default.</sub>
 
-Functional tests:
+**Functional tests:**
 
 ```
 # all functional tests
@@ -29,7 +29,7 @@ $ python build/test/functional/test_runner.py
 $ python build/test/functional/test_runner.py feature_signet.py
 ```
 
-Unit tests:
+**Unit tests:**
 
 ```
 # all unit tests
@@ -38,7 +38,7 @@ $ build/test/test_bitcoin
 $ build/bin/test_bitcoin --run_test=txospenderindex_tests
 ```
 
-Clean rebuild in one command:
+**Clean rebuild in one command:**
 
 ```
 $ rm -rf build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build && cmake --build build -j8

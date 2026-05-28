@@ -105,8 +105,14 @@
     word-break: break-word;
 }
 
-.post-content h2 + p:has(sub) {
+.post-content h2 + p:has(sub),
+.post-content pre:has(code) + p:has(sub) {
     margin-top: 0;
+}
+
+/* not using p:has(sub) because we can't nest :has() */
+.post-content pre:has(code):has(+ p>sub) {
+    margin-bottom: 3px;
 }
 
 .post-content>pre:has(code) {
