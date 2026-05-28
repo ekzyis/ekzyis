@@ -16,6 +16,9 @@ module.exports = {
       function ({ addComponents }) {
         addComponents({
           '.container': {
+            flexGrow: '1',
+            display: 'flex',
+            flexDirection: 'column',
             '@screen lg': {
               maxWidth: '1280px',
             },
