@@ -46,3 +46,15 @@ $ rm -rf build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build && cmake --bu
 
 <sub>Usually, only recompiling changed files with `cmake --build` is enough,
 though.</sub>
+
+**Fuzzing:**
+
+```
+# build
+$ cmake --preset=libfuzzer
+$ cmake --build build_fuzz
+# fuzz specific target
+$ FUZZ=process_message build_fuzz/test/bin/fuzz
+```
+
+<sub>See doc/fuzzing.md in the Bitcoin Core repository for more info.</sub>
