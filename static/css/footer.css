@@ -17,6 +17,10 @@ footer a.stackernews:hover {
     color: #fada5e;
 }
 
+footer a.signal:hover {
+    color: #3a76f0;
+}
+
 footer svg {
     display: inline;
     width: 24px;
