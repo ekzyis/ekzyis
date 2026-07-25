@@ -13,7 +13,7 @@ $ git clone git@github.com:bitcoin-dev-tools/bix
 $ nix develop bix/
 $ cd bitcoin
 $ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build
-$ cmake --build build -j8
+$ cmake --build build -j$(nproc)
 ```
 
 <sub>With `CMAKE_EXPORT_COMPILE_COMMANDS`, `cmake` will create
@@ -43,7 +43,7 @@ $ build/bin/test_bitcoin --run_test=txospenderindex_tests
 **Clean rebuild in one command:**
 
 ```
-$ rm -rf build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build && cmake --build build -j8
+$ rm -rf build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build && cmake --build build -j$(nproc)
 ```
 
 <sub>Usually, only recompiling changed files with `cmake --build` is enough,
