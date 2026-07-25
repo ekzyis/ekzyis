@@ -5,12 +5,12 @@ frontpage: true
 ---
 
 **Build [Bitcoin Core](https://github.com/bitcoin/bitcoin) with
-[bitcoin-nix-tools](https://github.com/uncomputable/bitcoin-nix-tools):**
+[bix](https://github.com/bitcoin-dev-tools/bix):**
 
 ```
 $ git clone git@github.com:bitcoin/bitcoin
-$ git clone git@github.com:uncomputable/bitcoin-nix-tools
-$ nix-shell bitcoin-nix-tools/
+$ git clone git@github.com:bitcoin-dev-tools/bix
+$ nix develop bix/
 $ cd bitcoin
 $ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build
 $ cmake --build build -j8
