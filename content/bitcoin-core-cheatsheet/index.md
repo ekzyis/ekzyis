@@ -34,7 +34,7 @@ $ python build/test/functional/test_runner.py feature_signet.py
 
 ```
 # all unit tests
-$ build/test/test_bitcoin
+$ build/bin/test_bitcoin
 
 # specific unit test
 $ build/bin/test_bitcoin --run_test=txospenderindex_tests
@@ -54,8 +54,8 @@ though.</sub>
 **Build for fuzzing:**
 
 ```
-$ cmake --preset=libfuzzer
-$ cmake --build build_fuzz
+$ cmake --preset libfuzzer
+$ cmake --build build_fuzz -j$(nproc)
 ```
 
 **Fuzz specific target:**
@@ -74,7 +74,7 @@ $ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz -max_total_time=60 fuzz_corpora/$FUZZ_TA
 $ cmake --preset libfuzzer -B build_cov \
     -DCMAKE_C_FLAGS="-fprofile-instr-generate -fcoverage-mapping" \
     -DCMAKE_CXX_FLAGS="-fprofile-instr-generate -fcoverage-mapping"
-$ cmake --build build_cov
+$ cmake --build build_cov -j$(nproc)
 ```
 
 **Fuzz for coverage data:**
