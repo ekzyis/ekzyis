@@ -4,6 +4,8 @@ date: 2026-03-05
 frontpage: true
 ---
 
+## Build
+
 **Build [Bitcoin Core](https://github.com/bitcoin/bitcoin) with
 [bix](https://github.com/bitcoin-dev-tools/bix):**
 
@@ -19,6 +21,17 @@ $ cmake --build build -j$(nproc)
 <sub>With `CMAKE_EXPORT_COMPILE_COMMANDS`, `cmake` will create
 compile_commands.json in build/. It is needed to enable code navigation with
 `clangd`. It will look for this file in build/ by default.</sub>
+
+**Clean rebuild in one command:**
+
+```
+$ rm -rf build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build && cmake --build build -j$(nproc)
+```
+
+<sub>Usually, only recompiling changed files with `cmake --build` is enough,
+though.</sub>
+
+## Test
 
 **Functional tests:**
 
@@ -40,16 +53,7 @@ $ build/bin/test_bitcoin
 $ build/bin/test_bitcoin --run_test=txospenderindex_tests
 ```
 
-**Clean rebuild in one command:**
-
-```
-$ rm -rf build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build && cmake --build build -j$(nproc)
-```
-
-<sub>Usually, only recompiling changed files with `cmake --build` is enough,
-though.</sub>
-
----
+## Fuzz
 
 **Build for fuzzing:**
 
