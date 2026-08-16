@@ -11,7 +11,7 @@ log () {
 
 log rm -r public/
 log cp -r static/ public/
-log go run xbuild.go -M
+log go run *.go -M
 log tailwindcss -i input.css -o public/css/tailwind.css
 
 log s3cmd sync $S3CMD_OPTS --dry-run public/ s3://www.ekzy.is

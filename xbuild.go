@@ -16,7 +16,6 @@ import (
 	"time"
 
 	embed "github.com/13rac1/goldmark-embed"
-	"github.com/alecthomas/chroma/v2/styles"
 	sn "github.com/ekzyis/snappy"
 	figure "github.com/mangoumbrella/goldmark-figure"
 	"github.com/tdewolff/minify/v2"
@@ -126,7 +125,7 @@ var (
 			embed.New(),
 			highlighting.NewHighlighting(
 				// https://swapoff.org/chroma/playground/
-				highlighting.WithCustomStyle(styles.Get("catppuccin-mocha")),
+				highlighting.WithCustomStyle(codeStyle()),
 			),
 		),
 	)
