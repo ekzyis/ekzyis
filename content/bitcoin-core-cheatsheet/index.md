@@ -9,10 +9,16 @@ frontpage: true
 **Build [Bitcoin Core](https://github.com/bitcoin/bitcoin) with
 [bix](https://github.com/bitcoin-dev-tools/bix):**
 
-```
+```term
+# clone Bitcoin Core
 $ git clone git@github.com:bitcoin/bitcoin
+# clone nix flake for Bitcoin Core dev environment
 $ git clone git@github.com:bitcoin-dev-tools/bix
+
+# enter dev environment
 $ nix develop bix/
+
+# build
 $ cd bitcoin
 $ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build
 $ cmake --build build -j$(nproc)
@@ -24,7 +30,7 @@ compile_commands.json in build/. It is needed to enable code navigation with
 
 **Clean rebuild in one command:**
 
-```
+```term
 $ rm -rf build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build && cmake --build build -j$(nproc)
 ```
 
@@ -35,7 +41,7 @@ though.</sub>
 
 **Functional tests:**
 
-```
+```term
 # all functional tests
 $ python build/test/functional/test_runner.py
 
@@ -45,7 +51,7 @@ $ python build/test/functional/test_runner.py feature_signet.py
 
 **Unit tests:**
 
-```
+```term
 # all unit tests
 $ build/bin/test_bitcoin
 
@@ -57,14 +63,14 @@ $ build/bin/test_bitcoin --run_test=txospenderindex_tests
 
 **Build for fuzzing:**
 
-```
+```term
 $ cmake --preset libfuzzer
 $ cmake --build build_fuzz -j$(nproc)
 ```
 
 **Fuzz specific target:**
 
-```
+```term
 # smoke test of target: fuzz until first crash, discarding any progress
 $ FUZZ_TARGET=process_message
 $ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz
@@ -89,7 +95,7 @@ $ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz -max_total_time=60 fuzz_corpora/$FUZZ_TA
 
 **Build for fuzz coverage:**
 
-```
+```term
 $ cmake --preset libfuzzer -B build_cov \
     -DCMAKE_C_FLAGS="-fprofile-instr-generate -fcoverage-mapping" \
     -DCMAKE_CXX_FLAGS="-fprofile-instr-generate -fcoverage-mapping"
@@ -98,14 +104,14 @@ $ cmake --build build_cov -j$(nproc)
 
 **Fuzz for coverage data:**
 
-```
+```term
 $ FUZZ=$FUZZ_TARGET build_cov/bin/fuzz -max_total_time=5 fuzz_corpora/$FUZZ_TARGET
 $ llvm-profdata merge build_cov/raw_profile_data/*.profraw -o build_cov/coverage.profdata
 ```
 
 **Generate HTML coverage report:**
 
-```
+```term
 $ llvm-cov show \
     --object=build_cov/bin/fuzz \
     -Xdemangler=llvm-cxxfilt \
