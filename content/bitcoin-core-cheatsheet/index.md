@@ -65,8 +65,23 @@ $ cmake --build build_fuzz -j$(nproc)
 **Fuzz specific target:**
 
 ```
+# smoke test of target: fuzz until first crash, discarding any progress
 $ FUZZ_TARGET=process_message
 $ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz
+
+# fuzz target with existing corpus
+$ git clone git@github.com:bitcoin-core/qa-assets ../qa-assets
+$ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz -runs=0 ../qa-assets/fuzz_corpora/$FUZZ_TARGET
+
+# minimize corpus
+$ tmp=$(mktemp -d)
+$ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz -merge=1 $tmp ../qa-assets/fuzz_corpora/$FUZZ_TARGET
+
+# check if existing corpus was minimized by comparing input count
+$ diff -u \
+    <(ls -l ../qa-assets/fuzz_corpora/$FUZZ_TARGET | wc -l) \
+    <(ls -l $tmp | wc -l)
+
 # fuzz target for 1 minute and generate corpus
 $ mkdir -p fuzz_corpora/$FUZZ_TARGET
 $ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz -max_total_time=60 fuzz_corpora/$FUZZ_TARGET
