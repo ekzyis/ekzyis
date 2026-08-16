@@ -14,10 +14,8 @@ frontpage: true
 $ git clone git@github.com:bitcoin/bitcoin
 # clone nix flake for Bitcoin Core dev environment
 $ git clone git@github.com:bitcoin-dev-tools/bix
-
 # enter dev environment
 $ nix develop bix/
-
 # build
 $ cd bitcoin
 $ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B build
@@ -44,7 +42,6 @@ though.</sub>
 ```term
 # all functional tests
 $ python build/test/functional/test_runner.py
-
 # specific functional test
 $ python build/test/functional/test_runner.py feature_signet.py
 ```
@@ -54,12 +51,13 @@ $ python build/test/functional/test_runner.py feature_signet.py
 ```term
 # all unit tests
 $ build/bin/test_bitcoin
-
 # specific unit test
 $ build/bin/test_bitcoin --run_test=txospenderindex_tests
 ```
 
 ## Fuzz
+
+<sub>[`doc/fuzzing.md`](https://github.com/bitcoin/bitcoin/blob/master/doc/fuzzing.md)</sub>
 
 **Build for fuzzing:**
 
@@ -74,23 +72,24 @@ $ cmake --build build_fuzz -j$(nproc)
 # smoke test of target: fuzz until first crash, discarding any progress
 $ FUZZ_TARGET=process_message
 $ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz
+# fuzz target for 1 minute and generate corpus
+$ mkdir -p fuzz_corpora/$FUZZ_TARGET
+$ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz -max_total_time=60 fuzz_corpora/$FUZZ_TARGET
+```
 
+**Fuzz with fuzz corpora:**
+
+```term
 # fuzz target with existing corpus
 $ git clone git@github.com:bitcoin-core/qa-assets ../qa-assets
 $ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz -runs=0 ../qa-assets/fuzz_corpora/$FUZZ_TARGET
-
 # minimize corpus
 $ tmp=$(mktemp -d)
 $ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz -merge=1 $tmp ../qa-assets/fuzz_corpora/$FUZZ_TARGET
-
 # check if existing corpus was minimized by comparing input count
 $ diff -u \
     <(ls -l ../qa-assets/fuzz_corpora/$FUZZ_TARGET | wc -l) \
     <(ls -l $tmp | wc -l)
-
-# fuzz target for 1 minute and generate corpus
-$ mkdir -p fuzz_corpora/$FUZZ_TARGET
-$ FUZZ=$FUZZ_TARGET build_fuzz/bin/fuzz -max_total_time=60 fuzz_corpora/$FUZZ_TARGET
 ```
 
 **Build for fuzz coverage:**
@@ -125,4 +124,3 @@ $ llvm-cov show \
     --project-title="Bitcoin Core Fuzz Coverage Report"
 ```
 
-<sub>See doc/fuzzing.md in the Bitcoin Core repository for more info.</sub>
