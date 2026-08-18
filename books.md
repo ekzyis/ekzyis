@@ -2,7 +2,6 @@
 
 **Started**
 
-* _How to Win Friends and Influence People_ by Dale Carnegie (p. 89)
 * _Broken Money_ by Lyn Alden (p. 139)
 * _The Mandibles_ by Lionel Shriver (p. 15)
 * _Heart of Darkness_ by Joseph Conrad (p. xiv)
@@ -14,6 +13,11 @@
 * _Helmet for My Pillow_ by Robert Leckie
 
 **Finished**
+
+---2026---
+
+* _How to Win Friends and Influence People_ by Dale Carnegie
+* _The Denial of Death_ by Ernest Becker
 
 ---2025---
 
