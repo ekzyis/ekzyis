@@ -6,11 +6,15 @@
 * _The Mandibles_ by Lionel Shriver (p. 15)
 * _Heart of Darkness_ by Joseph Conrad (p. xiv)
 * _The Big Short_ by Michael Lewis (p. 6)
+* _At Swim-Two-Birds_ by Flann O'Brien (p. 14)
 
 **Planned**
 
 * _Mastering Bitcoin (3rd Edition)_ by Andreas M. Antonopoulos, David A. Harding
 * _Helmet for My Pillow_ by Robert Leckie
+* _A Lodging of Wayfaring Men_ by Paul Rosenberg
+* _The Sovereign Individual_ by James Dale Davidson
+* _Debt: The First 5,000 Years_ by David Graeber
 
 **Finished**
 
