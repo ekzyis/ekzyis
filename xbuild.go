@@ -121,6 +121,8 @@ var (
 		goldmark.WithRendererOptions(goldmarkHtml.WithUnsafe()),
 		goldmark.WithExtensions(
 			extension.Footnote,
+			extension.Table,
+			extension.Strikethrough,
 			figure.Figure,
 			embed.New(),
 			highlighting.NewHighlighting(
@@ -178,7 +180,7 @@ func walkMarkdownContent() ([]string, error) {
 		return args, nil
 	}
 
-	files, err := filepath.Glob(filepath.Join(contentDir, "*", "index.md"))
+	files, err := filepath.Glob(filepath.Join(contentDir, "*", "*.md"))
 	if err != nil {
 		return nil, err
 	}
@@ -280,11 +282,12 @@ func parsePost(path string) (*Post, error) {
 	// url
 	url, ok := frontmatter["url"].(string)
 	if !ok {
-		dir := filepath.Dir(path)
 		// slash at the end is required so images can use relative links
 		// without the slash at the end, src="./diff.webp" would be relative to root
 		// TODO: load images even when there's no / at the end
-		url = "/" + strings.ReplaceAll(strings.ToLower(strings.TrimPrefix(dir, contentDir+"/")), "_", "-") + "/"
+		slug := strings.TrimSuffix(strings.TrimPrefix(path, contentDir+"/"), ".md")
+		slug = strings.TrimSuffix(slug, "/index")
+		url = "/" + strings.ReplaceAll(strings.ToLower(slug), "_", "-") + "/"
 	}
 
 	// markdown
@@ -295,7 +298,7 @@ func parsePost(path string) (*Post, error) {
 	if err := mdParser.Convert([]byte(markdown), &buf); err != nil {
 		return nil, fmt.Errorf("failed to convert markdown for %s: %v", path, err)
 	}
-	html := template.HTML(buf.String())
+	html := template.HTML(wrapTables(buf.String()))
 
 	// images
 	var images []string
@@ -361,6 +364,10 @@ func executeTemplates(posts []Post) error {
 	})
 	for _, p := range posts {
 		if !p.Publish {
+			continue
+		}
+		if filepath.Base(p.Path) != "index.md" {
+			// series parts are reachable through their folder's index.md, not the listings
 			continue
 		}
 		if p.Frontpage {
@@ -500,6 +507,14 @@ func copyFile(src, dst string) error {
 		return fmt.Errorf("error copying file %s to %s: %v", src, dst, err)
 	}
 	return nil
+}
+
+var tableRe = regexp.MustCompile(`(?s)<table>.*?</table>`)
+
+// wrapTables wraps each rendered table in a scroll container so wide tables
+// get their own horizontal scrollbar instead of overflowing the page.
+func wrapTables(s string) string {
+	return tableRe.ReplaceAllString(s, `<div class="table-wrap">${0}</div>`)
 }
 
 func toWebpPath(path string) string {

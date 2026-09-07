@@ -125,6 +125,27 @@
     line-height: 1.1;
 }
 
+.post-content .table-wrap {
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.post-content th,
+.post-content td {
+    border: 1px solid var(--quote-border-color);
+    padding: 6px 12px;
+    text-align: left;
+}
+
+.post-content thead th {
+    background-color: var(--tag-background-color);
+}
+
 .post-content img {
     margin: auto;
 }
