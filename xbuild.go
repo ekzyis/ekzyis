@@ -74,6 +74,7 @@ type Post struct {
 	Markdown  string
 	HTML      template.HTML
 	Images    []string
+	Videos    []string
 }
 
 type IndexTemplateData struct {
@@ -317,6 +318,23 @@ func parsePost(path string) (*Post, error) {
 		return nil, fmt.Errorf("failed to find images for %s: %v", path, err)
 	}
 
+	// videos
+	var videos []string
+	err = filepath.Walk(
+		filepath.Dir(path),
+		func(path string, info os.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+			if !info.IsDir() && regexp.MustCompile(`\.(mp4|webm)$`).MatchString(path) {
+				videos = append(videos, path)
+			}
+			return nil
+		})
+	if err != nil {
+		return nil, fmt.Errorf("failed to find videos for %s: %v", path, err)
+	}
+
 	return &Post{
 		Path:      path,
 		Title:     title,
@@ -331,6 +349,7 @@ func parsePost(path string) (*Post, error) {
 		Markdown:  markdown,
 		HTML:      html,
 		Images:    images,
+		Videos:    videos,
 	}, nil
 }
 
@@ -494,6 +513,20 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 			fmt.Printf("> %s\n", dstImage)
 		}
 
+		// re-encode videos as H.264 720p
+		for _, video := range post.Videos {
+			dstVideo := filepath.Join(postDir, filepath.Base(video))
+			if _, err := os.Stat(dstVideo); err == nil {
+				fmt.Printf("> %s (exists)\n", dstVideo)
+				continue
+			}
+			err = toH264(video, dstVideo)
+			if err != nil {
+				return err
+			}
+			fmt.Printf("> %s\n", dstVideo)
+		}
+
 		fmt.Printf("> %s\n", postHTMLPath)
 	}
 
@@ -525,6 +558,23 @@ func toWebp(src, dst string) error {
 	err := exec.Command("ffmpeg", "-i", src, "-c:v", "libwebp", dst).Run()
 	if err != nil {
 		return fmt.Errorf("error converting image to webp: %v", err)
+	}
+
+	return nil
+}
+
+func toH264(src, dst string) error {
+	err := exec.Command("ffmpeg", "-y",
+		"-i", src,
+		"-vf", `scale=-2:min(720\,ih)`,
+		"-c:v", "libx264", "-preset", "slow", "-crf", "24",
+		"-pix_fmt", "yuv420p",
+		"-c:a", "aac", "-b:a", "128k",
+		"-movflags", "+faststart",
+		dst,
+	).Run()
+	if err != nil {
+		return fmt.Errorf("error encoding video to h264: %v", err)
 	}
 
 	return nil
