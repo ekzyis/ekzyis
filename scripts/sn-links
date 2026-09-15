@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# Interactively turn @username and ~territory mentions in markdown into
+# Stacker News links:
+#   @bob     -> [@bob](https://stacker.news/bob)
+#   ~bitcoin -> [~bitcoin](https://stacker.news/~bitcoin)
+#
+# Usage: sn-links FILE|DIR [FILE|DIR ...]
+# Directories are searched recursively for *.md files.
+
+set -euo pipefail
+
+# '@' or '~' not preceded by a word char, '[', '/' or '~' (skips emails,
+# existing links, urls, strikethrough).
+mention='(?<![A-Za-z0-9[/~])[@~][A-Za-z0-9_]{1,32}'
+
+if [ -t 1 ]; then red=$'\033[1;31m'; rst=$'\033[0m'; else red=; rst=; fi
+
+files=()
+for p in "$@"; do
+    if [ -d "$p" ]; then
+        while IFS= read -r f; do files+=("$f"); done < <(find "$p" -name '*.md' | sort)
+    else
+        files+=("$p")
+    fi
+done
+
+[ ${#files[@]} -eq 0 ] && { echo "usage: sn-links FILE|DIR ..." >&2; exit 1; }
+
+for file in "${files[@]}"; do
+    grep -qP "$mention" "$file" || continue
+    total=$(wc -l < "$file")
+    echo "=== $file ==="
+    while IFS=: read -r lineno name <&3; do
+        start=$(( lineno > 3 ? lineno - 3 : 1 ))
+        end=$(( lineno + 3 < total ? lineno + 3 : total ))
+        for ((n = start; n <= end; n++)); do
+            text=$(sed -n "${n}p" "$file")
+            if [ "$n" -eq "$lineno" ]; then
+                text=$(printf '%s' "$text" | sed "s|${name}|${red}&${rst}|g")
+                printf "  > %4d: %s\n" "$n" "$text"
+            else
+                printf "    %4d: %s\n" "$n" "$text"
+            fi
+        done
+        case "$name" in
+            @*) url="https://stacker.news/${name#@}" ;;
+            *)  url="https://stacker.news/${name}" ;;
+        esac
+        read -r -p "  link $name ? [y/N/q] " answer
+        case "$answer" in
+            q) exit 0 ;;
+            y|Y)
+                sed -i "${lineno}s|${name}\\b|[${name}](${url})|" "$file"
+                echo "  -> linked $name"
+                ;;
+        esac
+    done 3< <(grep -noP "$mention" "$file")
+done

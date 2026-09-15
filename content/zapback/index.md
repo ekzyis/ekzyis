@@ -8,7 +8,7 @@ frontpage: true
 Hi! This is a little game I've been working on over the past few weekends.
 
 It's heavily inspired by [lastpaywins.com](https://lastpaywins.com) by
-@alex_lewin.
+[@alex_lewin](https://stacker.news/alex_lewin).
 
 It works similarly, except that you invite a friend to join your game—so you're
 not playing against strangers. Also, the timer is 24 hours instead of 300
