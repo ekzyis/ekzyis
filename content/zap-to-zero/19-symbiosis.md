@@ -78,16 +78,15 @@ _me trying to get out of bed after I already had 12 hours of sleep_
 
 ## Recent Superzaps
 
-### 1. [Everyone I've met would be well-served thinking more about what to focus
-on](https://stacker.news/items/376337)
+### 1. [Everyone I've met would be well-served thinking more about what to focus on](https://stacker.news/items/376337)
 
-I'm starting to feel bad to mention @elvismercury so much here. But well, [tHiS iS mY
+I'm starting to feel bad to mention [@elvismercury](https://stacker.news/elvismercury) so much here. But well, [tHiS iS mY
 pOsT](https://www.youtube.com/watch?v=Qrz_XkPELRQ&t=1230s) so I can mention whoever I want, right?
 
-@k00b sent me the link to this post yesterday when I mentioned I don't know which post he is talking
-about. When he sent me the link, I remembered. When I saw @elvismercury's post for the first time, I
+[@k00b](https://stacker.news/k00b) sent me the link to this post yesterday when I mentioned I don't know which post he is talking
+about. When he sent me the link, I remembered. When I saw [@elvismercury](https://stacker.news/elvismercury)'s post for the first time, I
 started reading it but I fell asleep since I usually only partly
-["bookend"](https://stacker.news/items/387960) my day, as @Coyote_Cosmico nicely put it [1]. We were
+["bookend"](https://stacker.news/items/387960) my day, as [@Coyote_Cosmico](https://stacker.news/Coyote_Cosmico) nicely put it [1]. We were
 talking about focus since I mentioned I feel very motivated but I don't know where to best put all
 this motivation into. I feel all over the place with my plans what I should do and my attention span
 and focus suffers from that.
@@ -108,13 +107,13 @@ posts](https://ekzyis.com/blog/) as reference) to connect our nodes.
 [As mentioned a few days ago](https://stacker.news/items/385785), something similar to SNL but for
 developers (or anyone interested in the development of SN) also struck me as a potentially great
 idea. But that would (again) take up a lot of time and I only have so much time before I get
-overwhelmed and then just want to hide myself again and do absolutely nothing. Or as @orthwyrm would
+overwhelmed and then just want to hide myself again and do absolutely nothing. Or as [@orthwyrm](https://stacker.news/orthwyrm) would
 write it:
 
-> __@_'-'
+> __[@_](https://stacker.news/_)'-'
 \_@'-' @
 
-— @orthwyrm, [#367964](https://stacker.news/items/367964)
+— [@orthwyrm](https://stacker.news/orthwyrm), [#367964](https://stacker.news/items/367964)
 
 There is a lot more I want to write about this phenomenon of "too much motivation", its relationship
 with sleep and my own experience with it but I notice I am already rambling too much (again) and I
@@ -160,20 +159,19 @@ forward to that.
 
 ---
 
-### 2. [My recent BTC story: What happened with me yesterday (real
-story)](https://stacker.news/items/387859)
+### 2. [My recent BTC story: What happened with me yesterday (real story)](https://stacker.news/items/387859)
 
-@kurszusz told us a _real_ story (mentioning it's real makes it _really_ real, I guess) the day
+[@kurszusz](https://stacker.news/kurszusz) told us a _real_ story (mentioning it's real makes it _really_ real, I guess) the day
 before yesterday. 
 
 I liked reading it since I also find it very interesting what other people find interesting about
-bitcoin like @elvismercury:
+bitcoin like [@elvismercury](https://stacker.news/elvismercury):
 
 > It's interesting to know what other people find interesting about btc -- it's usually a very
 > different set of things than what would occur to me, so it's a good opportunity to learn.
 I look forward to the update.
 
-— @elvismercury, [#387896](https://stacker.news/items/387896)
+— [@elvismercury](https://stacker.news/elvismercury), [#387896](https://stacker.news/items/387896)
 
 > The most interesting thing for him was the finite supply of Bitcoin...He told me that 21 millions
 > is not much, and it exist around 60 millions people who own more than 1 million $, and if this
@@ -182,7 +180,7 @@ I look forward to the update.
 The second aspect he liked it, was that the "blockchain never forget", and every transaction is
 coded and encrypted, and anyone can see / verify it, because it is open source...
 
-— @kurszusz, [#387859]( https://stacker.news/items/387859)
+— [@kurszusz](https://stacker.news/kurszusz), [#387859]( https://stacker.news/items/387859)
 
 Sounds like that person's favorite Satoshi quote will be this:
 
@@ -226,7 +224,7 @@ proposition of bitcoin in that moment.
 
 We talked more about real estate and gold afterwards though and even my father joined in later.
 
-Looking forward to the update from @kurszusz. It's been two days already.
+Looking forward to the update from [@kurszusz](https://stacker.news/kurszusz). It's been two days already.
 
 ---
 
@@ -259,7 +257,7 @@ Sudden endings contain cliff hangers. But is that necessarily a bad thing?
 
 [0] _At least I think I am funny._
 
-[1] _That term immediately stuck with me and I will probably remember @Coyote_Cosmico forever as the
+[1] _That term immediately stuck with me and I will probably remember [@Coyote_Cosmico](https://stacker.news/Coyote_Cosmico) forever as the
 "bookend stacker" now._
 
 [2] _Wow, it's really been four years now since the pandemic started. Is it finally over now? Feels

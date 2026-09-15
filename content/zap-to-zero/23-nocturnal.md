@@ -89,7 +89,7 @@ _JavaScript such random, much surprise, very fun_
 
 ### 1. [How do you explain zapping to non-bitcoiners?](https://stacker.news/items/392164)
 
-This post from @Scoresby (who was also featured in @Car's [recent
+This post from [@Scoresby](https://stacker.news/Scoresby) (who was also featured in [@Car](https://stacker.news/Car)'s [recent
 post](https://stacker.news/items/390030)) is about the lingo of bitcoiners.
 
 I found this post very interesting since I also have some personal experience with this. But first
@@ -102,23 +102,23 @@ very interesting:
 > identifying its cognates in other languages, or by tracing it and its cognates to a common
 > ancestral form in an ancestral language
 
-As far as I remember, the term was first used around the time when @jb55 created
+As far as I remember, the term was first used around the time when [@jb55](https://stacker.news/jb55) created
 [NIP-57](https://github.com/nostr-protocol/nips/blob/master/57.md) and called it _Lightning Zaps_.
 With this NIP, he wrote [rushed
 history](https://github.com/nostr-protocol/nips/pull/224#issuecomment-1418255711) almost a year ago:
 
 > I kinda rushed this and might be underspecified, let me know if anything seems unclear.
 
-One indicator that this is indeed one of the first times the term "zap" was mentioned is that @bumi
+One indicator that this is indeed one of the first times the term "zap" was mentioned is that [@bumi](https://stacker.news/bumi)
 [wrote this](https://github.com/nostr-protocol/nips/pull/224#issuecomment-1418293917) in the PR:
 
 > I am excited to see the interest of deeply integrating lightning payments into Nostr. **The name
 > zaps is great!**
 
-However, I am not sure if @jb55 came up with the name by himself. Maybe it just came up in a
+However, I am not sure if [@jb55](https://stacker.news/jb55) came up with the name by himself. Maybe it just came up in a
 discussion on nostr or elsewhere. But I am pretty sure that around the time the [PR was created and
 merged in February 2023](https://github.com/nostr-protocol/nips/pull/224) (much quicker than
-@benthecarman's [PR](https://github.com/nostr-protocol/nips/pull/685)), people quickly started to
+[@benthecarman](https://stacker.news/benthecarman)'s [PR](https://github.com/nostr-protocol/nips/pull/685)), people quickly started to
 call sending someone sats on nostr _zapping_. SN followed the trend and renamed all mentioning of
 "tips" to "zaps" in commit
 [`3e4161a`](https://github.com/stackernews/stacker.news/commit/3e4161ae8c7ef53bac5c0c273b87b7274ae498b6)[^1]
@@ -166,7 +166,7 @@ names, no faces, no authority. Just sats via zaps.
 
 ### 2. [Fiat Games on Bitcoin](https://stacker.news/items/394165)
 
-This post from @jimmysong mentioned points that are interesting, important and fresh at the same
+This post from [@jimmysong](https://stacker.news/jimmysong) mentioned points that are interesting, important and fresh at the same
 time. 
 
 As an aspiring military (history) nerd, I especially liked his intro about standing armies:
@@ -179,7 +179,7 @@ As an aspiring military (history) nerd, I especially liked his intro about stand
 > flaws of the human condition, there's bound to be some trouble. Many a revolution started with
 > standing armies that felt disrespected and seized power when they could.
 
-@jimmysong goes into detail why he believes that doing nothing is better than building something of
+[@jimmysong](https://stacker.news/jimmysong) goes into detail why he believes that doing nothing is better than building something of
 no value:
 
 > I mention this because this dynamic is at play in the Bitcoin ecosystem, where a bunch of bored

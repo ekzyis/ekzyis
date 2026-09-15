@@ -7,7 +7,7 @@ sn_id: 392798
 ![Absolute_Reality_v16_The_dark_sky_hangs_low_a_foreboding_prese_3.jpg](https://m.stacker.news/12920)
 
 _Is [this](https://github.com/stackernews/stacker.news/pull/749#issuecomment-1897770249) the storm
-that @DarthCoin mentioned [here](https://stacker.news/items/351564)?_
+that [@DarthCoin](https://stacker.news/DarthCoin) mentioned [here](https://stacker.news/items/351564)?_
 
 I don't like [my post from yesterday](https://stacker.news/items/391205)[^1]. I think that might
 have been the worst post in the series. Or I might just have forgotten how "bad" the earlier ones
@@ -69,7 +69,7 @@ again" at some point. Or something like that.
 
 ### 1. [So...How are We Activating Eltoo (LNSymmetry)?](https://stacker.news/items/391593)
 
-@nerd2ninja asked something I also wanted to ask for a long time but I always forgot and was too shy
+[@nerd2ninja](https://stacker.news/nerd2ninja) asked something I also wanted to ask for a long time but I always forgot and was too shy
 and afraid.
 
 > About a week ago, Darthcoin made a post using the nostr protocol about how while channel opening
@@ -88,20 +88,20 @@ You can see that post here:
 > fee, you don't have to sweet bullets over your peer trying to submit an older state to cheat funds
 > out of you with a higher fee, because you can just replace their older state with the newer one.
 
-@petertodd replied and I must have been as excited as @nerd2ninja to read his response:
+[@petertodd](https://stacker.news/petertodd) replied and I must have been as excited as [@nerd2ninja](https://stacker.news/nerd2ninja) to read his response:
 
 > The problem with Eltoo is that removing punishment has serious risks in untrusted environments.
 > Your counterparty can steal a lot of money if they manage to get a revoked state mined, up to
 > almost the entire balance of the channel.
 
-— @petertodd, [#391659]( https://stacker.news/items/391659)
+— [@petertodd](https://stacker.news/petertodd), [#391659]( https://stacker.news/items/391659)
 
 > So this is the first time I've ever seen anyone have a concern with LNSymmetry so this is exciting
 > lol.
 
-— @nerd2ninja, [#391843](https://stacker.news/items/391843)
+— [@nerd2ninja](https://stacker.news/nerd2ninja), [#391843](https://stacker.news/items/391843)
 
-I also liked that @nerd2ninja did not hold back (but stayed humble) since that's what SN should be
+I also liked that [@nerd2ninja](https://stacker.news/nerd2ninja) did not hold back (but stayed humble) since that's what SN should be
 about:
 
 > After I read your comment, I had this thought that I was kinda holding back, but I'll go ahead and
@@ -119,26 +119,25 @@ about:
 >
 > So I don't have much else to say other than "huh, that's interesting".
 
-— @nerd2ninja, ibidem
+— [@nerd2ninja](https://stacker.news/nerd2ninja), ibidem
 
-I kind of just want to end the post with this post and thus forward @nerd2ninja 50% but there was
+I kind of just want to end the post with this post and thus forward [@nerd2ninja](https://stacker.news/nerd2ninja) 50% but there was
 more great content yesterday (and before) that I found.
 
 But what I could do is add some more kind words that are definitely not just empty phrases: I always
-had great conversations with @nerd2ninja, not only on SN but also in the TG chat about various
+had great conversations with [@nerd2ninja](https://stacker.news/nerd2ninja), not only on SN but also in the TG chat about various
 things since my early days on SN (even before I got hired).
 
-So please, feel very appreciated @nerd2ninja even it took me 21 days to find something from you that
+So please, feel very appreciated [@nerd2ninja](https://stacker.news/nerd2ninja) even it took me 21 days to find something from you that
 I could mention here, lol :)
 
 But I am sure it won't be the last time.
 
 ---
 
-### 2. [Payment solution Stripe deplatforming accounts that sell bitcoin
-hardware](https://stacker.news/items/390003)
+### 2. [Payment solution Stripe deplatforming accounts that sell bitcoin hardware](https://stacker.news/items/390003)
 
-@bitsaga_org shared their experience with Stripe with us:
+[@bitsaga_org](https://stacker.news/bitsaga_org) shared their experience with Stripe with us:
 
 ![GD5ErhgXYAAkBZx.png](https://m.stacker.news/12923)
 
@@ -179,7 +178,7 @@ about the the Stripe ToS:
 >
 > We unfortunately need fiat for now to run successful businesses. Just the hard truth.
 
-Maybe similar to that @anon, I kind of wanted to reply to some comments "if you have no experience
+Maybe similar to that [@anon](https://stacker.news/anon), I kind of wanted to reply to some comments "if you have no experience
 running a business, maybe you shouldn't write comments about how to run a business".
 
 But I also don't want to stifle conversation. So I just grabbed some popcorn and bookmarked that

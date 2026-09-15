@@ -88,7 +88,7 @@ these actions with a 1% success rate of becoming something huge[^2]:
 >
 > I think about this a lot when it comes to MVPs in a startup.
 
-— @TonyGiorgio, [#396529](https://stacker.news/items/395797?commentId=396529)
+— [@TonyGiorgio](https://stacker.news/TonyGiorgio), [#396529](https://stacker.news/items/395797?commentId=396529)
 
 I would love to share more here and now but the surprise kind of is part of the point. We just have
 to wait until the time has come to deploy that line and you will have to trust me that I will do
@@ -106,8 +106,8 @@ _Yep, as mentioned, it has been a great success._
 
 ### 1. [A brief monologue on value4value](https://stacker.news/items/240442)
 
-I didn't intend to include any superzap today. But I found this post from @WeAreAllSatoshi while
-searching for [this post](https://stacker.news/items/349363) and I didn't mention @WeAreAllSatoshi
+I didn't intend to include any superzap today. But I found this post from [@WeAreAllSatoshi](https://stacker.news/WeAreAllSatoshi) while
+searching for [this post](https://stacker.news/items/349363) and I didn't mention [@WeAreAllSatoshi](https://stacker.news/WeAreAllSatoshi)
 here yet. That's how good our search has become. It shows you the content you need to see, not
 necessarily the content you're looking for, lol.
 

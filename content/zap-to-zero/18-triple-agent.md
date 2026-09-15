@@ -15,7 +15,7 @@ sn_id: 388997
 — Wikipedia, [_Triple Agent_](https://en.wikipedia.org/wiki/Triple_Agent)
 
 Yesterday, I realized I must be a nonconformist thanks to [this
-comment](https://stacker.news/items/387650) from @02399d3080. I realized I have been a nonconformist
+comment](https://stacker.news/items/387650) from [@02399d3080](https://stacker.news/02399d3080). I realized I have been a nonconformist
 my whole life. The more people agreed on something, the more skeptical I became.
 
 I was always the one who seemed to disagree. But I didn't necessarily disagree. No. All I wanted to
@@ -106,15 +106,15 @@ I am still good friends with the other person in that room though. We used to go
 
 _I even hit zero twice yesterday. Nice._
 
-The day before yesterday, @Undisciplined [mentioned in the
+The day before yesterday, [@Undisciplined](https://stacker.news/Undisciplined) [mentioned in the
 saloon](https://stacker.news/items/386733) that he "reached something of an equilibrium in my
 initial search for the optimal default zap. For a couple weeks now, I've been hovering around 270."
-He also asked how "other people's (@ekzyis and @elvismercury) current zap experiments [are] going".
+He also asked how "other people's ([@ekzyis](https://stacker.news/ekzyis) and [@elvismercury](https://stacker.news/elvismercury)) current zap experiments [are] going".
 
 I bookmarked his reply to my reply so I can respond to him here and he has to
 [search](https://stacker.news/items/387544) where he was mentioned. Isn't that fun?
 
->> How are other people's (@ekzyis and @elvismercury) current zap experiments going?
+>> How are other people's ([@ekzyis](https://stacker.news/ekzyis) and [@elvismercury](https://stacker.news/elvismercury)) current zap experiments going?
 >
 > Am I not writing every day how my current zap experiment is going? :)
 >
@@ -127,11 +127,11 @@ Will think more about this and reply here or create a post or just add them to m
 > I just meant quick takeaways. How has your experiment changed your own zapping behavior? Have you
 > noticed changes in other users? How have your rewards been affected? That kind of stuff.
 
-— @Undisciplined, [#387693](https://stacker.news/items/387693)
+— [@Undisciplined](https://stacker.news/Undisciplined), [#387693](https://stacker.news/items/387693)
 
 Even though I said I would think more about this, I didn't. So I am just going to pull stuff out of
-my ass like the original ass puller and namesake @orthwyrm did
-[here](https://stacker.news/items/373230). I hope ass pulling is welcome here like in ~oracle.
+my ass like the original ass puller and namesake [@orthwyrm](https://stacker.news/orthwyrm) did
+[here](https://stacker.news/items/373230). I hope ass pulling is welcome here like in [~oracle](https://stacker.news/~oracle).
 
 **1. Less bias enforcement in comment sections**
 
@@ -174,7 +174,7 @@ because I saw it earlier and my wallet was bigger at that point but unfortunatel
 
 ### 1. [You're a slut and a whore for the algorithm.](https://stacker.news/items/388164)
 
-@mo brings my feelings about social media or algorithmic feeds in general to the point with this
+[@mo](https://stacker.news/mo) brings my feelings about social media or algorithmic feeds in general to the point with this
 post. It contains a very good quote:
 
 > [...]
@@ -195,21 +195,21 @@ it's our current _sad_ reality?
 
 ### 2. [What's your "ritual" for reading a book smoothly?](https://stacker.news/items/387918)
 
-I might need to subscribe to @Fabs. He seems to speak regularly out of parts of my soul I am not
+I might need to subscribe to [@Fabs](https://stacker.news/Fabs). He seems to speak regularly out of parts of my soul I am not
 necessarily aware of.
 
 I currently struggle to find time to read the books I want to read. And there are a ton of them. I
 also noticed how reading in the morning should be a great idea but due to bad habits, I didn't do
 that yet. 
 
-@Coyote_Cosmico calls this "bookending":
+[@Coyote_Cosmico](https://stacker.news/Coyote_Cosmico) calls this "bookending":
 
 > **1 - "Bookend" the day. Reading first thing in the morning (especially before going online in any
 > fashion) and then reading at night before sleep.**
 
-— @Coyote_Cosmico, [#387960](https://stacker.news/items/387960)
+— [@Coyote_Cosmico](https://stacker.news/Coyote_Cosmico), [#387960](https://stacker.news/items/387960)
 
-They also have a lot of other very good tips. Naturally, @elvismercury chimed in:
+They also have a lot of other very good tips. Naturally, [@elvismercury](https://stacker.news/elvismercury) chimed in:
 
 >> Highlighting and rereading.
 >
@@ -226,7 +226,7 @@ They also have a lot of other very good tips. Naturally, @elvismercury chimed in
 >
 > Not saying this is right for everyone, just what I do.
 
-— @elvismercury, [#387995](https://stacker.news/items/387995)
+— [@elvismercury](https://stacker.news/elvismercury), [#387995](https://stacker.news/items/387995)
 
 I also like that he used the term LARPing. I really like LARPing (the term).
 
@@ -235,7 +235,7 @@ Ethereum_](https://github.com/ethereumbook/ethereumbook) one day. I have read a 
 here how people think Andreas M. Antonopoulos is a shitcoiner because he wrote a book about a
 shitcoin. I can see where they are coming from but — seriously? I think that summarizes very well
 how [bitcoiners aren't as special as they think they are](https://stacker.news/items/370418). I
-think AA is still a very based person like (@niftynei mentioned
+think AA is still a very based person like ([@niftynei](https://stacker.news/niftynei) mentioned
 [here](https://stacker.news/items/370826)). AA might simply be ahead of our time — or less
 degenerate.
 
@@ -251,7 +251,7 @@ degenerate.
 >
 > I shouldn't talk in generalities this way, I know.  It's a sore spot.
 
-— @elvismercury, [#370413](https://stacker.news/items/370413)
+— [@elvismercury](https://stacker.news/elvismercury), [#370413](https://stacker.news/items/370413)
 
 I think that also summarizes one of the biggest problems in our society today: To judge the whole
 character of a person via nitpicks from biased third-hand experiences. In this case here, these
@@ -264,7 +264,7 @@ Ok, I ranted enough about this here. I still have another post I want to mention
 
 ### 3. [Swedish government discusses cash retention](https://stacker.news/items/387657)
 
-@TomK linked to "good news for the freedom movement from Sweden".
+[@TomK](https://stacker.news/TomK) linked to "good news for the freedom movement from Sweden".
 
 > Good news for the freedom movement from Sweden: it seems that the new government is trying to make
 > cash compulsory. It's news like this that should startle the parasites in Davos!
@@ -283,7 +283,7 @@ As mentioned above, I care more about the _why's_ of people. So here are my why'
   gold and as significant like trying to mine bitcoin using CPUs. But I didn't do much research.
   That's just how I feel currently. I change my mind all the time (what is imo a virtue if done for
   the "right" reasons)
-- I don't care about the ~privacy of my everyday transactions. I believe in [hiding in plain
+- I don't care about the [~privacy](https://stacker.news/~privacy) of my everyday transactions. I believe in [hiding in plain
   sight](https://mcam.mills.edu/publications/inplainsight/nevers/index.html). If I want to buy
   something in a _very_ private way, I'll use [monero](https://www.getmonero.org/) [1]. I mostly
   don't even have a choice. That's simply what is accepted on most

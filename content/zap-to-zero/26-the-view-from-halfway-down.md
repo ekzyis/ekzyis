@@ -122,7 +122,7 @@ When I had this thought, I wrote down this:
 >
 > Remembering what I thought and liked feels like a different way to live or mindset or game
 >
-> As @Natalia mentioned: the art is to know when to stop
+> As [@Natalia](https://stacker.news/Natalia) mentioned: the art is to know when to stop
 >
 > To be writer and reader at once
 >

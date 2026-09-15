@@ -33,7 +33,7 @@ worse: that we have no choice.
 
 ---
 
-A few hours ago, I read some things from @plebpoet. It started with
+A few hours ago, I read some things from [@plebpoet](https://stacker.news/plebpoet). It started with
 [this](https://stacker.news/items/395051):
 
 > art is pebbles on the beach
@@ -128,10 +128,10 @@ actually does make sense. Is this the [editor part of my mind](https://stacker.n
 
 ### 1. [Culture and Choice by plebpoet on Thriller Bitcoin (2022)](https://stacker.news/items/92827)
 
-This was the debut of @plebpoet on SN. Reading this and the linked article [_How A Lefty Became A
+This was the debut of [@plebpoet](https://stacker.news/plebpoet) on SN. Reading this and the linked article [_How A Lefty Became A
 Maxi_](https://www.citadel21.com/how-a-lefty-became-a-maxi) made me feel sad, depressed, hopeful and
 inspired at the same time. Not many things give me such a mixture of feelings. And I am not only
-saying this to read more from @plebpoet on SN for my own selfish reasons.
+saying this to read more from [@plebpoet](https://stacker.news/plebpoet) on SN for my own selfish reasons.
 
 > Speaking as a young American adult, it seems the culture is broken. The test of a healthy culture
 > should be the general health of the population because it is the culture that supplies the
@@ -174,7 +174,7 @@ And now we are faced with war at the gates of Europe.
 ### 2. [How A Lefty Became A Maxi (2021)](https://www.citadel21.com/how-a-lefty-became-a-maxi)
 
 This is the first post that I link to which is not on SN. At least I didn't find it. I am very glad
-that @plebpoet linked to it in the post above else I am not sure if I would have found it.
+that [@plebpoet](https://stacker.news/plebpoet) linked to it in the post above else I am not sure if I would have found it.
 
 > My story is bigger than what I can cover with one article, and besides that, I’m still processing
 > all the changes I’ve gone through. I have been struggling to find a way to share it, to grasp the
@@ -183,13 +183,13 @@ that @plebpoet linked to it in the post above else I am not sure if I would have
 
 I really loved reading this since it brings the struggle of my generation to a point. I struggled
 with finding which parts I should quote since every paragraph feels as important as the one before.
-So please, read the article and thank me and most important @plebpoet later.
+So please, read the article and thank me and most important [@plebpoet](https://stacker.news/plebpoet) later.
 
 ---
 
 ### 3. [help me get through my writer's block](https://stacker.news/items/301588)
 
-A little less than 3 months ago, @plebpoet shared more struggles with us. Struggles that I also can
+A little less than 3 months ago, [@plebpoet](https://stacker.news/plebpoet) shared more struggles with us. Struggles that I also can
 relate to and fight by writing daily.
 
 > I hope you will lend me your ear, as i have something to say into it.
@@ -237,7 +237,7 @@ I want to write more since I know there is more to share but at the same time, I
 of writing is over for me—for now. I will definitely share more thoughts when the time came back.
 Now it's the time for the rest of SN to share their thoughts.
 
-**Very happy to have you here @plebpoet!**
+**Very happy to have you here [@plebpoet](https://stacker.news/plebpoet)!**
 
 ---
 

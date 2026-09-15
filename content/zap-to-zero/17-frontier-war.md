@@ -45,9 +45,9 @@ A few days ago, I read the following comment:
 > since it kinda sums up SN. This really is the frontier, we should keep that energy going.
 >
 > But maybe as a founder, I could pay extra and have a little alien dude with a cowboy hat
-> unlockable if you spend time in ~UFOs.
+> unlockable if you spend time in [~UFOs](https://stacker.news/~UFOs).
 
-— @OneOneSeven, [#383733](https://stacker.news/items/383733)
+— [@OneOneSeven](https://stacker.news/OneOneSeven), [#383733](https://stacker.news/items/383733)
 
 I had something to say but I didn't. So I am writing this post now. I wanted to write something like
 this:
@@ -68,7 +68,7 @@ this:
 >
 > — Wikipedia, [_American Frontier_](https://en.wikipedia.org/wiki/American_frontier)
 >
-> Frontiers can be everywhere in ~culture. We're at the [frontier of
+> Frontiers can be everywhere in [~culture](https://stacker.news/~culture). We're at the [frontier of
 > AI](https://web.archive.org/web/20240104203118/https://www.afr.com/technology/chatgpt-chief-asks-to-be-regulated-but-does-he-mean-it-20230521-p5da3g),
 > [frontier of space (exploration)](https://stacker.news/items/286873), frontier of networks out of
 > the reach of governments and other centralized control, [frontier of new mental health
@@ -123,7 +123,7 @@ Nice.
 
 ### 1. [Starlink - the end of the free internet? Or a new birth?](https://stacker.news/items/286873)
 
-In the search of content to mention here, I stumbled across this yesterday. I think @davidw
+In the search of content to mention here, I stumbled across this yesterday. I think [@davidw](https://stacker.news/davidw)
 mentioned it in some comment somewhere. I really liked reading through this because I was surprised
 that I didn't think about it from this perspective yet:
 
@@ -168,17 +168,17 @@ Robotics](https://titanfall.fandom.com/wiki/Hammond_Robotics) in the Titanfall l
 
 ### 2. [Can You Be A Libertarian Toxic Bitcoin Maximalist?](https://stacker.news/items/386991)
 
-Reading this from @siggy47 made me very happy:
+Reading this from [@siggy47](https://stacker.news/siggy47) made me very happy:
 
 > I’ve been a bitcoin maximalist for about four years now, and **I can feel myself getting more
 > toxic by the day.**
 
 So it's [not just me](https://stacker.news/items/349363) who noticed some change regarding his view
-on toxic bitcoin maximalism — something that @DarthCoin has preached a lot here when he was still
+on toxic bitcoin maximalism — something that [@DarthCoin](https://stacker.news/DarthCoin) has preached a lot here when he was still
 here [1]. I also fully blame him.
 
-Without @DarthCoin, I would probably still be a very nice person that everyone likes and wants to be
-friends with. **Without @DarthCoin, I would probably have never realized that I didn't get into
+Without [@DarthCoin](https://stacker.news/DarthCoin), I would probably still be a very nice person that everyone likes and wants to be
+friends with. **Without [@DarthCoin](https://stacker.news/DarthCoin), I would probably have never realized that I didn't get into
 bitcoin to make friends — even though I don't mind making _the right_ friends.**
 
 I only lurked in the comment section of that post. I immediately knew that I would mention this here
@@ -216,7 +216,7 @@ FOMO:
 > btw are we allowed uncensored swearing on SN? I have just bleeped out my swearing but don't know
 > if I need to XD
 
-— @02399d3080, [#387060](https://stacker.news/items/387060)
+— [@02399d3080](https://stacker.news/02399d3080), [#387060](https://stacker.news/items/387060)
 
 _I also liked the irony of the self-censoring that [wasn't lost on @02399d3080 while he was writing
 it](https://stacker.news/02399d3080). Is this my alt account?_
@@ -250,23 +250,23 @@ principles to their fullest extent.
 > If you forcibly prevent someone from launching their own site, decidcated or tolerant of
 > shitcoinery, then you're a communist. They can do whatever they want.
 
-— @SqNr65, [387117](https://stacker.news/items/387117)
+— [@SqNr65](https://stacker.news/SqNr65), [387117](https://stacker.news/items/387117)
 
 and this comment:
 
 > but why do you need to be a libertarian in the first place 🤔 they are just name tags to separate
 > people right? like I never bother with BEING anything but myself.
 
-— @Natalia, [#387000]( https://stacker.news/items/387000)
+— [@Natalia](https://stacker.news/Natalia), [#387000]( https://stacker.news/items/387000)
 
-_btw, classic authentic @Natalia; destroying someone with a few words that make them question their
+_btw, classic authentic [@Natalia](https://stacker.news/Natalia); destroying someone with a few words that make them question their
 whole existence [2]:_
 
 > Fair point, Natalia. I used to be a more formal libertarian (big L, as they say.) I couldn't
 > swallow the hypocrisy of being a freedom party that relied on Robert's Rules Of Order for
 > meetings. Maybe just substitute belief in freedom for libertarian.
 
-— @siggy47, [#387011]( https://stacker.news/items/387011)
+— [@siggy47](https://stacker.news/siggy47), [#387011]( https://stacker.news/items/387011)
 
 ---
 
@@ -304,7 +304,7 @@ Write two good posts on SN.
 ---
 
 Maybe [I woke up earlier today](https://stacker.news/items/387475) because I read [the thread that
-@davidw started in the saloon yesterday](https://stacker.news/items/386862)? And thus wanted to get
+[@davidw](https://stacker.news/davidw) started in the saloon yesterday](https://stacker.news/items/386862)? And thus wanted to get
 my Z2Z post out fast? Who knows, who knows. :)
 
 Morning zaps to early birds!
@@ -315,7 +315,7 @@ Morning zaps to early birds!
 matter in which form of media: book, movie, show, song, ... And all the ideas for these universes
 must have come from somewhere, right?_
 
-[1] _Btw, [there were some replies](https://stacker.news/DarthCoin/all) from @DarthCoin on here in
+[1] _Btw, [there were some replies](https://stacker.news/DarthCoin/all) from [@DarthCoin](https://stacker.news/DarthCoin) on here in
 the recent days. Apparently, talking shit about Lightning or embracing Fedimint triggers him enough
 to reply._
 

@@ -77,7 +77,7 @@ _it's still about zapping to zero, see?_
 > Have you ever come across something in which you resonated so strongly to what a character said or
 > did?
 
-@cryotosensei is back on stage here with this question. For him, it was this passage in the book
+[@cryotosensei](https://stacker.news/cryotosensei) is back on stage here with this question. For him, it was this passage in the book
 [_Help Me!_ by Marianne Power](https://www.goodreads.com/book/show/38136826-help-me):
 
 > He looked at me, then knocked back the rest of his pint. His blue yes were bloodshot and  glassy,
@@ -99,12 +99,12 @@ good.
 And regarding the passage: I also felt like it was speaking to me. Maybe I should make much more of
 my days while I still can.
 
-And I am glad @cryotosensei still finds the time to read books. Maybe not much but it's probably a
+And I am glad [@cryotosensei](https://stacker.news/cryotosensei) still finds the time to read books. Maybe not much but it's probably a
 lot more relieving then. Look at the bright side of life! :)
 
 _I also had a good laugh at this:_
 
-> Forwarding some sats to @siggy47 because two of my frequently patronised territories got archived,
+> Forwarding some sats to [@siggy47](https://stacker.news/siggy47) because two of my frequently patronised territories got archived,
 > which made me realise I got to be more proactive in ensuring the longevity of those remaining haha
 
 ---
@@ -114,7 +114,7 @@ _I also had a good laugh at this:_
 This is one of these posts where freebie bots and satfarmers probably start to salivate from the
 genuineness in it. Don't take notes, bots!
 
-It's also the debut from @Bitcoin_Bootcamp (excluding his bio) but has been "silent member here for
+It's also the debut from [@Bitcoin_Bootcamp](https://stacker.news/Bitcoin_Bootcamp) (excluding his bio) but has been "silent member here for
 about half a year":
 
 > Hey everyone,
@@ -135,7 +135,7 @@ about half a year":
 
 I really liked reading his story. I think we like these stories since they are like our stories.[^3]
 
-The following also sounded similar to what @plebpoet wrote in [_How a Lefty Became a
+The following also sounded similar to what [@plebpoet](https://stacker.news/plebpoet) wrote in [_How a Lefty Became a
 Maxi_](https://www.citadel21.com/how-a-lefty-became-a-maxi): 
 
 > Beyond my coin history, what's more intriguing is the change in my mindset and life itself.
@@ -165,7 +165,7 @@ Maxi_](https://www.citadel21.com/how-a-lefty-became-a-maxi):
     download the original mkv file.
 
 [^2]: Credits for this blog post that has been assimilated into my life experiences go to
-    @elvismercury ([#376337](https://stacker.news/items/376337))
+    [@elvismercury](https://stacker.news/elvismercury) ([#376337](https://stacker.news/items/376337))
 
 [^3]: I still remember how I blew my own mind when I told my ex-girlfriend before we got together
     that I _like_ her because she is _like_ me. I used a lot of words to pretend like I am just

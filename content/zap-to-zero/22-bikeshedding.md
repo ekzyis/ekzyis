@@ -20,7 +20,7 @@ price tag a stark contrast to the decaying nuclear power plant looming in the ba
 Yesterday, I worked on integrating [Nostr Wallet
 Connect](https://github.com/nostr-protocol/nips/blob/master/47.md) into SN. While I was trying to
 figure out how I can check if the connection URI from the wallet is working—don't want to throw
-preventable errors in your faces on zap attempts[^1]—I found this comment from @benthecarman that
+preventable errors in your faces on zap attempts[^1]—I found this comment from [@benthecarman](https://stacker.news/benthecarman) that
 made me laugh hard (still laughing every time I read it):
 
 >> Maybe this is a new nip indeed. Requesting invoices shouldn't require authorization. The need
@@ -29,7 +29,7 @@ made me laugh hard (still laughing every time I read it):
 > you guys bike shedding so much more than needed. the wallet connect functionality should have the
 > ability to receive, that is all this does
 
-— @benthecarman, [_NIP-47: Nostr Wallet Connect
+— [@benthecarman](https://stacker.news/benthecarman), [_NIP-47: Nostr Wallet Connect
 Extensions_](https://github.com/nostr-protocol/nips/pull/685#issuecomment-1654968901), Jul 28, 2023
 
 And the discussion only got more funny:
@@ -46,7 +46,7 @@ And the discussion only got more funny:
 However, people weren't satisfied that this PR doesn't solve world hunger—yet. So more and more
 people asked if it would make sense to add more and more things [^2].
 
-At some point, @supertestnet [joined
+At some point, [@supertestnet](https://stacker.news/supertestnet) [joined
 in](https://github.com/nostr-protocol/nips/pull/685#issuecomment-1668076555) and asked about the
 status of this PR since it wasn't clear.
 
@@ -64,17 +64,17 @@ status of this PR since it wasn't clear.
 > [getAlby/nostr-wallet-connect#112
 > (comment)](https://github.com/getAlby/nostr-wallet-connect/issues/112#issuecomment-1668903161)
 
-After this was done, @benthecarman asked on Sep 3, 2023:
+After this was done, [@benthecarman](https://stacker.news/benthecarman) asked on Sep 3, 2023:
 
 > https://github.com/getAlby/nostr-wallet-connect now implements this, good to merge?
 
-But we weren't done with @benthecarman yet. Even @TonyGiorgio [joined the
+But we weren't done with [@benthecarman](https://stacker.news/benthecarman) yet. Even [@TonyGiorgio](https://stacker.news/TonyGiorgio) [joined the
 fun](https://github.com/nostr-protocol/nips/pull/685#issuecomment-1728100073):
 
 > How about a keysend method? That would enable wallets to be the funding source for a lot of value
 > for value podcast stuff.
 
-After @benthecarman also added this method, he dared to ask if it was good to merge now:
+After [@benthecarman](https://stacker.news/benthecarman) also added this method, he dared to ask if it was good to merge now:
 
 > I think this PR is getting pretty big at this point. We should have enough functionality now for
 > any kind of wallet.
@@ -83,7 +83,7 @@ After @benthecarman also added this method, he dared to ask if it was good to me
 
 But since new methods were added to the spec, these new methods also had to be implemented now:
 
-> @benthecarman we haven't implemented the new methods yet, if possible it would be great to do this
+> [@benthecarman](https://stacker.news/benthecarman) we haven't implemented the new methods yet, if possible it would be great to do this
 > first in case we notice any changes that need to be made.
 
 On Oct 11, 2023, `get_info` [was proposed as the final
@@ -96,7 +96,7 @@ method I was currently trying to use to check the connection status.
 >
 > Returns information about the user's node
 
-The discussion continued. @Semisol also[ joined in and did a
+The discussion continued. [@Semisol](https://stacker.news/Semisol) also[ joined in and did a
 review](https://github.com/nostr-protocol/nips/pull/685#discussion_r1376599737) on Oct 30, 2023. But
 since the PR has deviated a lot since it started as a simple way to add receiving to NWC, they were
 confused:
@@ -194,7 +194,7 @@ done
 
 ### 1. [Confessions of a burnt-out father](https://stacker.news/items/304937)
 
-A while ago, @cryotosensei shared his pain of being a father of two kids with us. Pain that he
+A while ago, [@cryotosensei](https://stacker.news/cryotosensei) shared his pain of being a father of two kids with us. Pain that he
 expected but pain that still hurts.
 
 I don't want to quote too much since I don't want people to feel like they don't have to read the
@@ -204,7 +204,7 @@ scientific paper. If you only read the abstract of the [Bitcoin
 Whitepaper](https://stacker.news/bitcoin.pdf), did you really read the Bitcoin Whitepaper? The
 answer should be obvious.
 
-So here is my favorite line where I felt a real connection to @cryotosensei even though I am far
+So here is my favorite line where I felt a real connection to [@cryotosensei](https://stacker.news/cryotosensei) even though I am far
 away from being a parent—and I am not sure if I ever _really_ want to or will have kids.
 
 > I don’t have to be around people all the time. I’m perfectly fine signing up for seminars and
@@ -215,7 +215,7 @@ away from being a parent—and I am not sure if I ever _really_ want to or will 
 > I’m at the indoor playground. All I see around me are equally bored parents passing the time
 > buried in their handphones. Since when did my activity-filled life turn out to be so mundane?
 
-So please, check out the post from @cryotosensei and share whatever you have to share with him. I
+So please, check out the post from [@cryotosensei](https://stacker.news/cryotosensei) and share whatever you have to share with him. I
 think he deserves it. Even though he sometimes talk a little too much for my liking about his wife
 being Japanese, lol.
 
@@ -223,9 +223,9 @@ being Japanese, lol.
 
 ### 2. [What’s your SN routine like?](https://stacker.news/items/393176)
 
-Another great post from @cryotosensei. This one is from yesterday.
+Another great post from [@cryotosensei](https://stacker.news/cryotosensei). This one is from yesterday.
 
-I loved how @cryotosensei not just asked us about our routine ([like a
+I loved how [@cryotosensei](https://stacker.news/cryotosensei) not just asked us about our routine ([like a
 fed](https://stacker.news/items/392090)) but actually shared his own routine first (like a very
 sophisticated fed). That's what SN is about: Value 4 Value!
 
@@ -240,28 +240,28 @@ sophisticated fed). That's what SN is about: Value 4 Value!
 >
 > What’s your SN routine like?
 
-I also loved reading the comments. @cryotosensei basically created a good prompt to create bonds
-between old cowboys and people learning the ropes. For example, @siggy47, the founder of
-~bitcoin_beginners, replied this:
+I also loved reading the comments. [@cryotosensei](https://stacker.news/cryotosensei) basically created a good prompt to create bonds
+between old cowboys and people learning the ropes. For example, [@siggy47](https://stacker.news/siggy47), the founder of
+[~bitcoin_beginners](https://stacker.news/~bitcoin_beginners), replied this:
 
 > Can I just say that I see you all the time making quality contributions here. I think you may be
 > cheating yourself of sats with your method. You will earn far more by tipping more. Build up some
-> more sats, then tip quality posts early. For more details, check @Natalia's recent post. It really
+> more sats, then tip quality posts early. For more details, check [@Natalia](https://stacker.news/Natalia)'s recent post. It really
 > pays to pay others before yourself, as crazy as that sounds.
 As an example, the first thing I do in the morning is donate a load of sats to the site. It's not
 completely out of the goodness of my heart. First of all, then I don't need to worry about my cowboy
 hat. Secondly, I know I have a chance to earn it back with good tipping and posting throughout the
 day.
 
-— @siggy47, [#393198](https://stacker.news/items/393198)
+— [@siggy47](https://stacker.news/siggy47), [#393198](https://stacker.news/items/393198)
 
-_Maybe there should also be ~meta_beginners territory? Half-joking._
+_Maybe there should also be [~meta_beginners](https://stacker.news/~meta_beginners) territory? Half-joking._
 
 ---
 
 ### 3. [The Mysterious Life And Death Of Mircea Popescu](https://stacker.news/items/204836)
 
-In SN terms, this is a very old post. When @siggy47 found out that some dude named Popescu died, he
+In SN terms, this is a very old post. When [@siggy47](https://stacker.news/siggy47) found out that some dude named Popescu died, he
 dug deeper (not into his grave fortunately—at least I hope so).
 
 > I once took a vacation with my family to Costa Rica’s pacific coast, not far from the place where
@@ -282,7 +282,7 @@ dug deeper (not into his grave fortunately—at least I hope so).
 > misogynistic, and anti-semitic.  I am a bit of a history junkie, so I wanted to learn more about
 > him.
 
-I must confess that I didn't really look much into this Popescu dude until @siggy47 mentioned
+I must confess that I didn't really look much into this Popescu dude until [@siggy47](https://stacker.news/siggy47) mentioned
 yesterday that my writing style is similar; just more friendly.
 
 > I don't want to dump more work on you, but when you're done with this experiment I hope you keep
@@ -290,7 +290,7 @@ yesterday that my writing style is similar; just more friendly.
 > friendly Popescu. I read it to see what's going on in that head of yours more than for this
 > experiment. I bet I'm not the only one.
 
-— @siggy47, [#392821](https://stacker.news/items/392821)
+— [@siggy47](https://stacker.news/siggy47), [#392821](https://stacker.news/items/392821)
 
 I looked into [trilema.com](http://trilema.com/) and even the domain name was something that
 inspired me. The front page also loads random posts on every site fresh. Also something that I can
@@ -300,7 +300,7 @@ However, I would never host a site without TLS enabled. I know that it might not
 for something like a blog[^3] but with my background in cryptography, that's just a no-go for me
 when it comes to my own sites.
 
-I am very happy that @siggy47 mentioned this. I am still processing what it means for me though.
+I am very happy that [@siggy47](https://stacker.news/siggy47) mentioned this. I am still processing what it means for me though.
 
 It feels like I passed some kind of writing event horizon.
 

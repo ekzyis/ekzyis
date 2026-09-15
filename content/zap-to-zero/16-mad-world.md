@@ -83,39 +83,40 @@ Mhh, I think I need to accept that the calendar is indeed not reliable. Not only
 comments but in general. We did a [release yesterday](https://stacker.news/items/385781) and I got a
 lot of sats forwarded and stacked some more sats here and there. As you can see in the chart that
 shows my balance, it exploded but the calendar thinks I only stacked 8016 sats, lol. I mean, not
-complaining (totally complaining) since that means I basically won yesterday against @grayruby since
-we didn't clarify which source we're using as the ~oracle to tell if I stacked more than I spent
-(totally not ignoring that the my win condition was to hit 0, not `spent` > `stacked`).
+complaining (totally complaining) since that means I basically won yesterday against
+[@grayruby](https://stacker.news/grayruby) since we didn't clarify which source we're using as the
+[~oracle](https://stacker.news/~oracle) to tell if I stacked more than I spent (totally not ignoring that the my win condition was
+to hit 0, not `spent` > `stacked`).
 
-So as @siggy47 [already mentioned on Jan 6](https://stacker.news/items/378903), we still have a bug
-in prisms:
+So as [@siggy47](https://stacker.news/siggy47) [already mentioned on Jan
+6](https://stacker.news/items/378903), we still have a bug in prisms:
 
-> I was just listening, and towards the end @k00b started talking about all the sats I have earned.
-> I did a double take. I'm not complaining, but I couldn't believe those totals. I know I don't have
-> those sats, so I was puzzled. I also pride myself on zapping others a lot, and my percentage was
-> low. Then it occurred to me. I was credited with the approximately 3 million sats that were
-> donated to Anita for the Satsraiser.https://stacker.news/items/239180
+> I was just listening, and towards the end [@k00b](https://stacker.news/k00b) started talking about
+> all the sats I have earned. I did a double take. I'm not complaining, but I couldn't believe those
+> totals. I know I don't have those sats, so I was puzzled. I also pride myself on zapping others a
+> lot, and my percentage was low. Then it occurred to me. I was credited with the approximately 3
+> million sats that were donated to Anita for the Satsraiser.https://stacker.news/items/239180
 Apparently those sats are credited to the donor. I don't want to look like some kind of Scrooge or
 Mr. Potter!
 
-— @siggy47, [#378903](https://stacker.news/items/378903)
+— [@siggy47](https://stacker.news/siggy47), [#378903](https://stacker.news/items/378903)
 
 > Dang you're right we might still have that bug for prisms.
 
-— @k00b, [#379050](https://stacker.news/items/379050)
+— [@k00b](https://stacker.news/k00b), [#379050](https://stacker.news/items/379050)
 
 ---
 
-We also included a new but funny bug in our release yesterday. As @Wumbo noticed pretty quick, you
+We also included a new but funny bug in our release yesterday. As [@Wumbo](https://stacker.news/Wumbo) noticed pretty quick, you
 were able to enter your own SN address to trigger an infinite loop of withdrawals:
 
 > Time for Inception!
 >
 > Withdraw from wumbo@stacker.news to wumbo@stacker.news
 
-— @Wumbo, [#385801](https://stacker.news/items/385801)
+— [@Wumbo](https://stacker.news/Wumbo), [#385801](https://stacker.news/items/385801)
 
-Still wondering when we will get our first real responsible disclosure though. Maybe @Wumbo would
+Still wondering when we will get our first real responsible disclosure though. Maybe [@Wumbo](https://stacker.news/Wumbo) would
 have been greatly rewarded if he would have told us about it in a responsible way? :) Just like was
 mentioned to Dinesh in Silicon Valley in this scene at the end?
 
@@ -130,7 +131,7 @@ That report was funny though. Reporter, if you're still on SN and read this, ple
 personal. It was just too funny to not mention it here and I think you agreed when I explained to
 you that it wasn't a vulnerability and we laughed together about it :)
 
-Since it' another good example, I also want to mention the vuln that @kepford found since it was a
+Since it' another good example, I also want to mention the vuln that [@kepford](https://stacker.news/kepford) found since it was a
 pretty good (bad for us) privacy leak [0] a while ago but didn't realize what he found until I
 replied:
 
@@ -142,7 +143,7 @@ replied:
 > disclosure](https://github.com/stackernews/stacker.news?tab=readme-ov-file#responsible-disclosure)
 > next time you find something like this.**
 Maybe you would have been more greatly rewarded if you didn't disclose it publicly immediately with
-no chance for us to fix before everyone knows about it? :) /cc @k00b
+no chance for us to fix before everyone knows about it? :) /cc [@k00b](https://stacker.news/k00b)
 
 — me, [#355354](https://stacker.news/items/355354)
 
@@ -152,7 +153,7 @@ https://stacker.news/items/355256
 > stacker.news I'd feel responsible to fix it asap. I appreciate the gentle scolding and the zap.
 > Was not expecting either.
 
-— @kepford, [#355814](https://stacker.news/items/355814)
+— [@kepford](https://stacker.news/kepford), [#355814](https://stacker.news/items/355814)
 
 I can totally understand how you just find something and want to post about it on SN. I do this all
 the time. But it should depend on _what_ you want to post.
@@ -167,15 +168,14 @@ they find something, they will remember my words and be like:
 
 ## Recent Superzaps
 
-### 1. [Technological determinism and splitting the atom of cause and
-effect](https://stacker.news/items/333010)
+### 1. [Technological determinism and splitting the atom of cause and effect](https://stacker.news/items/333010)
 
-This post by @elvismercury (totally not biased which posts I pick) is something I found yesterday
+This post by [@elvismercury](https://stacker.news/elvismercury) (totally not biased which posts I pick) is something I found yesterday
 but again have no idea _how_. I think telling how I find interesting things on SN would also be ...
 interesting.
 
 This post is related to the [_Broken Money_](https://stacker.news/items/274195) [book
-club](https://stacker.news/items/274195) that @elvismercury was running [1]. 
+club](https://stacker.news/items/274195) that [@elvismercury](https://stacker.news/elvismercury) was running [1]. 
 
 > (A post in the meta-experiment series of the Broken Money book club, part 5)
 >
@@ -191,20 +191,20 @@ club](https://stacker.news/items/274195) that @elvismercury was running [1].
 > [...]
 
 There were only 20 comments but basically all of them of them evolved around replies from
-@Undisciplined and @k00b:
+[@Undisciplined](https://stacker.news/Undisciplined) and [@k00b](https://stacker.news/k00b):
 
 > Tom Woods has talked about how one of the major problems fiat created was turning almost everyone
 > into amateur stock traders. On a hard money standard, people can literally just save their money
 > for tomorrow and have confidence its purchasing power will be preserved. Fiat made saving
 > untenable and "saving" became a euphemism for financial speculation.
 
-— @Undisciplined, [333064](https://stacker.news/items/333064)
+— [@Undisciplined](https://stacker.news/Undisciplined), [333064](https://stacker.news/items/333064)
 
 This post also convinced me that [Urban
 Dictionary](https://www.urbandictionary.com/define.php?term=Mind%20Blown) should add the following
 definition to the term "Mind Blown":
 
-> The feeling you get when you read something from @elvismercury
+> The feeling you get when you read something from [@elvismercury](https://stacker.news/elvismercury)
 
 ![the-universe-tim-and-eric-mind-blown.gif](https://m.stacker.news/12072)
 
@@ -216,7 +216,7 @@ Some shameless self-promotion. But in case you didn't see it (_and_ you are one 
 didn't [pay up](https://stacker.news/items/363233) yet!), I thought it makes sense to mention it
 here.
 
-@oracle is running a bet when bitcoin will reach $100k. This is inspired by @orthwyrm's daily
+[@oracle](https://stacker.news/oracle) is running a bet when bitcoin will reach $100k. This is inspired by [@orthwyrm](https://stacker.news/orthwyrm)'s daily
 comments in the saloon (that used to be called _Daily discussion thread_ as you can see
 [here](https://stacker.news/items/165652)).
 
@@ -259,7 +259,7 @@ shown error message, you basically knew that the user balance was at least above
 was fortunately no code for exploitation included. While writing my own exploit to evaluate the
 impact, I found out about the 10 chances (limit for pending invoices)._
 
-[1] _Apparently, @lynaldencontact even was made [aware of the book
+[1] _Apparently, [@lynaldencontact](https://stacker.news/lynaldencontact) even was made [aware of the book
 club](https://stacker.news/items/352875) at some point. And is it still running? Can't find part 5.
-But I think @elvismercury mentioned somewhere that he got very busy. So I might indeed still have
+But I think [@elvismercury](https://stacker.news/elvismercury) mentioned somewhere that he got very busy. So I might indeed still have
 time to catch up!_

@@ -6,7 +6,7 @@ sn_id: 385785
 
 ![secret-forumla-sponge-bob-nickelodeon-050516.webp](https://m.stacker.news/11930)
 
-Today, @Natalia gave me the idea for something similar to
+Today, [@Natalia](https://stacker.news/Natalia) gave me the idea for something similar to
 [SNL](https://www.youtube.com/@stackernews).
 
 Instead of going over the top posts of the week (user perspective), I would go over the top code
@@ -20,7 +20,7 @@ Live`**:
 
 > Welcome to our decoding SN SSL - Secret Source Live ⚡️😂
 
-— @Natalia, [#385623](https://stacker.news/items/385623)
+— [@Natalia](https://stacker.news/Natalia), [#385623](https://stacker.news/items/385623)
 
 This is a great name since SSL also stands for Secure Sockets Layer [0] which is (among other
 security features) about encrypting HTTP traffic:
@@ -36,7 +36,8 @@ security features) about encrypting HTTP traffic:
 
 — Cloudflare, [_What is SSL?_](https://www.cloudflare.com/learning/ssl/what-is-ssl/)
 
-I am not sure if @Natalia was aware how good the acronym that she picked _really_ was.
+I am not sure if [@Natalia](https://stacker.news/Natalia) was aware how good the acronym that she
+picked _really_ was.
 
 I am also not sure if I am actually going to do this. But sounds like a good idea. I guess it
 depends on how much interest there is for something like this? :)
@@ -74,8 +75,8 @@ depends on how much interest there is for something like this? :)
 
 ![Figure_3.png](https://m.stacker.news/11911)
 
-Seems like I am back on track. Or @grayruby and his mercenaries have overstretched themselves and
-ran into supply problems, [a common
+Seems like I am back on track. Or [@grayruby](https://stacker.news/grayruby) and his mercenaries
+have overstretched themselves and ran into supply problems, [a common
 mistake](https://web.archive.org/web/20240112113246/https://www.economist.com/briefing/2023/10/24/the-overstretched-superpower).
 
 ---
@@ -84,31 +85,32 @@ mistake](https://web.archive.org/web/20240112113246/https://www.economist.com/br
 
 ### 1. [Anita Posch Satsraiser](https://stacker.news/items/239180)
 
-This must be a blast from the past for @siggy47. I forgot how I landed at this post and I wanted to
-mark my trail with bookmarks but seems like I didn't ...
+This must be a blast from the past for [@siggy47](https://stacker.news/siggy47). I forgot how I
+landed at this post and I wanted to mark my trail with bookmarks but seems like I didn't ...
 
 Anyway, if you're new on SN or don't know what the cowboy hats mean, check out this post. You might
 find the secret sauce in there.
 
 ![8c4i81.jpg](https://m.stacker.news/11914)
 
-_Btw, the picture of @siggy47 armchair has burned itself into my brain. Every time I see @siggy47
-shitposting, I imagine how he sits in that armchair (like an [armchair
-historian](https://www.youtube.com/c/TheArmchairHistorian) but for SN), smoking a pipe or cigar with
-a long queue of people who saw [the episode](https://www.youtube.com/watch?v=80r4cjBEbFc) with him
-on @kr's show. They are waiting for him to stop shitposting on SN so he can sign more shitposts that
-these people printed out because it changed their life. Or something like that._
+_Btw, the picture of [@siggy47](https://stacker.news/siggy47) armchair has burned itself into my
+brain. Every time I see [@siggy47](https://stacker.news/siggy47) shitposting, I imagine how he sits
+in that armchair (like an [armchair historian](https://www.youtube.com/c/TheArmchairHistorian) but
+for SN), smoking a pipe or cigar with a long queue of people who saw [the
+episode](https://www.youtube.com/watch?v=80r4cjBEbFc) with him on [@kr](https://stacker.news/kr)'s
+show. They are waiting for him to stop shitposting on SN so he can sign more shitposts that these
+people printed out because it changed their life. Or something like that._
 
 ---
 
 ### 2. [Satsraiser - Running Bitcoin - 10th Jan 2024](https://stacker.news/items/380729)
 
-Or did I find @siggy47 posts because of this post from @davidw?
+Or did I find [@siggy47](https://stacker.news/siggy47) posts because of this post from [@davidw](https://stacker.news/davidw)?
 
 He's asking that we shouldn't only run bitcoin but also actually run on the day Hal Finney tweeted
 this:
 
-https://m.stacker.news/11316
+![](https://m.stacker.news/11316)
 
 If you ask me, that wasn't too much to ask for. So I hope you got your running shoes out (or bought
 some). And if you didn't, there is still time to donate some sats.
@@ -121,9 +123,9 @@ assholes:
 > As I mentioned, sats or no sats, please make sure you watch the [**What Bitcoin Did
 > interview**](https://www.whatbitcoindid.com/podcast/running-bitcoin-with-fran-finney) with Fran
 > Finney, Hal's wife. It was discussed [**here on SN**](https://stacker.news/items/371456) by
-> @siggy47. It was incredible to hear of her resilience in spite of the immense struggles they both
-> had together. And it is still wonderful to see her smiling and still thinking about Hal each and
-> every day.
+> [@siggy47](https://stacker.news/siggy47). It was incredible to hear of her resilience in spite of
+> the immense struggles they both had together. And it is still wonderful to see her smiling and
+> still thinking about Hal each and every day.
 
 But if I ever listen to one [WBD](https://www.whatbitcoindid.com/) episode again, it will be this
 one.
@@ -132,19 +134,19 @@ one.
 
 ### 3. [Kevin Mitnick has died](https://stacker.news/items/211520)
 
-https://d3eguztg5751m.cloudfront.net/as/assets-mem-com/cmi/8/6/6/1/11371668/20230719_173037764_0_orig.jpg/-/kevin-mitnick-las-vegas-nv-obituary.jpg?crop=%28171.58333333333331%2C0%2C544.9583333333333%2C464%29&cropxunits=696&cropyunits=464&a.balancewhite=true&maxheight=650
+![](https://d3eguztg5751m.cloudfront.net/as/assets-mem-com/cmi/8/6/6/1/11371668/20230719_173037764_0_orig.jpg/-/kevin-mitnick-las-vegas-nv-obituary.jpg?crop=%28171.58333333333331%2C0%2C544.9583333333333%2C464%29&cropxunits=696&cropyunits=464&a.balancewhite=true&maxheight=650)
 
 No, he didn't die again. I just didn't know that I am currently reading a book from a person that is
 no longer with us.
 
-My own bot @hn even posted that link in July 2023 but it didn't catch my attention. That's very sad.
-I didn't know about Kevin Mitnick until @Gian mentioned his book [_Art of
+My own bot [@hn](https://stacker.news/hn) even posted that link in July 2023 but it didn't catch my attention. That's very sad.
+I didn't know about Kevin Mitnick until [@Gian](https://stacker.news/Gian) mentioned his book [_Art of
 Deception_](https://www.mitnicksecurity.com/the-art-of-deception) to me:
 
 > Kevin Mitnick is the best teacher, his book: Art of deception is a great lecture for aspiring
 > social engeneers
 
-—  @Gian, [#371767](https://stacker.news/items/371767)
+—  [@Gian](https://stacker.news/Gian), [#371767](https://stacker.news/items/371767)
 
 I instantly fell in love with the book and the writer. That made it especially sad when I found this
 post.
@@ -219,5 +221,4 @@ this post:_
 ---
 
 [0] _SSL is basically the old name for TLS since TLS is basically SSLv3._
-
 

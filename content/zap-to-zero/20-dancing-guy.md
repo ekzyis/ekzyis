@@ -87,7 +87,7 @@ passed.
 
 ### 1. [Solitude and Leadership](https://stacker.news/items/390833)
 
-This post from @Kathleen_Croteau is the title post of this post[^3]. I read this before going on my
+This post from [@Kathleen_Croteau](https://stacker.news/Kathleen_Croteau) is the title post of this post[^3]. I read this before going on my
 walk. In fact, this post inspired me to go on my solitary walk. It also inspired me to start taking
 notes while reading since a lot was going through my head while reading it.
 
@@ -250,8 +250,8 @@ Definitely among the most inspiring essays I've read.
 
 ### 2. [Opinion: Spam can't cause high fees - Thriller post](https://stacker.news/items/390030)
 
-This post from @Car which forwards sats to @Scoresby and @ThrillerBitcoin (isn't that basically
-@Car?) goes in depth about the following thesis:
+This post from [@Car](https://stacker.news/Car) which forwards sats to [@Scoresby](https://stacker.news/Scoresby) and [@ThrillerBitcoin](https://stacker.news/ThrillerBitcoin) (isn't that basically
+[@Car](https://stacker.news/Car)?) goes in depth about the following thesis:
 
 > If spammers are willing to pay the high fees, then the fees aren't actually high or the spammers
 > aren't actually spamming.

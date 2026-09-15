@@ -110,7 +110,7 @@ Darkness_](https://www.britannica.com/topic/Heart-of-Darkness)
 _Guess I am entering a (writer?) phase (?) where you need to make up new words for what you want to
 write about._
 
-Yesterday, I started with H4L as recommended by @elvismercury
+Yesterday, I started with H4L as recommended by [@elvismercury](https://stacker.news/elvismercury)
 [here](https://stacker.news/items/398752). I think I failed since I actually just wrote down bullet
 points about my day but I didn't really focus on the story part. But I think today's story could be
 this: I've seen a pigeon with a white spot on the head. It looked like another pigeon emptied its
