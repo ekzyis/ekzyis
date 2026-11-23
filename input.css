@@ -45,6 +45,11 @@
         margin-bottom: 20px;
     }
 
+    p.entry {
+        text-align: center;
+        color: var(--post-meta-color);
+    }
+
     /* roboto-regular - latin */
     @font-face {
         font-display: swap;

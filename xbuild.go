@@ -293,6 +293,7 @@ func parsePost(path string) (*Post, error) {
 
 	// markdown
 	markdown := string(parts[2])
+	markdown = regexp.MustCompile(`(?m)^\+\+\+[ \t]*$`).ReplaceAllString(markdown, `<p class="entry">+++</p>`)
 
 	// html
 	var buf bytes.Buffer
