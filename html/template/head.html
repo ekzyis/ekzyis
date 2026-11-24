@@ -10,5 +10,16 @@
     <link rel="stylesheet" href="/css/post.css?v={{- .Commit -}}">
     <link rel="stylesheet" href="/css/footer.css?v={{- .Commit -}}">
     <link rel="stylesheet" href="/css/carousel.css?v={{- .Commit -}}">
+    {{ if liveReload }}
+    <script>
+        (async () => {
+            const version = () => fetch("/livereload.txt", { cache: "no-store" }).then(r => r.text())
+            const current = await version()
+            setInterval(async () => {
+                if (await version().catch(() => current) !== current) location.reload()
+            }, 500)
+        })()
+    </script>
+    {{ end }}
 </head>
 {{ end }}

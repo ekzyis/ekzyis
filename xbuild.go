@@ -134,6 +134,7 @@ var (
 	)
 	commit         string
 	updateMetadata bool
+	liveReload     bool
 )
 
 func main() {
@@ -146,6 +147,7 @@ ___  __\_ |__  __ __|__|  |    __| _/
       \/    \/                    \/
    xbuild: because it sounds cool` + "\n\n")
 	flag.BoolVar(&updateMetadata, "M", false, "Update metadata from Stacker News API")
+	flag.BoolVar(&liveReload, "L", false, "Reload pages in the browser when public/livereload.txt changes")
 	flag.Parse()
 
 	output, err := exec.Command("git", "rev-parse", "--short", "HEAD").Output()
@@ -361,6 +363,9 @@ func executeTemplates(posts []Post) error {
 				return t.Format(format)
 			},
 			"hasPrefix": strings.HasPrefix,
+			"liveReload": func() bool {
+				return liveReload
+			},
 		},
 	)
 

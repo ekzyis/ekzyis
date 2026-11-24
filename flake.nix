@@ -11,8 +11,9 @@
         build = pkgs.writeShellScript "build" ''
           set -xe
           cp -r static/. public/
-          ${pkgs.go}/bin/go run *.go
+          ${pkgs.go}/bin/go run *.go -L
           ${pkgs.tailwindcss}/bin/tailwindcss -i input.css -o public/css/tailwind.css
+          date +%s%N > public/livereload.txt
         '';
       in
       {
