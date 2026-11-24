@@ -497,6 +497,13 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 		// copy images as webp
 		for _, image := range post.Images {
 			dstImage := filepath.Join(postDir, filepath.Base(image))
+			if !strings.HasSuffix(image, ".webp") {
+				dstImage = toWebpPath(dstImage)
+			}
+			if isUpToDate(image, dstImage) {
+				fmt.Printf("> %s (up to date)\n", dstImage)
+				continue
+			}
 			if strings.HasSuffix(image, ".webp") {
 				// already webp, just copy it
 				err = copyFile(image, dstImage)
@@ -506,7 +513,6 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 				fmt.Printf("> %s\n", dstImage)
 				continue
 			}
-			dstImage = toWebpPath(dstImage)
 			err = toWebp(image, dstImage)
 			if err != nil {
 				return fmt.Errorf("error copying image %s: %v", image, err)
@@ -517,8 +523,8 @@ func executePostTemplates(tmpl *template.Template, posts []Post) error {
 		// re-encode videos as H.264 720p
 		for _, video := range post.Videos {
 			dstVideo := filepath.Join(postDir, filepath.Base(video))
-			if _, err := os.Stat(dstVideo); err == nil {
-				fmt.Printf("> %s (exists)\n", dstVideo)
+			if isUpToDate(video, dstVideo) {
+				fmt.Printf("> %s (up to date)\n", dstVideo)
 				continue
 			}
 			err = toH264(video, dstVideo)
@@ -555,8 +561,21 @@ func toWebpPath(path string) string {
 	return strings.TrimSuffix(strings.TrimSuffix(path, ".png"), ".jpg") + ".webp"
 }
 
+// isUpToDate reports whether dst exists and was modified after src.
+func isUpToDate(src, dst string) bool {
+	srcInfo, err := os.Stat(src)
+	if err != nil {
+		return false
+	}
+	dstInfo, err := os.Stat(dst)
+	if err != nil {
+		return false
+	}
+	return dstInfo.ModTime().After(srcInfo.ModTime())
+}
+
 func toWebp(src, dst string) error {
-	err := exec.Command("ffmpeg", "-i", src, "-c:v", "libwebp", dst).Run()
+	err := exec.Command("ffmpeg", "-y", "-i", src, "-c:v", "libwebp", dst).Run()
 	if err != nil {
 		return fmt.Errorf("error converting image to webp: %v", err)
 	}
