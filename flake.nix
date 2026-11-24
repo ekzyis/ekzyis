@@ -8,6 +8,12 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
+        build = pkgs.writeShellScript "build" ''
+          set -xe
+          cp -r static/. public/
+          ${pkgs.go}/bin/go run *.go
+          ${pkgs.tailwindcss}/bin/tailwindcss -i input.css -o public/css/tailwind.css
+        '';
       in
       {
         devShells.default = pkgs.mkShell {
@@ -25,10 +31,15 @@
           type = "app";
           program = toString (pkgs.writeShellScript "serve" ''
             set -xe
-            cp -r static/. public/
-            ${pkgs.go}/bin/go run *.go
-            ${pkgs.tailwindcss}/bin/tailwindcss -i input.css -o public/css/tailwind.css
-            ${pkgs.caddy}/bin/caddy run --config Caddyfile
+            rm -rf public/
+            ${build}
+
+            ${pkgs.caddy}/bin/caddy run --config Caddyfile &
+            trap "kill $!" EXIT
+
+            ${pkgs.watchexec}/bin/watchexec --postpone --on-busy-update=queue \
+              -w content -w html -w static -w input.css -w tailwind.config.js -w xbuild.go -w chroma.go \
+              -- ${build}
           '');
         };
 
